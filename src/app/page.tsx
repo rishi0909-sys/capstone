@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, Database, Network, TrendingUp, Lightbulb } from "lucide-react";
@@ -10,19 +11,67 @@ export default function LandingPage() {
   return (
     <GridBackground>
       {/* Navbar Minimal */}
-      <nav className="w-full flex justify-between items-center px-8 py-6 z-20">
+      <nav className="w-full flex justify-between items-center px-6 md:px-12 py-6 z-20">
         <div className="font-bold text-xl tracking-tighter text-white flex items-center gap-2">
-          <div className="h-6 w-6 rounded-sm bg-indigo-600 flex items-center justify-center">
+          <div className="h-7 w-7 rounded-md bg-indigo-600 flex items-center justify-center shadow-lg shadow-indigo-500/30">
              <Network className="h-4 w-4 text-white" />
           </div>
-          IPDE
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-zinc-400">IPDE</span>
         </div>
-        <Link 
-          href="/dashboard" 
-          className="text-sm font-medium text-zinc-300 hover:text-white transition-colors"
-        >
-          Documentation
-        </Link>
+        
+        <div className="hidden lg:flex items-center gap-6">
+          <Link 
+            href="/dashboard" 
+            className="text-sm font-medium text-zinc-400 hover:text-white transition-colors"
+          >
+            Categories
+          </Link>
+          <Link 
+            href="/patterns" 
+            className="text-sm font-medium text-zinc-400 hover:text-white transition-colors"
+          >
+            Product Patterns
+          </Link>
+          <Link 
+            href="/demographics" 
+            className="text-sm font-medium text-zinc-400 hover:text-white transition-colors"
+          >
+            Customer Behavior
+          </Link>
+          <Link 
+            href="/temporal" 
+            className="text-sm font-medium text-zinc-400 hover:text-white transition-colors"
+          >
+            Trends
+          </Link>
+          <Link 
+            href="/forecasting" 
+            className="text-sm font-medium text-zinc-400 hover:text-white transition-colors"
+          >
+            Forecast
+          </Link>
+          <Link 
+            href="/insights" 
+            className="text-sm font-medium text-zinc-400 hover:text-white transition-colors"
+          >
+            AI Insights
+          </Link>
+        </div>
+
+        <div className="flex items-center gap-3">
+          <Link 
+            href="/demographics" 
+            className="hidden sm:inline-flex text-xs font-semibold px-3 py-1.5 rounded-full bg-zinc-800/80 border border-zinc-700 text-zinc-300 hover:text-white hover:border-zinc-500 transition-all"
+          >
+            Customer Behavior
+          </Link>
+          <Link 
+            href="/dashboard" 
+            className="text-xs font-semibold px-4 py-2 rounded-full bg-indigo-600 text-white hover:bg-indigo-500 transition-all shadow-md shadow-indigo-600/30"
+          >
+            Explore Engine
+          </Link>
+        </div>
       </nav>
 
       {/* Hero Section */}
@@ -48,10 +97,9 @@ export default function LandingPage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 1 }}
-          className="text-lg md:text-xl text-zinc-400 max-w-2xl mb-12"
+          className="text-lg md:text-xl text-zinc-300 max-w-2xl mb-12"
         >
-          Discover relationships. Understand behavior. Predict what comes next.
-          An end-to-end analytical engine powered by FP-Growth and XGBoost.
+          Discover what customers buy together, understand real shopper habits, and accurately predict future sales demand — made simple for any business team.
         </motion.p>
 
         <motion.div
@@ -59,11 +107,12 @@ export default function LandingPage() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 1.2, duration: 0.5, type: "spring" }}
         >
-          <Link href="/dashboard">
-            <button className="group relative inline-flex h-14 items-center justify-center overflow-hidden rounded-full bg-indigo-600 px-8 font-medium text-white transition-all hover:bg-indigo-500 hover:scale-105 active:scale-95 shadow-[0_0_40px_8px_rgba(79,70,229,0.3)] hover:shadow-[0_0_60px_12px_rgba(79,70,229,0.5)]">
-              <span className="mr-2 text-lg">Explore the Engine</span>
-              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </button>
+          <Link 
+            href="/dashboard"
+            className="group relative inline-flex h-14 items-center justify-center overflow-hidden rounded-full bg-indigo-600 px-8 font-medium text-white transition-all hover:bg-indigo-500 hover:scale-105 active:scale-95 shadow-[0_0_40px_8px_rgba(79,70,229,0.3)] hover:shadow-[0_0_60px_12px_rgba(79,70,229,0.5)]"
+          >
+            <span className="mr-2 text-lg">Explore the Engine</span>
+            <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
           </Link>
         </motion.div>
       </main>
@@ -87,29 +136,29 @@ export default function LandingPage() {
 
           <StoryStep 
             number="01"
-            title="RAW DATA"
-            description="Rows of information contain relationships that are difficult to see directly."
+            title="SHOPPING DATA"
+            description="Thousands of receipts and orders contain hidden shopping patterns impossible to spot by hand."
             icon={<Database className="h-8 w-8 text-zinc-400" />}
             delay={0.1}
           />
           <StoryStep 
             number="02"
-            title="DISCOVER"
-            description="Association-rule mining exposes relationships hidden inside the dataset."
+            title="BUNDLE PATTERNS"
+            description="Instantly reveals which products shoppers buy together so you can create high-selling bundles."
             icon={<Network className="h-8 w-8 text-indigo-400" />}
             delay={0.3}
           />
           <StoryStep 
             number="03"
-            title="UNDERSTAND"
-            description="Statistical evidence turns raw patterns into interpretable insights."
+            title="CUSTOMER HABITS"
+            description="Groups shoppers into VIPs, Repeat Buyers, and New Visitors based on real spending habits."
             icon={<Lightbulb className="h-8 w-8 text-purple-400" />}
             delay={0.5}
           />
           <StoryStep 
             number="04"
-            title="PREDICT"
-            description="Forecasting extends the analysis toward what may happen next."
+            title="SALES FORECAST"
+            description="Predicts upcoming sales demand weeks ahead so you always stock the right amount of inventory."
             icon={<TrendingUp className="h-8 w-8 text-emerald-400" />}
             delay={0.7}
           />

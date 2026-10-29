@@ -1,6 +1,11 @@
 import { APIError } from '../types';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const rawBase = 
+  (typeof window !== 'undefined' && (window as any).__API_URL__) ||
+  (typeof process !== 'undefined' && process.env?.NEXT_PUBLIC_API_URL) ||
+  'http://localhost:8000';
+
+const API_BASE_URL = rawBase.replace(/\/api\/?$/, '').replace(/\/+$/, '');
 
 async function handleResponse<T>(response: Response): Promise<T> {
   if (!response.ok) {

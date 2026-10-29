@@ -10,7 +10,12 @@ import {
   RuleItem
 } from "./types";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api";
+const rawBase = 
+  (typeof window !== 'undefined' && (window as any).__API_URL__) ||
+  (typeof process !== 'undefined' && process.env?.NEXT_PUBLIC_API_URL) ||
+  "http://localhost:8000";
+
+const API_URL = rawBase.endsWith('/api') ? rawBase : `${rawBase.replace(/\/+$/, '')}/api`;
 
 export const api = {
   async loadDemoDataset(): Promise<DatasetResponse> {
@@ -60,11 +65,14 @@ export const api = {
     return res.json();
   },
 
-  async analyzeTemporal(datasetId: string): Promise<any> {
+  async analyzeTemporal(
+    datasetId: string,
+    options?: { target_category?: string; target_product?: string; metric?: string; granularity?: string }
+  ): Promise<any> {
     const res = await fetch(`${API_URL}/temporal/analyze`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ dataset_id: datasetId }),
+      body: JSON.stringify({ dataset_id: datasetId, ...options }),
     });
     if (!res.ok) throw new Error(await res.text());
     return res.json();

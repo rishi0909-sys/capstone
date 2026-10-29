@@ -17,54 +17,34 @@ export default function DashboardPage() {
 
   const categories = [
     {
-      id: "Electronics",
-      name: "Electronics",
-      icon: <Monitor className="h-6 w-6 text-indigo-400" />
-    },
-    {
-      id: "Gaming Accessories",
-      name: "Gaming Accessories",
-      icon: <Laptop className="h-6 w-6 text-indigo-400" />
-    },
-    {
-      id: "Office Supplies",
-      name: "Office Supplies",
-      icon: <Paperclip className="h-6 w-6 text-indigo-400" />
-    },
-    {
-      id: "Home Appliances",
-      name: "Home Appliances",
+      id: "Home Decor & Lighting",
+      name: "Home Decor & Lighting",
       icon: <LayoutGrid className="h-6 w-6 text-indigo-400" />
     },
     {
-      id: "Beauty & Personal Care",
-      name: "Beauty Care",
-      icon: <Heart className="h-6 w-6 text-indigo-400" />
-    },
-    {
-      id: "Sports & Fitness",
-      name: "Sports & Fitness",
-      icon: <Dumbbell className="h-6 w-6 text-indigo-400" />
-    },
-    {
-      id: "Apparel & Fashion",
-      name: "Apparel & Fashion",
-      icon: <Shirt className="h-6 w-6 text-indigo-400" />
-    },
-    {
-      id: "Automotive",
-      name: "Automotive",
-      icon: <Car className="h-6 w-6 text-indigo-400" />
-    },
-    {
-      id: "Food & Beverage",
-      name: "Food & Beverage",
+      id: "Kitchenware & Dining",
+      name: "Kitchenware & Dining",
       icon: <Coffee className="h-6 w-6 text-indigo-400" />
     },
     {
-      id: "Mobile Devices",
-      name: "Mobile Devices",
-      icon: <Smartphone className="h-6 w-6 text-indigo-400" />
+      id: "Bags & Personal Items",
+      name: "Bags & Personal Items",
+      icon: <Shirt className="h-6 w-6 text-indigo-400" />
+    },
+    {
+      id: "Seasonal & Holiday",
+      name: "Seasonal & Holiday",
+      icon: <Heart className="h-6 w-6 text-indigo-400" />
+    },
+    {
+      id: "Craft & Stationery",
+      name: "Craft & Stationery",
+      icon: <Paperclip className="h-6 w-6 text-indigo-400" />
+    },
+    {
+      id: "General Merchandise",
+      name: "General Merchandise",
+      icon: <Sparkles className="h-6 w-6 text-indigo-400" />
     }
   ];
 
@@ -96,13 +76,13 @@ export default function DashboardPage() {
         >
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-6">
             <Sparkles className="h-3.5 w-3.5" />
-            Intelligence Explorer
+            Category Explorer
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-br from-white to-white/50">
-            Select an Industry
+            Select a Product Category
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground font-light leading-relaxed">
-            Dive deep into precomputed association rules, demographic shifts, and AI-powered demand forecasts.
+          <p className="text-lg md:text-xl text-zinc-300 font-light leading-relaxed">
+            Explore shopping patterns, customer behavior, sales trends, and AI-powered demand forecasts for each retail department.
           </p>
         </motion.div>
 

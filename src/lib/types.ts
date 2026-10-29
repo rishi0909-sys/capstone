@@ -68,6 +68,10 @@ export interface ForecastResponse {
   mape?: number;
   training_period: string;
   testing_period: string;
+  future_lower_80?: number[];
+  future_upper_80?: number[];
+  wape?: number;
+  model_name?: string;
 }
 
 export interface InsightRequest {

@@ -1,0 +1,16 @@
+{
+  "hgb_daily": {
+    "load_ms": 23.04,
+    "warm_14d_ms": 277.9,
+    "reload_max_diff": 0.0
+  },
+  "hgb_weekly": {
+    "load_ms": 17.44,
+    "warm_4w_ms": 52.01,
+    "reload_max_diff": 0.0
+  },
+  "xgb_daily": {
+    "load_ms": 20.74,
+    "warm_14d_ms": 36.9
+  }
+}

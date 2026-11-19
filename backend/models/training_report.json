@@ -1,0 +1,456 @@
+{
+  "dataset": "online_retail_clean.csv",
+  "total_records": 522632,
+  "unique_transactions": 19778,
+  "unique_products": 4008,
+  "date_range": "2010-12-01 to 2011-12-09",
+  "models": {
+    "xgboost_overall_weekly": {
+      "status": "trained",
+      "granularity": "Weekly",
+      "metrics": {
+        "MAE": 47514.7125,
+        "RMSE": 56592.06700481603,
+        "R2": -2.2249175481697048,
+        "MAPE": 26.225148614035753
+      },
+      "forecast_next_8_weeks": {
+        "future_dates": [
+          "2011-12-18",
+          "2011-12-25",
+          "2012-01-01",
+          "2012-01-08",
+          "2012-01-15",
+          "2012-01-22",
+          "2012-01-29",
+          "2012-02-05"
+        ],
+        "future_preds": [
+          120083.61,
+          120083.61,
+          123460.62,
+          56228.51,
+          57277.19,
+          61979.62,
+          79145.44,
+          77505.71
+        ]
+      }
+    },
+    "xgboost_overall_daily": {
+      "status": "trained",
+      "granularity": "Daily",
+      "metrics": {
+        "MAE": 9489.30371204723,
+        "RMSE": 14888.467419499704,
+        "R2": 0.0628052001291729,
+        "MAPE": 32.60300849985965
+      }
+    },
+    "top_products_forecasting": {
+      "Medium Ceramic Top Storage Jar": {
+        "metrics": {
+          "MAE": 86.15045022964478,
+          "RMSE": 134.92130984704247,
+          "R2": -0.2405240370609496,
+          "MAPE": 69.36340150808557
+        },
+        "future_forecast": {
+          "future_dates": [
+            "2011-12-18",
+            "2011-12-25",
+            "2012-01-01",
+            "2012-01-08"
+          ],
+          "future_preds": [
+            101.24,
+            61.16,
+            62.98,
+            4.2
+          ]
+        }
+      },
+      "World War 2 Gliders Asstd Designs": {
+        "metrics": {
+          "MAE": 735.5056045532226,
+          "RMSE": 1626.8561369835252,
+          "R2": -0.516593052401559,
+          "MAPE": 34.053393151417744
+        },
+        "future_forecast": {
+          "future_dates": [
+            "2011-12-18",
+            "2011-12-25",
+            "2012-01-01",
+            "2012-01-08"
+          ],
+          "future_preds": [
+            520.85,
+            567.05,
+            644.92,
+            868.32
+          ]
+        }
+      }
+    },
+    "fp_growth_mining": {
+      "min_support": 0.015,
+      "frequent_itemsets_count": 718,
+      "rules_count": 432,
+      "top_rules": [
+        {
+          "antecedents": [
+            "Regency Tea Plate Roses"
+          ],
+          "consequents": [
+            "Regency Tea Plate Green"
+          ],
+          "antecedent support": 0.022499747193851755,
+          "consequent support": 0.01926382849630903,
+          "support": 0.016129032258064516,
+          "confidence": 0.7168539325842697,
+          "lift": 37.21243327730102,
+          "representativity": 1.0,
+          "leverage": 0.015695600986911844,
+          "conviction": 3.463711081897956,
+          "zhangs_metric": 0.9955263524433265,
+          "jaccard": 0.6291913214990137,
+          "certainty": 0.7112923172991538,
+          "kulczynski": 0.7770621368958094,
+          "antecedent_len": 1,
+          "consequent_len": 1
+        },
+        {
+          "antecedents": [
+            "Regency Tea Plate Green"
+          ],
+          "consequents": [
+            "Regency Tea Plate Roses"
+          ],
+          "antecedent support": 0.01926382849630903,
+          "consequent support": 0.022499747193851755,
+          "support": 0.016129032258064516,
+          "confidence": 0.8372703412073491,
+          "lift": 37.21243327730101,
+          "representativity": 1.0,
+          "leverage": 0.015695600986911844,
+          "conviction": 6.00689671482488,
+          "zhangs_metric": 0.9922416338499166,
+          "jaccard": 0.6291913214990137,
+          "certainty": 0.8335246887911318,
+          "kulczynski": 0.7770621368958094,
+          "antecedent_len": 1,
+          "consequent_len": 1
+        },
+        {
+          "antecedents": [
+            "Poppy'S Playhouse Kitchen"
+          ],
+          "consequents": [
+            "Poppy'S Playhouse Bedroom"
+          ],
+          "antecedent support": 0.022044696127009808,
+          "consequent support": 0.021387400141571443,
+          "support": 0.015825664880169885,
+          "confidence": 0.7178899082568807,
+          "lift": 33.56602034398247,
+          "representativity": 1.0,
+          "leverage": 0.015354186143102175,
+          "conviction": 3.468903199498169,
+          "zhangs_metric": 0.9920780251752299,
+          "jaccard": 0.5732600732600732,
+          "certainty": 0.7117244435807071,
+          "kulczynski": 0.7289213134665018,
+          "antecedent_len": 1,
+          "consequent_len": 1
+        },
+        {
+          "antecedents": [
+            "Poppy'S Playhouse Bedroom"
+          ],
+          "consequents": [
+            "Poppy'S Playhouse Kitchen"
+          ],
+          "antecedent support": 0.021387400141571443,
+          "consequent support": 0.022044696127009808,
+          "support": 0.015825664880169885,
+          "confidence": 0.7399527186761229,
+          "lift": 33.56602034398247,
+          "representativity": 1.0,
+          "leverage": 0.015354186143102175,
+          "conviction": 3.7606826685297707,
+          "zhangs_metric": 0.9914116849878221,
+          "jaccard": 0.5732600732600732,
+          "certainty": 0.7340908318672504,
+          "kulczynski": 0.7289213134665018,
+          "antecedent_len": 1,
+          "consequent_len": 1
+        },
+        {
+          "antecedents": [
+            "Set/6 Red Spotty Paper Plates"
+          ],
+          "consequents": [
+            "Set/6 Red Spotty Paper Cups"
+          ],
+          "antecedent support": 0.02664576802507837,
+          "consequent support": 0.021640206289816968,
+          "support": 0.017696430377186774,
+          "confidence": 0.6641366223908919,
+          "lift": 30.689939527212758,
+          "representativity": 1.0,
+          "leverage": 0.017119810460373468,
+          "conviction": 2.9129695552839916,
+          "zhangs_metric": 0.9938992408557625,
+          "jaccard": 0.5785123966942148,
+          "certainty": 0.6567077063383493,
+          "kulczynski": 0.7409468158683432,
+          "antecedent_len": 1,
+          "consequent_len": 1
+        }
+      ]
+    }
+  },
+  "insights": [
+    {
+      "type": "Association",
+      "pattern": "Strong association between Regency Tea Plate Roses and Regency Tea Plate Green",
+      "metrics": {
+        "support": 0.0161,
+        "confidence": 0.7169,
+        "lift": 37.2124
+      },
+      "raw_data": {
+        "antecedents": [
+          "Regency Tea Plate Roses"
+        ],
+        "consequents": [
+          "Regency Tea Plate Green"
+        ],
+        "antecedent support": 0.022499747193851755,
+        "consequent support": 0.01926382849630903,
+        "support": 0.016129032258064516,
+        "confidence": 0.7168539325842697,
+        "lift": 37.21243327730102,
+        "representativity": 1.0,
+        "leverage": 0.015695600986911844,
+        "conviction": 3.463711081897956,
+        "zhangs_metric": 0.9955263524433265,
+        "jaccard": 0.6291913214990137,
+        "certainty": 0.7112923172991538,
+        "kulczynski": 0.7770621368958094,
+        "antecedent_len": 1,
+        "consequent_len": 1
+      },
+      "importance": "High"
+    },
+    {
+      "type": "Association",
+      "pattern": "Strong association between Regency Tea Plate Green and Regency Tea Plate Roses",
+      "metrics": {
+        "support": 0.0161,
+        "confidence": 0.8373,
+        "lift": 37.2124
+      },
+      "raw_data": {
+        "antecedents": [
+          "Regency Tea Plate Green"
+        ],
+        "consequents": [
+          "Regency Tea Plate Roses"
+        ],
+        "antecedent support": 0.01926382849630903,
+        "consequent support": 0.022499747193851755,
+        "support": 0.016129032258064516,
+        "confidence": 0.8372703412073491,
+        "lift": 37.21243327730101,
+        "representativity": 1.0,
+        "leverage": 0.015695600986911844,
+        "conviction": 6.00689671482488,
+        "zhangs_metric": 0.9922416338499166,
+        "jaccard": 0.6291913214990137,
+        "certainty": 0.8335246887911318,
+        "kulczynski": 0.7770621368958094,
+        "antecedent_len": 1,
+        "consequent_len": 1
+      },
+      "importance": "High"
+    },
+    {
+      "type": "Association",
+      "pattern": "Strong association between Poppy'S Playhouse Kitchen and Poppy'S Playhouse Bedroom",
+      "metrics": {
+        "support": 0.0158,
+        "confidence": 0.7179,
+        "lift": 33.566
+      },
+      "raw_data": {
+        "antecedents": [
+          "Poppy'S Playhouse Kitchen"
+        ],
+        "consequents": [
+          "Poppy'S Playhouse Bedroom"
+        ],
+        "antecedent support": 0.022044696127009808,
+        "consequent support": 0.021387400141571443,
+        "support": 0.015825664880169885,
+        "confidence": 0.7178899082568807,
+        "lift": 33.56602034398247,
+        "representativity": 1.0,
+        "leverage": 0.015354186143102175,
+        "conviction": 3.468903199498169,
+        "zhangs_metric": 0.9920780251752299,
+        "jaccard": 0.5732600732600732,
+        "certainty": 0.7117244435807071,
+        "kulczynski": 0.7289213134665018,
+        "antecedent_len": 1,
+        "consequent_len": 1
+      },
+      "importance": "High"
+    },
+    {
+      "type": "Association",
+      "pattern": "Strong association between Poppy'S Playhouse Bedroom and Poppy'S Playhouse Kitchen",
+      "metrics": {
+        "support": 0.0158,
+        "confidence": 0.74,
+        "lift": 33.566
+      },
+      "raw_data": {
+        "antecedents": [
+          "Poppy'S Playhouse Bedroom"
+        ],
+        "consequents": [
+          "Poppy'S Playhouse Kitchen"
+        ],
+        "antecedent support": 0.021387400141571443,
+        "consequent support": 0.022044696127009808,
+        "support": 0.015825664880169885,
+        "confidence": 0.7399527186761229,
+        "lift": 33.56602034398247,
+        "representativity": 1.0,
+        "leverage": 0.015354186143102175,
+        "conviction": 3.7606826685297707,
+        "zhangs_metric": 0.9914116849878221,
+        "jaccard": 0.5732600732600732,
+        "certainty": 0.7340908318672504,
+        "kulczynski": 0.7289213134665018,
+        "antecedent_len": 1,
+        "consequent_len": 1
+      },
+      "importance": "High"
+    },
+    {
+      "type": "Association",
+      "pattern": "Strong association between Set/6 Red Spotty Paper Plates and Set/6 Red Spotty Paper Cups",
+      "metrics": {
+        "support": 0.0177,
+        "confidence": 0.6641,
+        "lift": 30.6899
+      },
+      "raw_data": {
+        "antecedents": [
+          "Set/6 Red Spotty Paper Plates"
+        ],
+        "consequents": [
+          "Set/6 Red Spotty Paper Cups"
+        ],
+        "antecedent support": 0.02664576802507837,
+        "consequent support": 0.021640206289816968,
+        "support": 0.017696430377186774,
+        "confidence": 0.6641366223908919,
+        "lift": 30.689939527212758,
+        "representativity": 1.0,
+        "leverage": 0.017119810460373468,
+        "conviction": 2.9129695552839916,
+        "zhangs_metric": 0.9938992408557625,
+        "jaccard": 0.5785123966942148,
+        "certainty": 0.6567077063383493,
+        "kulczynski": 0.7409468158683432,
+        "antecedent_len": 1,
+        "consequent_len": 1
+      },
+      "importance": "High"
+    },
+    {
+      "type": "Demographic",
+      "pattern": "Age group 18-25 has strong preference for Home & Living",
+      "metrics": {
+        "probability": 0.3065,
+        "purchases": 24641
+      },
+      "raw_data": {
+        "age_group": "18-25",
+        "category": "Home & Living",
+        "purchase_count": 24641,
+        "total_age_purchases": 80404,
+        "probability": 0.30646485249490074
+      },
+      "importance": "Medium"
+    },
+    {
+      "type": "Demographic",
+      "pattern": "Age group 26-35 has strong preference for Home & Living",
+      "metrics": {
+        "probability": 0.2872,
+        "purchases": 48262
+      },
+      "raw_data": {
+        "age_group": "26-35",
+        "category": "Home & Living",
+        "purchase_count": 48262,
+        "total_age_purchases": 168054,
+        "probability": 0.2871815011841432
+      },
+      "importance": "Medium"
+    },
+    {
+      "type": "Demographic",
+      "pattern": "Age group 36-45 has strong preference for Home & Living",
+      "metrics": {
+        "probability": 0.294,
+        "purchases": 44580
+      },
+      "raw_data": {
+        "age_group": "36-45",
+        "category": "Home & Living",
+        "purchase_count": 44580,
+        "total_age_purchases": 151629,
+        "probability": 0.29400708307777534
+      },
+      "importance": "Medium"
+    },
+    {
+      "type": "Demographic",
+      "pattern": "Age group 46-55 has strong preference for Home & Living",
+      "metrics": {
+        "probability": 0.2933,
+        "purchases": 26637
+      },
+      "raw_data": {
+        "age_group": "46-55",
+        "category": "Home & Living",
+        "purchase_count": 26637,
+        "total_age_purchases": 90821,
+        "probability": 0.29329119917199764
+      },
+      "importance": "Medium"
+    },
+    {
+      "type": "Demographic",
+      "pattern": "Age group 56+ has strong preference for Home & Living",
+      "metrics": {
+        "probability": 0.2904,
+        "purchases": 9213
+      },
+      "raw_data": {
+        "age_group": "56+",
+        "category": "Home & Living",
+        "purchase_count": 9213,
+        "total_age_purchases": 31724,
+        "probability": 0.2904110452654142
+      },
+      "importance": "Medium"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "daily": {
+    "gaussian": {
+      "overall_cov_pct": 83.57,
+      "avg_width": 20161.9,
+      "by_regime_cov_pct": {
+        "medium": 87.5,
+        "high": 80.95
+      }
+    },
+    "normalized_conformal": {
+      "overall_cov_pct": 77.86,
+      "avg_width": 16857.26,
+      "by_regime_cov_pct": {
+        "medium": 80.36,
+        "high": 76.19
+      }
+    },
+    "regime_conformal": {
+      "overall_cov_pct": 79.29,
+      "avg_width": 17876.7,
+      "by_regime_cov_pct": {
+        "medium": 83.93,
+        "high": 76.19
+      }
+    }
+  },
+  "weekly": {
+    "gaussian": {
+      "overall_cov_pct": 68.75,
+      "avg_width": 46340.66,
+      "by_regime_cov_pct": {
+        "low": 75.0,
+        "medium": 70.0,
+        "high": 62.5
+      }
+    },
+    "normalized_conformal": {
+      "overall_cov_pct": 65.62,
+      "avg_width": 56885.4,
+      "by_regime_cov_pct": {
+        "low": 50.0,
+        "medium": 65.0,
+        "high": 75.0
+      }
+    },
+    "regime_conformal": {
+      "overall_cov_pct": 75.0,
+      "avg_width": 57231.1,
+      "by_regime_cov_pct": {
+        "low": 50.0,
+        "medium": 80.0,
+        "high": 75.0
+      }
+    }
+  }
+}

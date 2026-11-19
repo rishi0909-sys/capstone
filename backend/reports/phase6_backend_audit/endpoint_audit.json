@@ -1,0 +1,51 @@
+{
+  "GET /health": {
+    "status": 404,
+    "ms": 14.2,
+    "ok": false
+  },
+  "POST /api/dataset/load-demo": {
+    "status": 404,
+    "ms": 1.01,
+    "ok": false
+  },
+  "POST /api/preprocessing/run": {
+    "status": 404,
+    "ms": 2.37,
+    "ok": false
+  },
+  "GET /api/mining/rules": {
+    "status": 200,
+    "ms": 6.6,
+    "ok": true,
+    "count": 10
+  },
+  "POST /api/demographics/analyze": {
+    "status": 200,
+    "ms": 2.05,
+    "ok": true
+  },
+  "POST /api/temporal/analyze": {
+    "status": 200,
+    "ms": 2929.82,
+    "ok": true
+  },
+  "POST /api/forecast/run (HGB Daily)": {
+    "status": 200,
+    "cold_ms": 310.21,
+    "warm_ms": 488.49,
+    "ok": true,
+    "model_name": "HistGradientBoosting Regressor (Production, Leakage-Safe)"
+  },
+  "POST /api/forecast/run (XGBoost Fallback)": {
+    "status": 200,
+    "ms": 79.05,
+    "ok": true,
+    "model_name": "XGBoost Regressor (Leakage-Safe)"
+  },
+  "POST /api/insights/generate": {
+    "status": 200,
+    "ms": 4.11,
+    "ok": true
+  }
+}

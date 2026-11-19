@@ -1,0 +1,216 @@
+[
+  {
+    "type": "Association",
+    "pattern": "Strong association between Set/6 Red Spotty Paper Plates and Set/6 Red Spotty Paper Cups",
+    "metrics": {
+      "support": 0.0165,
+      "confidence": 0.6616,
+      "lift": 31.0278
+    },
+    "raw_data": {
+      "antecedents": [
+        "Set/6 Red Spotty Paper Plates"
+      ],
+      "consequents": [
+        "Set/6 Red Spotty Paper Cups"
+      ],
+      "antecedent support": 0.024888709024686363,
+      "consequent support": 0.021322339133953865,
+      "support": 0.01646600566572238,
+      "confidence": 0.6615853658536585,
+      "lift": 31.027804299395303,
+      "representativity": 1.0,
+      "leverage": 0.01593532017129172,
+      "conviction": 2.8919484032798475,
+      "zhangs_metric": 0.9924721938792588,
+      "jaccard": 0.5535714285714285,
+      "certainty": 0.65421236462384,
+      "kulczynski": 0.7169136793681103,
+      "antecedent_len": 1,
+      "consequent_len": 1
+    },
+    "importance": "High"
+  },
+  {
+    "type": "Association",
+    "pattern": "Strong association between Set/6 Red Spotty Paper Cups and Set/6 Red Spotty Paper Plates",
+    "metrics": {
+      "support": 0.0165,
+      "confidence": 0.7722,
+      "lift": 31.0278
+    },
+    "raw_data": {
+      "antecedents": [
+        "Set/6 Red Spotty Paper Cups"
+      ],
+      "consequents": [
+        "Set/6 Red Spotty Paper Plates"
+      ],
+      "antecedent support": 0.021322339133953865,
+      "consequent support": 0.024888709024686363,
+      "support": 0.01646600566572238,
+      "confidence": 0.7722419928825622,
+      "lift": 31.027804299395303,
+      "representativity": 1.0,
+      "leverage": 0.01593532017129172,
+      "conviction": 4.281348011938486,
+      "zhangs_metric": 0.9888555557447906,
+      "jaccard": 0.5535714285714285,
+      "certainty": 0.7664287048818474,
+      "kulczynski": 0.7169136793681103,
+      "antecedent_len": 1,
+      "consequent_len": 1
+    },
+    "importance": "High"
+  },
+  {
+    "type": "Association",
+    "pattern": "Strong association between Pink Regency Teacup And Saucer and Roses Regency Teacup And Saucer, Green Regency Teacup And Saucer",
+    "metrics": {
+      "support": 0.0184,
+      "confidence": 0.709,
+      "lift": 27.4002
+    },
+    "raw_data": {
+      "antecedents": [
+        "Pink Regency Teacup And Saucer"
+      ],
+      "consequents": [
+        "Roses Regency Teacup And Saucer",
+        "Green Regency Teacup And Saucer"
+      ],
+      "antecedent support": 0.025900445163901255,
+      "consequent support": 0.02587515176042088,
+      "support": 0.018363010926750304,
+      "confidence": 0.708984375,
+      "lift": 27.400201612903228,
+      "representativity": 1.0,
+      "leverage": 0.0176928329774719,
+      "conviction": 3.3473283375749294,
+      "zhangs_metric": 0.9891226347395854,
+      "jaccard": 0.5495836487509461,
+      "certainty": 0.7012542842676499,
+      "kulczynski": 0.7093308971774194,
+      "antecedent_len": 1,
+      "consequent_len": 2
+    },
+    "importance": "High"
+  },
+  {
+    "type": "Association",
+    "pattern": "Strong association between Roses Regency Teacup And Saucer, Green Regency Teacup And Saucer and Pink Regency Teacup And Saucer",
+    "metrics": {
+      "support": 0.0184,
+      "confidence": 0.7097,
+      "lift": 27.4002
+    },
+    "raw_data": {
+      "antecedents": [
+        "Roses Regency Teacup And Saucer",
+        "Green Regency Teacup And Saucer"
+      ],
+      "consequents": [
+        "Pink Regency Teacup And Saucer"
+      ],
+      "antecedent support": 0.02587515176042088,
+      "consequent support": 0.025900445163901255,
+      "support": 0.018363010926750304,
+      "confidence": 0.7096774193548387,
+      "lift": 27.400201612903228,
+      "representativity": 1.0,
+      "leverage": 0.0176928329774719,
+      "conviction": 3.3552317999910075,
+      "zhangs_metric": 0.9890969519147017,
+      "jaccard": 0.5495836487509461,
+      "certainty": 0.7019579988474477,
+      "kulczynski": 0.7093308971774194,
+      "antecedent_len": 2,
+      "consequent_len": 1
+    },
+    "importance": "High"
+  },
+  {
+    "type": "Association",
+    "pattern": "Strong association between Roses Regency Teacup And Saucer, Pink Regency Teacup And Saucer and Green Regency Teacup And Saucer",
+    "metrics": {
+      "support": 0.0184,
+      "confidence": 0.903,
+      "lift": 26.6421
+    },
+    "raw_data": {
+      "antecedents": [
+        "Roses Regency Teacup And Saucer",
+        "Pink Regency Teacup And Saucer"
+      ],
+      "consequents": [
+        "Green Regency Teacup And Saucer"
+      ],
+      "antecedent support": 0.020335896398219346,
+      "consequent support": 0.03389316066369891,
+      "support": 0.018363010926750304,
+      "confidence": 0.9029850746268656,
+      "lift": 26.642102918244596,
+      "representativity": 1.0,
+      "leverage": 0.01767376312288512,
+      "conviction": 9.958332036235712,
+      "zhangs_metric": 0.9824443111084179,
+      "jaccard": 0.5119887165021157,
+      "certainty": 0.8995815768784103,
+      "kulczynski": 0.7223880597014924,
+      "antecedent_len": 2,
+      "consequent_len": 1
+    },
+    "importance": "High"
+  },
+  {
+    "type": "Demographic",
+    "pattern": "Age group Loyal / VIP has strong preference for Home & Living",
+    "metrics": {
+      "probability": 0.299,
+      "purchases": 190989
+    },
+    "raw_data": {
+      "customer_segment": "Loyal / VIP",
+      "category": "Home & Living",
+      "purchase_count": 190989,
+      "total_segment_purchases": 638823,
+      "probability": 0.29897013726806954,
+      "age_group": "Loyal / VIP"
+    },
+    "importance": "Medium"
+  },
+  {
+    "type": "Demographic",
+    "pattern": "Age group One-Time Buyer has strong preference for Home & Living",
+    "metrics": {
+      "probability": 0.2677,
+      "purchases": 72393
+    },
+    "raw_data": {
+      "customer_segment": "One-Time Buyer",
+      "category": "Home & Living",
+      "purchase_count": 72393,
+      "total_segment_purchases": 270453,
+      "probability": 0.2676731261993766,
+      "age_group": "One-Time Buyer"
+    },
+    "importance": "Medium"
+  },
+  {
+    "type": "Demographic",
+    "pattern": "Age group Repeat Shopper has strong preference for Home & Living",
+    "metrics": {
+      "probability": 0.2826,
+      "purchases": 36192
+    },
+    "raw_data": {
+      "customer_segment": "Repeat Shopper",
+      "category": "Home & Living",
+      "purchase_count": 36192,
+      "total_segment_purchases": 128090,
+      "probability": 0.2825513310953236,
+      "age_group": "Repeat Shopper"
+    },
+    "importance": "Medium"
+  }
+]

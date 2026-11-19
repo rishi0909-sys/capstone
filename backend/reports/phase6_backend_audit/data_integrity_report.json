@@ -1,0 +1,35 @@
+{
+  "data_files": [
+    "dataset_10_clean.csv",
+    "dataset_2_clean.csv",
+    "dataset_3_clean.csv",
+    "dataset_4_clean.csv",
+    "dataset_6_clean.csv",
+    "dataset_7_clean.csv",
+    "dataset_9_clean.csv",
+    "online_retail_clean.csv",
+    "sample_transactions.csv"
+  ],
+  "experimental_models": [
+    "association_rules.json",
+    "customer_behavior.json",
+    "demographic_preferences.json",
+    "insights.json",
+    "training_report.json",
+    "xgboost_overall_daily.json",
+    "xgboost_overall_daily_metadata.json",
+    "xgboost_overall_weekly.json",
+    "xgboost_overall_weekly_metadata.json"
+  ],
+  "production_models": [
+    "hgb_overall_daily.joblib",
+    "hgb_overall_daily_metadata.json",
+    "hgb_overall_weekly.joblib",
+    "hgb_overall_weekly_metadata.json"
+  ],
+  "hgb_daily_dataset": "dataset_3_clean.csv",
+  "hgb_daily_date_range": "2009-12-15 to 2011-12-09",
+  "hgb_weekly_dataset": "dataset_3_clean.csv",
+  "hgb_weekly_date_range": "2010-01-31 to 2011-12-11",
+  "note": "Production HGB models were trained on dataset_3_clean.csv (2-year 2009-2011), whereas association_rules.json / customer_behavior.json / insights.json were last updated by Experiment 10 (dataset_10_clean.csv, 2010-2011)."
+}

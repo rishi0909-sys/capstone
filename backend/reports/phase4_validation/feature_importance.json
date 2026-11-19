@@ -1,0 +1,30 @@
+{
+  "daily": {
+    "day_of_week": 0.5312,
+    "lag_7": 0.3938,
+    "lag_3": 0.0847,
+    "day_of_month": 0.0362,
+    "rolling_std_7": 0.0243,
+    "lag_14": 0.0229,
+    "lag_2": 0.015,
+    "lag_1": 0.0105,
+    "rolling_mean_7": 0.01,
+    "month": 0.0054,
+    "rolling_mean_14": 0.0046,
+    "quarter": 0.0,
+    "is_weekend": 0.0,
+    "trend_step": 0.0
+  },
+  "weekly": {
+    "rolling_mean_4": 0.3304,
+    "lag_3": 0.3286,
+    "lag_2": 0.0258,
+    "lag_4": 0.0036,
+    "day_of_week": 0.0,
+    "quarter": 0.0,
+    "trend_step": 0.0,
+    "rolling_mean_8": 0.0,
+    "lag_1": -0.0666,
+    "month": -0.0764
+  }
+}

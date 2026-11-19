@@ -1,0 +1,3110 @@
+[
+  {
+    "antecedents":[
+      "Strawberry Ceramic Trinket Box"
+    ],
+    "consequents":[
+      "White Hanging Heart T-Light Holder"
+    ],
+    "antecedent support":0.058427762,
+    "consequent support":0.137975516,
+    "support":0.0183377175,
+    "confidence":0.3138528139,
+    "lift":2.2746993306,
+    "representativity":1.0,
+    "leverage":0.0102761169,
+    "conviction":1.2563259041,
+    "zhangs_metric":0.5951550362,
+    "jaccard":0.1029829545,
+    "certainty":0.2040281931,
+    "kulczynski":0.2233792025,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Home Building Block Word"
+    ],
+    "consequents":[
+      "White Hanging Heart T-Light Holder"
+    ],
+    "antecedent support":0.0522561716,
+    "consequent support":0.137975516,
+    "support":0.0187929988,
+    "confidence":0.3596321394,
+    "lift":2.6064924406,
+    "representativity":1.0,
+    "leverage":0.0115829265,
+    "conviction":1.3461395193,
+    "zhangs_metric":0.6503262008,
+    "jaccard":0.1096193567,
+    "certainty":0.2571349509,
+    "kulczynski":0.2479187278,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Love Building Block Word"
+    ],
+    "consequents":[
+      "Home Building Block Word"
+    ],
+    "antecedent support":0.0428976123,
+    "consequent support":0.0522561716,
+    "support":0.0219040874,
+    "confidence":0.5106132075,
+    "lift":9.7713474219,
+    "representativity":1.0,
+    "leverage":0.0196624224,
+    "conviction":1.9365946181,
+    "zhangs_metric":0.9378933543,
+    "jaccard":0.2990331492,
+    "certainty":0.483629671,
+    "kulczynski":0.4648903405,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Home Building Block Word"
+    ],
+    "consequents":[
+      "Love Building Block Word"
+    ],
+    "antecedent support":0.0522561716,
+    "consequent support":0.0428976123,
+    "support":0.0219040874,
+    "confidence":0.4191674734,
+    "lift":9.7713474219,
+    "representativity":1.0,
+    "leverage":0.0196624224,
+    "conviction":1.6478112775,
+    "zhangs_metric":0.9471546444,
+    "jaccard":0.2990331492,
+    "certainty":0.3931343876,
+    "kulczynski":0.4648903405,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Love Building Block Word"
+    ],
+    "consequents":[
+      "White Hanging Heart T-Light Holder"
+    ],
+    "antecedent support":0.0428976123,
+    "consequent support":0.137975516,
+    "support":0.0169971671,
+    "confidence":0.3962264151,
+    "lift":2.8717154074,
+    "representativity":1.0,
+    "leverage":0.0110783469,
+    "conviction":1.4277280516,
+    "zhangs_metric":0.6809888755,
+    "jaccard":0.1037197098,
+    "certainty":0.2995865012,
+    "kulczynski":0.2597080746,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Chocolate Hot Water Bottle"
+    ],
+    "consequents":[
+      "Scottie Dog Hot Water Bottle"
+    ],
+    "antecedent support":0.0435299474,
+    "consequent support":0.0427205585,
+    "support":0.0156819102,
+    "confidence":0.3602556653,
+    "lift":8.4328407245,
+    "representativity":1.0,
+    "leverage":0.0138222865,
+    "conviction":1.4963468836,
+    "zhangs_metric":0.9215301574,
+    "jaccard":0.2222222222,
+    "certainty":0.3317057622,
+    "kulczynski":0.3636683892,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Scottie Dog Hot Water Bottle"
+    ],
+    "consequents":[
+      "Chocolate Hot Water Bottle"
+    ],
+    "antecedent support":0.0427205585,
+    "consequent support":0.0435299474,
+    "support":0.0156819102,
+    "confidence":0.3670811131,
+    "lift":8.4328407245,
+    "representativity":1.0,
+    "leverage":0.0138222865,
+    "conviction":1.5112047885,
+    "zhangs_metric":0.9207509949,
+    "jaccard":0.2222222222,
+    "certainty":0.3382763159,
+    "kulczynski":0.3636683892,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Pink Cream Felt Craft Trinket Box"
+    ],
+    "consequents":[
+      "Pink Blue Felt Craft Trinket Box"
+    ],
+    "antecedent support":0.0353348847,
+    "consequent support":0.0290368272,
+    "support":0.0165165925,
+    "confidence":0.4674302076,
+    "lift":16.0978403198,
+    "representativity":1.0,
+    "leverage":0.0154905795,
+    "conviction":1.8231660651,
+    "zhangs_metric":0.972233629,
+    "jaccard":0.3451374207,
+    "certainty":0.4515036128,
+    "kulczynski":0.5181227693,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Pink Blue Felt Craft Trinket Box"
+    ],
+    "consequents":[
+      "Pink Cream Felt Craft Trinket Box"
+    ],
+    "antecedent support":0.0290368272,
+    "consequent support":0.0353348847,
+    "support":0.0165165925,
+    "confidence":0.568815331,
+    "lift":16.0978403198,
+    "representativity":1.0,
+    "leverage":0.0154905795,
+    "conviction":2.2372435402,
+    "zhangs_metric":0.9659273309,
+    "jaccard":0.3451374207,
+    "certainty":0.5530213935,
+    "kulczynski":0.5181227693,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Bag Pink Vintage Paisley"
+    ],
+    "consequents":[
+      "Jumbo Bag Strawberry"
+    ],
+    "antecedent support":0.0409500202,
+    "consequent support":0.0469192635,
+    "support":0.0152266289,
+    "confidence":0.3718344657,
+    "lift":7.9249851411,
+    "representativity":1.0,
+    "leverage":0.0133052841,
+    "conviction":1.517244555,
+    "zhangs_metric":0.9111274871,
+    "jaccard":0.2096100279,
+    "certainty":0.3409104704,
+    "kulczynski":0.3481813838,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Bag Strawberry"
+    ],
+    "consequents":[
+      "Jumbo Bag Pink Vintage Paisley"
+    ],
+    "antecedent support":0.0469192635,
+    "consequent support":0.0409500202,
+    "support":0.0152266289,
+    "confidence":0.3245283019,
+    "lift":7.9249851411,
+    "representativity":1.0,
+    "leverage":0.0133052841,
+    "conviction":1.4198225957,
+    "zhangs_metric":0.9168339728,
+    "jaccard":0.2096100279,
+    "certainty":0.2956866562,
+    "kulczynski":0.3481813838,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Bag Pink Vintage Paisley"
+    ],
+    "consequents":[
+      "Jumbo Storage Bag Suki"
+    ],
+    "antecedent support":0.0409500202,
+    "consequent support":0.0589083367,
+    "support":0.0165671793,
+    "confidence":0.4045707227,
+    "lift":6.8678008121,
+    "representativity":1.0,
+    "leverage":0.0141548817,
+    "conviction":1.5805263515,
+    "zhangs_metric":0.8908743022,
+    "jaccard":0.1989067719,
+    "certainty":0.3672993816,
+    "kulczynski":0.3429036524,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Bag Pink Vintage Paisley"
+    ],
+    "consequents":[
+      "Jumbo Shopper Vintage Red Paisley"
+    ],
+    "antecedent support":0.0409500202,
+    "consequent support":0.0554431404,
+    "support":0.0173259814,
+    "confidence":0.4231006794,
+    "lift":7.6312538604,
+    "representativity":1.0,
+    "leverage":0.0150555837,
+    "conviction":1.6372993101,
+    "zhangs_metric":0.9060632434,
+    "jaccard":0.2191298784,
+    "certainty":0.3892381229,
+    "kulczynski":0.3678003397,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Shopper Vintage Red Paisley"
+    ],
+    "consequents":[
+      "Jumbo Bag Pink Vintage Paisley"
+    ],
+    "antecedent support":0.0554431404,
+    "consequent support":0.0409500202,
+    "support":0.0173259814,
+    "confidence":0.3125,
+    "lift":7.6312538604,
+    "representativity":1.0,
+    "leverage":0.0150555837,
+    "conviction":1.3949817887,
+    "zhangs_metric":0.9199657241,
+    "jaccard":0.2191298784,
+    "certainty":0.2831447636,
+    "kulczynski":0.3678003397,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Bag Pink Vintage Paisley"
+    ],
+    "consequents":[
+      "Jumbo Bag Red Retrospot"
+    ],
+    "antecedent support":0.0409500202,
+    "consequent support":0.082684136,
+    "support":0.0192988669,
+    "confidence":0.471278567,
+    "lift":5.699745924,
+    "representativity":1.0,
+    "leverage":0.0159129498,
+    "conviction":1.7349700746,
+    "zhangs_metric":0.8597608054,
+    "jaccard":0.184969697,
+    "certainty":0.4236211825,
+    "kulczynski":0.352341639,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Lunch Bag  Black Skull."
+    ],
+    "consequents":[
+      "Lunch Bag Cars Blue"
+    ],
+    "antecedent support":0.0594647916,
+    "consequent support":0.052281465,
+    "support":0.0223593687,
+    "confidence":0.3760102084,
+    "lift":7.1920365748,
+    "representativity":1.0,
+    "leverage":0.0192504623,
+    "conviction":1.5188045506,
+    "zhangs_metric":0.9153908518,
+    "jaccard":0.2501414827,
+    "certainty":0.341587435,
+    "kulczynski":0.4018415822,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Lunch Bag Cars Blue"
+    ],
+    "consequents":[
+      "Lunch Bag  Black Skull."
+    ],
+    "antecedent support":0.052281465,
+    "consequent support":0.0594647916,
+    "support":0.0223593687,
+    "confidence":0.427672956,
+    "lift":7.1920365748,
+    "representativity":1.0,
+    "leverage":0.0192504623,
+    "conviction":1.6433527268,
+    "zhangs_metric":0.9084525561,
+    "jaccard":0.2501414827,
+    "certainty":0.3914879115,
+    "kulczynski":0.4018415822,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Lunch Bag Spaceboy Design"
+    ],
+    "consequents":[
+      "Lunch Bag Cars Blue"
+    ],
+    "antecedent support":0.0533184945,
+    "consequent support":0.052281465,
+    "support":0.02043707,
+    "confidence":0.3833017078,
+    "lift":7.3315028151,
+    "representativity":1.0,
+    "leverage":0.017649501,
+    "conviction":1.5367620552,
+    "zhangs_metric":0.912241669,
+    "jaccard":0.23997624,
+    "certainty":0.3492811743,
+    "kulczynski":0.3871032003,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Lunch Bag Cars Blue"
+    ],
+    "consequents":[
+      "Lunch Bag Spaceboy Design"
+    ],
+    "antecedent support":0.052281465,
+    "consequent support":0.0533184945,
+    "support":0.02043707,
+    "confidence":0.3909046928,
+    "lift":7.3315028151,
+    "representativity":1.0,
+    "leverage":0.017649501,
+    "conviction":1.5542419951,
+    "zhangs_metric":0.9112434596,
+    "jaccard":0.23997624,
+    "certainty":0.3565995494,
+    "kulczynski":0.3871032003,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Lunch Bag Woodland"
+    ],
+    "consequents":[
+      "Lunch Bag Cars Blue"
+    ],
+    "antecedent support":0.0487150951,
+    "consequent support":0.052281465,
+    "support":0.0207911777,
+    "confidence":0.4267912773,
+    "lift":8.1633381411,
+    "representativity":1.0,
+    "leverage":0.0182442811,
+    "conviction":1.653356792,
+    "zhangs_metric":0.922437735,
+    "jaccard":0.2592242195,
+    "certainty":0.3951698721,
+    "kulczynski":0.4122345356,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Lunch Bag Cars Blue"
+    ],
+    "consequents":[
+      "Lunch Bag Woodland"
+    ],
+    "antecedent support":0.052281465,
+    "consequent support":0.0487150951,
+    "support":0.0207911777,
+    "confidence":0.3976777939,
+    "lift":8.1633381411,
+    "representativity":1.0,
+    "leverage":0.0182442811,
+    "conviction":1.5793621674,
+    "zhangs_metric":0.9259089704,
+    "jaccard":0.2592242195,
+    "certainty":0.3668330035,
+    "kulczynski":0.4122345356,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Lunch Bag  Black Skull."
+    ],
+    "consequents":[
+      "Lunch Bag Woodland"
+    ],
+    "antecedent support":0.0594647916,
+    "consequent support":0.0487150951,
+    "support":0.0208670579,
+    "confidence":0.3509145045,
+    "lift":7.2034038674,
+    "representativity":1.0,
+    "leverage":0.0179702249,
+    "conviction":1.4655772028,
+    "zhangs_metric":0.9156241397,
+    "jaccard":0.2389918888,
+    "certainty":0.317674976,
+    "kulczynski":0.3896317071,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Lunch Bag Woodland"
+    ],
+    "consequents":[
+      "Lunch Bag  Black Skull."
+    ],
+    "antecedent support":0.0487150951,
+    "consequent support":0.0594647916,
+    "support":0.0208670579,
+    "confidence":0.4283489097,
+    "lift":7.2034038674,
+    "representativity":1.0,
+    "leverage":0.0179702249,
+    "conviction":1.6452959232,
+    "zhangs_metric":0.9052774165,
+    "jaccard":0.2389918888,
+    "certainty":0.3922066019,
+    "kulczynski":0.3896317071,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Lunch Bag Spaceboy Design"
+    ],
+    "consequents":[
+      "Lunch Bag Woodland"
+    ],
+    "antecedent support":0.0533184945,
+    "consequent support":0.0487150951,
+    "support":0.0208417645,
+    "confidence":0.3908918406,
+    "lift":8.0240393615,
+    "representativity":1.0,
+    "leverage":0.0182443489,
+    "conviction":1.5617668065,
+    "zhangs_metric":0.9246768683,
+    "jaccard":0.2566978193,
+    "certainty":0.3596995429,
+    "kulczynski":0.4093607697,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Lunch Bag Woodland"
+    ],
+    "consequents":[
+      "Lunch Bag Spaceboy Design"
+    ],
+    "antecedent support":0.0487150951,
+    "consequent support":0.0533184945,
+    "support":0.0208417645,
+    "confidence":0.4278296989,
+    "lift":8.0240393615,
+    "representativity":1.0,
+    "leverage":0.0182443489,
+    "conviction":1.6545449905,
+    "zhangs_metric":0.9202022288,
+    "jaccard":0.2566978193,
+    "certainty":0.3956042261,
+    "kulczynski":0.4093607697,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Red Hanging Heart T-Light Holder"
+    ],
+    "consequents":[
+      "White Hanging Heart T-Light Holder"
+    ],
+    "antecedent support":0.0445163901,
+    "consequent support":0.137975516,
+    "support":0.0313638203,
+    "confidence":0.7045454545,
+    "lift":5.1063078077,
+    "representativity":1.0,
+    "leverage":0.0252216484,
+    "conviction":2.9176213305,
+    "zhangs_metric":0.8416301185,
+    "jaccard":0.2075313808,
+    "certainty":0.6572550421,
+    "kulczynski":0.4659299225,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Chocolate Hot Water Bottle"
+    ],
+    "consequents":[
+      "Hot Water Bottle Tea And Sympathy"
+    ],
+    "antecedent support":0.0435299474,
+    "consequent support":0.0400394577,
+    "support":0.0196276811,
+    "confidence":0.4509006392,
+    "lift":11.2614072457,
+    "representativity":1.0,
+    "leverage":0.0178847656,
+    "conviction":1.7482456014,
+    "zhangs_metric":0.9526708637,
+    "jaccard":0.3069620253,
+    "certainty":0.4279979888,
+    "kulczynski":0.4705545521,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Hot Water Bottle Tea And Sympathy"
+    ],
+    "consequents":[
+      "Chocolate Hot Water Bottle"
+    ],
+    "antecedent support":0.0400394577,
+    "consequent support":0.0435299474,
+    "support":0.0196276811,
+    "confidence":0.4902084649,
+    "lift":11.2614072457,
+    "representativity":1.0,
+    "leverage":0.0178847656,
+    "conviction":1.8761983808,
+    "zhangs_metric":0.9492068799,
+    "jaccard":0.3069620253,
+    "certainty":0.4670073217,
+    "kulczynski":0.4705545521,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Pack Of 60 Pink Paisley Cake Cases"
+    ],
+    "consequents":[
+      "60 Teatime Fairy Cake Cases"
+    ],
+    "antecedent support":0.0504097531,
+    "consequent support":0.0537990692,
+    "support":0.0234216916,
+    "confidence":0.4646261917,
+    "lift":8.636323984,
+    "representativity":1.0,
+    "leverage":0.0207096938,
+    "conviction":1.7673650001,
+    "zhangs_metric":0.9311489852,
+    "jaccard":0.2899185974,
+    "certainty":0.4341859209,
+    "kulczynski":0.4499905759,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "60 Teatime Fairy Cake Cases"
+    ],
+    "consequents":[
+      "Pack Of 60 Pink Paisley Cake Cases"
+    ],
+    "antecedent support":0.0537990692,
+    "consequent support":0.0504097531,
+    "support":0.0234216916,
+    "confidence":0.43535496,
+    "lift":8.636323984,
+    "representativity":1.0,
+    "leverage":0.0207096938,
+    "conviction":1.6817472565,
+    "zhangs_metric":0.9344843848,
+    "jaccard":0.2899185974,
+    "certainty":0.4053803292,
+    "kulczynski":0.4499905759,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Wooden Frame Antique White"
+    ],
+    "consequents":[
+      "White Hanging Heart T-Light Holder"
+    ],
+    "antecedent support":0.0520791178,
+    "consequent support":0.137975516,
+    "support":0.0212211655,
+    "confidence":0.4074793589,
+    "lift":2.9532729485,
+    "representativity":1.0,
+    "leverage":0.0140355224,
+    "conviction":1.4548429611,
+    "zhangs_metric":0.6977297764,
+    "jaccard":0.1256928839,
+    "certainty":0.3126405896,
+    "kulczynski":0.2806416043,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Pack Of 72 Retro Spot Cake Cases"
+    ],
+    "consequents":[
+      "60 Teatime Fairy Cake Cases"
+    ],
+    "antecedent support":0.0356636989,
+    "consequent support":0.0537990692,
+    "support":0.0152519223,
+    "confidence":0.4276595745,
+    "lift":7.9492002521,
+    "representativity":1.0,
+    "leverage":0.0133332485,
+    "conviction":1.6532135222,
+    "zhangs_metric":0.906531446,
+    "jaccard":0.2055214724,
+    "certainty":0.3951174567,
+    "kulczynski":0.3555787294,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Sweetheart Ceramic Trinket Box"
+    ],
+    "consequents":[
+      "Strawberry Ceramic Trinket Box"
+    ],
+    "antecedent support":0.037484824,
+    "consequent support":0.058427762,
+    "support":0.0266086605,
+    "confidence":0.709851552,
+    "lift":12.149216865,
+    "representativity":1.0,
+    "leverage":0.0244185061,
+    "conviction":3.2451396666,
+    "zhangs_metric":0.9534292973,
+    "jaccard":0.3839416058,
+    "certainty":0.6918468532,
+    "kulczynski":0.5826314037,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Strawberry Ceramic Trinket Box"
+    ],
+    "consequents":[
+      "Sweetheart Ceramic Trinket Box"
+    ],
+    "antecedent support":0.058427762,
+    "consequent support":0.037484824,
+    "support":0.0266086605,
+    "confidence":0.4554112554,
+    "lift":12.149216865,
+    "representativity":1.0,
+    "leverage":0.0244185061,
+    "conviction":1.7674165792,
+    "zhangs_metric":0.9746359662,
+    "jaccard":0.3839416058,
+    "certainty":0.4342024332,
+    "kulczynski":0.5826314037,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Storage Bag Skulls"
+    ],
+    "consequents":[
+      "Jumbo Storage Bag Suki"
+    ],
+    "antecedent support":0.033412586,
+    "consequent support":0.0589083367,
+    "support":0.0174018616,
+    "confidence":0.5208175625,
+    "lift":8.8411520606,
+    "representativity":1.0,
+    "leverage":0.0154335817,
+    "conviction":1.9639527444,
+    "zhangs_metric":0.9175502968,
+    "jaccard":0.2322754895,
+    "certainty":0.4908227793,
+    "kulczynski":0.408111658,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Storage Bag Skulls"
+    ],
+    "consequents":[
+      "Jumbo Bag Red Retrospot"
+    ],
+    "antecedent support":0.033412586,
+    "consequent support":0.082684136,
+    "support":0.0156819102,
+    "confidence":0.469341408,
+    "lift":5.6763175,
+    "representativity":1.0,
+    "leverage":0.0129192194,
+    "conviction":1.7286365997,
+    "zhangs_metric":0.8523072345,
+    "jaccard":0.1561712846,
+    "certainty":0.4215094137,
+    "kulczynski":0.3295009273,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Vintage Snap Cards"
+    ],
+    "consequents":[
+      "Vintage Heads And Tails Card Game"
+    ],
+    "antecedent support":0.0477539458,
+    "consequent support":0.0332102388,
+    "support":0.0193747471,
+    "confidence":0.405720339,
+    "lift":12.2167245408,
+    "representativity":1.0,
+    "leverage":0.0177888271,
+    "conviction":1.6268262649,
+    "zhangs_metric":0.9641888196,
+    "jaccard":0.3145790554,
+    "certainty":0.3853062115,
+    "kulczynski":0.4945585701,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Vintage Heads And Tails Card Game"
+    ],
+    "consequents":[
+      "Vintage Snap Cards"
+    ],
+    "antecedent support":0.0332102388,
+    "consequent support":0.0477539458,
+    "support":0.0193747471,
+    "confidence":0.5833968012,
+    "lift":12.2167245408,
+    "representativity":1.0,
+    "leverage":0.0177888271,
+    "conviction":2.2857387006,
+    "zhangs_metric":0.9496842393,
+    "jaccard":0.3145790554,
+    "certainty":0.5625046731,
+    "kulczynski":0.4945585701,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Storage Bag Suki"
+    ],
+    "consequents":[
+      "Jumbo Bag Red Retrospot"
+    ],
+    "antecedent support":0.0589083367,
+    "consequent support":0.082684136,
+    "support":0.0277215702,
+    "confidence":0.4705882353,
+    "lift":5.6913969014,
+    "representativity":1.0,
+    "leverage":0.0228507853,
+    "conviction":1.7327077432,
+    "zhangs_metric":0.875893649,
+    "jaccard":0.2434473567,
+    "certainty":0.4228686263,
+    "kulczynski":0.4029294801,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Bag Red Retrospot"
+    ],
+    "consequents":[
+      "Jumbo Storage Bag Suki"
+    ],
+    "antecedent support":0.082684136,
+    "consequent support":0.0589083367,
+    "support":0.0277215702,
+    "confidence":0.335270725,
+    "lift":5.6913969014,
+    "representativity":1.0,
+    "leverage":0.0228507853,
+    "conviction":1.4157517935,
+    "zhangs_metric":0.8985958309,
+    "jaccard":0.2434473567,
+    "certainty":0.2936614987,
+    "kulczynski":0.4029294801,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Gin + Tonic Diet Metal Sign"
+    ],
+    "consequents":[
+      "Cook With Wine Metal Sign"
+    ],
+    "antecedent support":0.0406970862,
+    "consequent support":0.0360431,
+    "support":0.0160107244,
+    "confidence":0.3934120572,
+    "lift":10.9150449773,
+    "representativity":1.0,
+    "leverage":0.0145438753,
+    "conviction":1.58914616,
+    "zhangs_metric":0.946920231,
+    "jaccard":0.2636401499,
+    "certainty":0.3707312611,
+    "kulczynski":0.4188112917,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Cook With Wine Metal Sign"
+    ],
+    "consequents":[
+      "Gin + Tonic Diet Metal Sign"
+    ],
+    "antecedent support":0.0360431,
+    "consequent support":0.0406970862,
+    "support":0.0160107244,
+    "confidence":0.4442105263,
+    "lift":10.9150449773,
+    "representativity":1.0,
+    "leverage":0.0145438753,
+    "conviction":1.7260185002,
+    "zhangs_metric":0.9423484979,
+    "jaccard":0.2636401499,
+    "certainty":0.4206319342,
+    "kulczynski":0.4188112917,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Set\/6 Red Spotty Paper Cups"
+    ],
+    "consequents":[
+      "Set\/6 Red Spotty Paper Plates"
+    ],
+    "antecedent support":0.0213223391,
+    "consequent support":0.024888709,
+    "support":0.0164660057,
+    "confidence":0.7722419929,
+    "lift":31.0278042994,
+    "representativity":1.0,
+    "leverage":0.0159353202,
+    "conviction":4.2813480119,
+    "zhangs_metric":0.9888555557,
+    "jaccard":0.5535714286,
+    "certainty":0.7664287049,
+    "kulczynski":0.7169136794,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Set\/6 Red Spotty Paper Plates"
+    ],
+    "consequents":[
+      "Set\/6 Red Spotty Paper Cups"
+    ],
+    "antecedent support":0.024888709,
+    "consequent support":0.0213223391,
+    "support":0.0164660057,
+    "confidence":0.6615853659,
+    "lift":31.0278042994,
+    "representativity":1.0,
+    "leverage":0.0159353202,
+    "conviction":2.8919484033,
+    "zhangs_metric":0.9924721939,
+    "jaccard":0.5535714286,
+    "certainty":0.6542123646,
+    "kulczynski":0.7169136794,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Bag Woodland Animals"
+    ],
+    "consequents":[
+      "Jumbo Storage Bag Suki"
+    ],
+    "antecedent support":0.0357901659,
+    "consequent support":0.0589083367,
+    "support":0.0170983408,
+    "confidence":0.4777385159,
+    "lift":8.1098625868,
+    "representativity":1.0,
+    "leverage":0.0149900016,
+    "conviction":1.8019549439,
+    "zhangs_metric":0.9092350207,
+    "jaccard":0.2203389831,
+    "certainty":0.4450471676,
+    "kulczynski":0.3839959218,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Bag Woodland Animals"
+    ],
+    "consequents":[
+      "Jumbo Bag Red Retrospot"
+    ],
+    "antecedent support":0.0357901659,
+    "consequent support":0.082684136,
+    "support":0.0179583165,
+    "confidence":0.5017667845,
+    "lift":6.0684770848,
+    "representativity":1.0,
+    "leverage":0.0149990375,
+    "conviction":1.8411375143,
+    "zhangs_metric":0.866216026,
+    "jaccard":0.1786612984,
+    "certainty":0.4568575176,
+    "kulczynski":0.3594792931,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Bag Owls"
+    ],
+    "consequents":[
+      "Jumbo Storage Bag Suki"
+    ],
+    "antecedent support":0.0332355322,
+    "consequent support":0.0589083367,
+    "support":0.0164154189,
+    "confidence":0.4939117199,
+    "lift":8.3844112321,
+    "representativity":1.0,
+    "leverage":0.0144575689,
+    "conviction":1.8595405197,
+    "zhangs_metric":0.9110089068,
+    "jaccard":0.2167668671,
+    "certainty":0.4622327454,
+    "kulczynski":0.3862860446,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Bag Owls"
+    ],
+    "consequents":[
+      "Jumbo Bag Red Retrospot"
+    ],
+    "antecedent support":0.0332355322,
+    "consequent support":0.082684136,
+    "support":0.0155807365,
+    "confidence":0.4687975647,
+    "lift":5.66974014,
+    "representativity":1.0,
+    "leverage":0.0128326853,
+    "conviction":1.7268668271,
+    "zhangs_metric":0.8519397444,
+    "jaccard":0.1552810688,
+    "certainty":0.42091655,
+    "kulczynski":0.3286171978,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo  Bag Baroque Black White"
+    ],
+    "consequents":[
+      "Jumbo Storage Bag Suki"
+    ],
+    "antecedent support":0.0475010117,
+    "consequent support":0.0589083367,
+    "support":0.0198300283,
+    "confidence":0.4174653887,
+    "lift":7.0866945505,
+    "representativity":1.0,
+    "leverage":0.0170318227,
+    "conviction":1.6155120143,
+    "zhangs_metric":0.9017232564,
+    "jaccard":0.2290388548,
+    "certainty":0.3810011989,
+    "kulczynski":0.3770452749,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Storage Bag Suki"
+    ],
+    "consequents":[
+      "Jumbo  Bag Baroque Black White"
+    ],
+    "antecedent support":0.0589083367,
+    "consequent support":0.0475010117,
+    "support":0.0198300283,
+    "confidence":0.336625161,
+    "lift":7.0866945505,
+    "representativity":1.0,
+    "leverage":0.0170318227,
+    "conviction":1.4358382807,
+    "zhangs_metric":0.9126533821,
+    "jaccard":0.2290388548,
+    "certainty":0.3035427364,
+    "kulczynski":0.3770452749,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo  Bag Baroque Black White"
+    ],
+    "consequents":[
+      "Jumbo Shopper Vintage Red Paisley"
+    ],
+    "antecedent support":0.0475010117,
+    "consequent support":0.0554431404,
+    "support":0.0180847835,
+    "confidence":0.3807241747,
+    "lift":6.8669301866,
+    "representativity":1.0,
+    "leverage":0.0154511782,
+    "conviction":1.5252603459,
+    "zhangs_metric":0.8969820768,
+    "jaccard":0.2131147541,
+    "certainty":0.3443742226,
+    "kulczynski":0.353455153,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Shopper Vintage Red Paisley"
+    ],
+    "consequents":[
+      "Jumbo  Bag Baroque Black White"
+    ],
+    "antecedent support":0.0554431404,
+    "consequent support":0.0475010117,
+    "support":0.0180847835,
+    "confidence":0.3261861314,
+    "lift":6.8669301866,
+    "representativity":1.0,
+    "leverage":0.0154511782,
+    "conviction":1.4135936237,
+    "zhangs_metric":0.9045241819,
+    "jaccard":0.2131147541,
+    "certainty":0.2925831136,
+    "kulczynski":0.353455153,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo  Bag Baroque Black White"
+    ],
+    "consequents":[
+      "Jumbo Bag Red Retrospot"
+    ],
+    "antecedent support":0.0475010117,
+    "consequent support":0.082684136,
+    "support":0.0231687576,
+    "confidence":0.4877529286,
+    "lift":5.8989904518,
+    "representativity":1.0,
+    "leverage":0.0192411775,
+    "conviction":1.7907683915,
+    "zhangs_metric":0.8718953807,
+    "jaccard":0.216497282,
+    "certainty":0.4415804943,
+    "kulczynski":0.3839804717,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Wooden Picture Frame White Finish"
+    ],
+    "consequents":[
+      "White Hanging Heart T-Light Holder"
+    ],
+    "antecedent support":0.0507385674,
+    "consequent support":0.137975516,
+    "support":0.0210694051,
+    "confidence":0.4152542373,
+    "lift":3.0096226444,
+    "representativity":1.0,
+    "leverage":0.0140687251,
+    "conviction":1.4741867987,
+    "zhangs_metric":0.7034231119,
+    "jaccard":0.1256789378,
+    "certainty":0.3216599139,
+    "kulczynski":0.2839790893,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Wooden Picture Frame White Finish"
+    ],
+    "consequents":[
+      "Wooden Frame Antique White"
+    ],
+    "antecedent support":0.0507385674,
+    "consequent support":0.0520791178,
+    "support":0.0281768515,
+    "confidence":0.555333998,
+    "lift":10.6632758354,
+    "representativity":1.0,
+    "leverage":0.0255344317,
+    "conviction":2.1317592935,
+    "zhangs_metric":0.9546581765,
+    "jaccard":0.3774991528,
+    "certainty":0.5309038863,
+    "kulczynski":0.5481866687,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Wooden Frame Antique White"
+    ],
+    "consequents":[
+      "Wooden Picture Frame White Finish"
+    ],
+    "antecedent support":0.0520791178,
+    "consequent support":0.0507385674,
+    "support":0.0281768515,
+    "confidence":0.5410393395,
+    "lift":10.6632758354,
+    "representativity":1.0,
+    "leverage":0.0255344317,
+    "conviction":2.0682849627,
+    "zhangs_metric":0.9560082548,
+    "jaccard":0.3774991528,
+    "certainty":0.5165076293,
+    "kulczynski":0.5481866687,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "72 Sweetheart Fairy Cake Cases"
+    ],
+    "consequents":[
+      "60 Teatime Fairy Cake Cases"
+    ],
+    "antecedent support":0.0369283691,
+    "consequent support":0.0537990692,
+    "support":0.0185147713,
+    "confidence":0.501369863,
+    "lift":9.3193036691,
+    "representativity":1.0,
+    "leverage":0.0165280595,
+    "conviction":1.8976007678,
+    "zhangs_metric":0.9269256999,
+    "jaccard":0.2563922942,
+    "certainty":0.473018763,
+    "kulczynski":0.4227582742,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "60 Teatime Fairy Cake Cases"
+    ],
+    "consequents":[
+      "72 Sweetheart Fairy Cake Cases"
+    ],
+    "antecedent support":0.0537990692,
+    "consequent support":0.0369283691,
+    "support":0.0185147713,
+    "confidence":0.3441466855,
+    "lift":9.3193036691,
+    "representativity":1.0,
+    "leverage":0.0165280595,
+    "conviction":1.4684253469,
+    "zhangs_metric":0.943452724,
+    "jaccard":0.2563922942,
+    "certainty":0.3189984073,
+    "kulczynski":0.4227582742,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "72 Sweetheart Fairy Cake Cases"
+    ],
+    "consequents":[
+      "Pack Of 60 Pink Paisley Cake Cases"
+    ],
+    "antecedent support":0.0369283691,
+    "consequent support":0.0504097531,
+    "support":0.016111898,
+    "confidence":0.4363013699,
+    "lift":8.6550983236,
+    "representativity":1.0,
+    "leverage":0.014250348,
+    "conviction":1.6845707903,
+    "zhangs_metric":0.918375263,
+    "jaccard":0.2262073864,
+    "certainty":0.40637698,
+    "kulczynski":0.3779600176,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Pack Of 60 Pink Paisley Cake Cases"
+    ],
+    "consequents":[
+      "72 Sweetheart Fairy Cake Cases"
+    ],
+    "antecedent support":0.0504097531,
+    "consequent support":0.0369283691,
+    "support":0.016111898,
+    "confidence":0.3196186653,
+    "lift":8.6550983236,
+    "representativity":1.0,
+    "leverage":0.014250348,
+    "conviction":1.4154880239,
+    "zhangs_metric":0.9314134863,
+    "jaccard":0.2262073864,
+    "certainty":0.2935298758,
+    "kulczynski":0.3779600176,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Storage Bag Suki"
+    ],
+    "consequents":[
+      "Jumbo Bag Strawberry"
+    ],
+    "antecedent support":0.0589083367,
+    "consequent support":0.0469192635,
+    "support":0.0190712262,
+    "confidence":0.3237440962,
+    "lift":6.900025114,
+    "representativity":1.0,
+    "leverage":0.0163072905,
+    "conviction":1.4093492288,
+    "zhangs_metric":0.9085969248,
+    "jaccard":0.2198250729,
+    "certainty":0.2904526575,
+    "kulczynski":0.3651065494,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Bag Strawberry"
+    ],
+    "consequents":[
+      "Jumbo Storage Bag Suki"
+    ],
+    "antecedent support":0.0469192635,
+    "consequent support":0.0589083367,
+    "support":0.0190712262,
+    "confidence":0.4064690027,
+    "lift":6.900025114,
+    "representativity":1.0,
+    "leverage":0.0163072905,
+    "conviction":1.5855813219,
+    "zhangs_metric":0.8971674261,
+    "jaccard":0.2198250729,
+    "certainty":0.3693164859,
+    "kulczynski":0.3651065494,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo  Bag Baroque Black White"
+    ],
+    "consequents":[
+      "Jumbo Bag Strawberry"
+    ],
+    "antecedent support":0.0475010117,
+    "consequent support":0.0469192635,
+    "support":0.016238365,
+    "confidence":0.3418530351,
+    "lift":7.2859846886,
+    "representativity":1.0,
+    "leverage":0.0140096526,
+    "conviction":1.4481275269,
+    "zhangs_metric":0.9057754418,
+    "jaccard":0.2076997735,
+    "certainty":0.3094530824,
+    "kulczynski":0.3439723397,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Bag Strawberry"
+    ],
+    "consequents":[
+      "Jumbo  Bag Baroque Black White"
+    ],
+    "antecedent support":0.0469192635,
+    "consequent support":0.0475010117,
+    "support":0.016238365,
+    "confidence":0.3460916442,
+    "lift":7.2859846886,
+    "representativity":1.0,
+    "leverage":0.0140096526,
+    "conviction":1.4566245863,
+    "zhangs_metric":0.9052225681,
+    "jaccard":0.2076997735,
+    "certainty":0.3134813119,
+    "kulczynski":0.3439723397,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Bag Strawberry"
+    ],
+    "consequents":[
+      "Jumbo Bag Red Retrospot"
+    ],
+    "antecedent support":0.0469192635,
+    "consequent support":0.082684136,
+    "support":0.0233963982,
+    "confidence":0.4986522911,
+    "lift":6.030809722,
+    "representativity":1.0,
+    "leverage":0.0195169195,
+    "conviction":1.8296999223,
+    "zhangs_metric":0.875250915,
+    "jaccard":0.2202905454,
+    "certainty":0.453462293,
+    "kulczynski":0.3908067207,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Pack Of 72 Skull Cake Cases"
+    ],
+    "consequents":[
+      "60 Teatime Fairy Cake Cases"
+    ],
+    "antecedent support":0.0374595306,
+    "consequent support":0.0537990692,
+    "support":0.0156060299,
+    "confidence":0.4166103984,
+    "lift":7.7438216786,
+    "representativity":1.0,
+    "leverage":0.0135907421,
+    "conviction":1.6219022899,
+    "zhangs_metric":0.9047565506,
+    "jaccard":0.2062855232,
+    "certainty":0.3834400468,
+    "kulczynski":0.3533451616,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Pack Of 60 Dinosaur Cake Cases"
+    ],
+    "consequents":[
+      "60 Teatime Fairy Cake Cases"
+    ],
+    "antecedent support":0.0329573047,
+    "consequent support":0.0537990692,
+    "support":0.0170224605,
+    "confidence":0.5165003837,
+    "lift":9.6005449794,
+    "representativity":1.0,
+    "leverage":0.0152493882,
+    "conviction":1.9569838299,
+    "zhangs_metric":0.9263699015,
+    "jaccard":0.2441059122,
+    "certainty":0.4890095745,
+    "kulczynski":0.4164542351,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "60 Teatime Fairy Cake Cases"
+    ],
+    "consequents":[
+      "Pack Of 60 Dinosaur Cake Cases"
+    ],
+    "antecedent support":0.0537990692,
+    "consequent support":0.0329573047,
+    "support":0.0170224605,
+    "confidence":0.3164080865,
+    "lift":9.6005449794,
+    "representativity":1.0,
+    "leverage":0.0152493882,
+    "conviction":1.4146491147,
+    "zhangs_metric":0.9467748522,
+    "jaccard":0.2441059122,
+    "certainty":0.2931109279,
+    "kulczynski":0.4164542351,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Hanging Heart Zinc T-Light Holder"
+    ],
+    "consequents":[
+      "Single Heart Zinc T-Light Holder"
+    ],
+    "antecedent support":0.0385218535,
+    "consequent support":0.028960947,
+    "support":0.0172248078,
+    "confidence":0.4471437951,
+    "lift":15.4395433054,
+    "representativity":1.0,
+    "leverage":0.0161091784,
+    "conviction":1.7564043679,
+    "zhangs_metric":0.9727015099,
+    "jaccard":0.3427277302,
+    "certainty":0.4306550255,
+    "kulczynski":0.5209518102,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Single Heart Zinc T-Light Holder"
+    ],
+    "consequents":[
+      "Hanging Heart Zinc T-Light Holder"
+    ],
+    "antecedent support":0.028960947,
+    "consequent support":0.0385218535,
+    "support":0.0172248078,
+    "confidence":0.5947598253,
+    "lift":15.4395433054,
+    "representativity":1.0,
+    "leverage":0.0161091784,
+    "conviction":2.3726130986,
+    "zhangs_metric":0.9631242348,
+    "jaccard":0.3427277302,
+    "certainty":0.5785237801,
+    "kulczynski":0.5209518102,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Strawberry Charlotte Bag"
+    ],
+    "consequents":[
+      "Woodland Charlotte Bag"
+    ],
+    "antecedent support":0.0348796034,
+    "consequent support":0.0397865237,
+    "support":0.0175283286,
+    "confidence":0.5025380711,
+    "lift":12.6308615243,
+    "representativity":1.0,
+    "leverage":0.0161405904,
+    "conviction":1.9302250493,
+    "zhangs_metric":0.9541077362,
+    "jaccard":0.3067729084,
+    "certainty":0.4819256955,
+    "kulczynski":0.4715487558,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Woodland Charlotte Bag"
+    ],
+    "consequents":[
+      "Strawberry Charlotte Bag"
+    ],
+    "antecedent support":0.0397865237,
+    "consequent support":0.0348796034,
+    "support":0.0175283286,
+    "confidence":0.4405594406,
+    "lift":12.6308615243,
+    "representativity":1.0,
+    "leverage":0.0161405904,
+    "conviction":1.7251527089,
+    "zhangs_metric":0.9589834547,
+    "jaccard":0.3067729084,
+    "certainty":0.4203411705,
+    "kulczynski":0.4715487558,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Charlotte Bag Suki Design"
+    ],
+    "consequents":[
+      "Strawberry Charlotte Bag"
+    ],
+    "antecedent support":0.0354866451,
+    "consequent support":0.0348796034,
+    "support":0.0155301497,
+    "confidence":0.4376336422,
+    "lift":12.5469787366,
+    "representativity":1.0,
+    "leverage":0.0142923896,
+    "conviction":1.7161773339,
+    "zhangs_metric":0.9541594561,
+    "jaccard":0.2832103321,
+    "certainty":0.4173096333,
+    "kulczynski":0.4414419117,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Strawberry Charlotte Bag"
+    ],
+    "consequents":[
+      "Charlotte Bag Suki Design"
+    ],
+    "antecedent support":0.0348796034,
+    "consequent support":0.0354866451,
+    "support":0.0155301497,
+    "confidence":0.4452501813,
+    "lift":12.5469787366,
+    "representativity":1.0,
+    "leverage":0.0142923896,
+    "conviction":1.7386456424,
+    "zhangs_metric":0.9535593087,
+    "jaccard":0.2832103321,
+    "certainty":0.4248396708,
+    "kulczynski":0.4414419117,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Toilet Metal Sign"
+    ],
+    "consequents":[
+      "Bathroom Metal Sign"
+    ],
+    "antecedent support":0.0230928774,
+    "consequent support":0.0379653986,
+    "support":0.0170477539,
+    "confidence":0.7382256298,
+    "lift":19.4446958691,
+    "representativity":1.0,
+    "leverage":0.0161710237,
+    "conviction":3.6750526822,
+    "zhangs_metric":0.9709951659,
+    "jaccard":0.3873563218,
+    "certainty":0.7278950572,
+    "kulczynski":0.5936298036,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Bathroom Metal Sign"
+    ],
+    "consequents":[
+      "Toilet Metal Sign"
+    ],
+    "antecedent support":0.0379653986,
+    "consequent support":0.0230928774,
+    "support":0.0170477539,
+    "confidence":0.4490339773,
+    "lift":19.4446958691,
+    "representativity":1.0,
+    "leverage":0.0161710237,
+    "conviction":1.7730805212,
+    "zhangs_metric":0.9860062125,
+    "jaccard":0.3873563218,
+    "certainty":0.4360098213,
+    "kulczynski":0.5936298036,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Recycling Bag Retrospot"
+    ],
+    "consequents":[
+      "Jumbo Bag Red Retrospot"
+    ],
+    "antecedent support":0.0397106435,
+    "consequent support":0.082684136,
+    "support":0.0158083772,
+    "confidence":0.398089172,
+    "lift":4.8145773947,
+    "representativity":1.0,
+    "leverage":0.0125249369,
+    "conviction":1.5240062503,
+    "zhangs_metric":0.82506116,
+    "jaccard":0.14831514,
+    "certainty":0.3438347121,
+    "kulczynski":0.2946395692,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Bag Spaceboy Design"
+    ],
+    "consequents":[
+      "Jumbo Storage Bag Suki"
+    ],
+    "antecedent support":0.0315661675,
+    "consequent support":0.0589083367,
+    "support":0.0157577904,
+    "confidence":0.4991987179,
+    "lift":8.4741608041,
+    "representativity":1.0,
+    "leverage":0.0138982799,
+    "conviction":1.8791718333,
+    "zhangs_metric":0.910742877,
+    "jaccard":0.2109004739,
+    "certainty":0.467850687,
+    "kulczynski":0.3833477488,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Bag Spaceboy Design"
+    ],
+    "consequents":[
+      "Jumbo Bag Red Retrospot"
+    ],
+    "antecedent support":0.0315661675,
+    "consequent support":0.082684136,
+    "support":0.0159095508,
+    "confidence":0.5040064103,
+    "lift":6.0955636084,
+    "representativity":1.0,
+    "leverage":0.0132995295,
+    "conviction":1.8494510473,
+    "zhangs_metric":0.8631939872,
+    "jaccard":0.1617798354,
+    "certainty":0.4592990166,
+    "kulczynski":0.3482099962,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Storage Bag Suki"
+    ],
+    "consequents":[
+      "Jumbo Shopper Vintage Red Paisley"
+    ],
+    "antecedent support":0.0589083367,
+    "consequent support":0.0554431404,
+    "support":0.0226881829,
+    "confidence":0.3851438386,
+    "lift":6.9466454385,
+    "representativity":1.0,
+    "leverage":0.0194221197,
+    "conviction":1.5362241103,
+    "zhangs_metric":0.9096304417,
+    "jaccard":0.2475165563,
+    "certainty":0.3490533098,
+    "kulczynski":0.3971795835,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Shopper Vintage Red Paisley"
+    ],
+    "consequents":[
+      "Jumbo Storage Bag Suki"
+    ],
+    "antecedent support":0.0554431404,
+    "consequent support":0.0589083367,
+    "support":0.0226881829,
+    "confidence":0.4092153285,
+    "lift":6.9466454385,
+    "representativity":1.0,
+    "leverage":0.0194221197,
+    "conviction":1.5929520664,
+    "zhangs_metric":0.9062933763,
+    "jaccard":0.2475165563,
+    "certainty":0.37223472,
+    "kulczynski":0.3971795835,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Bag Red Retrospot"
+    ],
+    "consequents":[
+      "Jumbo Shopper Vintage Red Paisley"
+    ],
+    "antecedent support":0.082684136,
+    "consequent support":0.0554431404,
+    "support":0.0254957507,
+    "confidence":0.3083511777,
+    "lift":5.5615748918,
+    "representativity":1.0,
+    "leverage":0.0209114825,
+    "conviction":1.3656596081,
+    "zhangs_metric":0.8941247476,
+    "jaccard":0.2263642488,
+    "certainty":0.2677531106,
+    "kulczynski":0.3841025962,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Shopper Vintage Red Paisley"
+    ],
+    "consequents":[
+      "Jumbo Bag Red Retrospot"
+    ],
+    "antecedent support":0.0554431404,
+    "consequent support":0.082684136,
+    "support":0.0254957507,
+    "confidence":0.4598540146,
+    "lift":5.5615748918,
+    "representativity":1.0,
+    "leverage":0.0209114825,
+    "conviction":1.6982739645,
+    "zhangs_metric":0.8683382129,
+    "jaccard":0.2263642488,
+    "certainty":0.4111668547,
+    "kulczynski":0.3841025962,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Lunch Bag  Black Skull."
+    ],
+    "consequents":[
+      "Lunch Bag Spaceboy Design"
+    ],
+    "antecedent support":0.0594647916,
+    "consequent support":0.0533184945,
+    "support":0.0224605423,
+    "confidence":0.3777116121,
+    "lift":7.0840637074,
+    "representativity":1.0,
+    "leverage":0.0192899691,
+    "conviction":1.5212906489,
+    "zhangs_metric":0.9131376233,
+    "jaccard":0.2486698404,
+    "certainty":0.342663415,
+    "kulczynski":0.399481992,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Lunch Bag Spaceboy Design"
+    ],
+    "consequents":[
+      "Lunch Bag  Black Skull."
+    ],
+    "antecedent support":0.0533184945,
+    "consequent support":0.0594647916,
+    "support":0.0224605423,
+    "confidence":0.4212523719,
+    "lift":7.0840637074,
+    "representativity":1.0,
+    "leverage":0.0192899691,
+    "conviction":1.6251214913,
+    "zhangs_metric":0.9072091088,
+    "jaccard":0.2486698404,
+    "certainty":0.3846613897,
+    "kulczynski":0.399481992,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Natural Slate Heart Chalkboard"
+    ],
+    "consequents":[
+      "White Hanging Heart T-Light Holder"
+    ],
+    "antecedent support":0.0517503035,
+    "consequent support":0.137975516,
+    "support":0.0178318495,
+    "confidence":0.3445747801,
+    "lift":2.497361779,
+    "representativity":1.0,
+    "leverage":0.0106915746,
+    "conviction":1.3152140897,
+    "zhangs_metric":0.6322991095,
+    "jaccard":0.1037374926,
+    "certainty":0.2396675128,
+    "kulczynski":0.2369070051,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Plasters In Tin Spaceboy"
+    ],
+    "consequents":[
+      "Plasters In Tin Woodland Animals"
+    ],
+    "antecedent support":0.0328561311,
+    "consequent support":0.0322490894,
+    "support":0.0157072036,
+    "confidence":0.4780600462,
+    "lift":14.8239858715,
+    "representativity":1.0,
+    "leverage":0.0146476233,
+    "conviction":1.8541422313,
+    "zhangs_metric":0.9642223766,
+    "jaccard":0.3179723502,
+    "certainty":0.4606670496,
+    "kulczynski":0.4825594349,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Plasters In Tin Woodland Animals"
+    ],
+    "consequents":[
+      "Plasters In Tin Spaceboy"
+    ],
+    "antecedent support":0.0322490894,
+    "consequent support":0.0328561311,
+    "support":0.0157072036,
+    "confidence":0.4870588235,
+    "lift":14.8239858715,
+    "representativity":1.0,
+    "leverage":0.0146476233,
+    "conviction":1.8854869003,
+    "zhangs_metric":0.9636175483,
+    "jaccard":0.3179723502,
+    "certainty":0.4696330164,
+    "kulczynski":0.4825594349,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Heart Of Wicker Small"
+    ],
+    "consequents":[
+      "White Hanging Heart T-Light Holder"
+    ],
+    "antecedent support":0.0544061109,
+    "consequent support":0.137975516,
+    "support":0.0197288547,
+    "confidence":0.3626220363,
+    "lift":2.6281622045,
+    "representativity":1.0,
+    "leverage":0.0122221435,
+    "conviction":1.3524541686,
+    "zhangs_metric":0.6551501528,
+    "jaccard":0.1142689716,
+    "certainty":0.2606034103,
+    "kulczynski":0.2528050603,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Heart Of Wicker Small"
+    ],
+    "consequents":[
+      "Heart Of Wicker Large"
+    ],
+    "antecedent support":0.0544061109,
+    "consequent support":0.0493727236,
+    "support":0.0253186969,
+    "confidence":0.4653649465,
+    "lift":9.4255474008,
+    "representativity":1.0,
+    "leverage":0.022632519,
+    "conviction":1.7780863231,
+    "zhangs_metric":0.9453375032,
+    "jaccard":0.3226950355,
+    "certainty":0.4375976087,
+    "kulczynski":0.4890861618,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Heart Of Wicker Large"
+    ],
+    "consequents":[
+      "Heart Of Wicker Small"
+    ],
+    "antecedent support":0.0493727236,
+    "consequent support":0.0544061109,
+    "support":0.0253186969,
+    "confidence":0.512807377,
+    "lift":9.4255474008,
+    "representativity":1.0,
+    "leverage":0.022632519,
+    "conviction":1.9409035453,
+    "zhangs_metric":0.9403321242,
+    "jaccard":0.3226950355,
+    "certainty":0.4847760454,
+    "kulczynski":0.4890861618,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Heart Of Wicker Large"
+    ],
+    "consequents":[
+      "White Hanging Heart T-Light Holder"
+    ],
+    "antecedent support":0.0493727236,
+    "consequent support":0.137975516,
+    "support":0.0193241603,
+    "confidence":0.3913934426,
+    "lift":2.8366876531,
+    "representativity":1.0,
+    "leverage":0.0125119332,
+    "conviction":1.416390398,
+    "zhangs_metric":0.6811041348,
+    "jaccard":0.1150082794,
+    "certainty":0.2939799638,
+    "kulczynski":0.265724219,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Charlotte Bag Suki Design"
+    ],
+    "consequents":[
+      "Woodland Charlotte Bag"
+    ],
+    "antecedent support":0.0354866451,
+    "consequent support":0.0397865237,
+    "support":0.0175030352,
+    "confidence":0.4932287954,
+    "lift":12.3968809005,
+    "representativity":1.0,
+    "leverage":0.016091145,
+    "conviction":1.8947672395,
+    "zhangs_metric":0.9531589619,
+    "jaccard":0.3029772329,
+    "certainty":0.4722306893,
+    "kulczynski":0.466576254,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Woodland Charlotte Bag"
+    ],
+    "consequents":[
+      "Charlotte Bag Suki Design"
+    ],
+    "antecedent support":0.0397865237,
+    "consequent support":0.0354866451,
+    "support":0.0175030352,
+    "confidence":0.4399237127,
+    "lift":12.3968809005,
+    "representativity":1.0,
+    "leverage":0.016091145,
+    "conviction":1.722110678,
+    "zhangs_metric":0.95742725,
+    "jaccard":0.3029772329,
+    "certainty":0.4193172293,
+    "kulczynski":0.466576254,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Spaceboy Lunch Box"
+    ],
+    "consequents":[
+      "Dolly Girl Lunch Box"
+    ],
+    "antecedent support":0.034601376,
+    "consequent support":0.0337161068,
+    "support":0.0209682315,
+    "confidence":0.605994152,
+    "lift":17.9734319545,
+    "representativity":1.0,
+    "leverage":0.0198016078,
+    "conviction":2.4524607901,
+    "zhangs_metric":0.9782097256,
+    "jaccard":0.4428418803,
+    "certainty":0.5922462842,
+    "kulczynski":0.6139498142,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Dolly Girl Lunch Box"
+    ],
+    "consequents":[
+      "Spaceboy Lunch Box"
+    ],
+    "antecedent support":0.0337161068,
+    "consequent support":0.034601376,
+    "support":0.0209682315,
+    "confidence":0.6219054764,
+    "lift":17.9734319545,
+    "representativity":1.0,
+    "leverage":0.0198016078,
+    "conviction":2.5533261227,
+    "zhangs_metric":0.9773135305,
+    "jaccard":0.4428418803,
+    "certainty":0.6083539854,
+    "kulczynski":0.6139498142,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Roses Regency Teacup And Saucer"
+    ],
+    "consequents":[
+      "Regency Cakestand 3 Tier"
+    ],
+    "antecedent support":0.0356636989,
+    "consequent support":0.0990995548,
+    "support":0.018615945,
+    "confidence":0.5219858156,
+    "lift":5.2672871888,
+    "representativity":1.0,
+    "leverage":0.0150816883,
+    "conviction":1.8846730381,
+    "zhangs_metric":0.8401103948,
+    "jaccard":0.1602787456,
+    "certainty":0.4694039869,
+    "kulczynski":0.35491838,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Green Regency Teacup And Saucer"
+    ],
+    "consequents":[
+      "Roses Regency Teacup And Saucer"
+    ],
+    "antecedent support":0.0338931607,
+    "consequent support":0.0356636989,
+    "support":0.0258751518,
+    "confidence":0.7634328358,
+    "lift":21.4064401397,
+    "representativity":1.0,
+    "leverage":0.0246663963,
+    "conviction":4.0763742696,
+    "zhangs_metric":0.9867284317,
+    "jaccard":0.5923566879,
+    "certainty":0.7546839584,
+    "kulczynski":0.7444823754,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Roses Regency Teacup And Saucer"
+    ],
+    "consequents":[
+      "Green Regency Teacup And Saucer"
+    ],
+    "antecedent support":0.0356636989,
+    "consequent support":0.0338931607,
+    "support":0.0258751518,
+    "confidence":0.7255319149,
+    "lift":21.4064401397,
+    "representativity":1.0,
+    "leverage":0.0246663963,
+    "conviction":3.5199241433,
+    "zhangs_metric":0.9885400823,
+    "jaccard":0.5923566879,
+    "certainty":0.7159029686,
+    "kulczynski":0.7444823754,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Green Regency Teacup And Saucer"
+    ],
+    "consequents":[
+      "Regency Cakestand 3 Tier"
+    ],
+    "antecedent support":0.0338931607,
+    "consequent support":0.0990995548,
+    "support":0.0180089033,
+    "confidence":0.5313432836,
+    "lift":5.3617121132,
+    "representativity":1.0,
+    "leverage":0.0146501061,
+    "conviction":1.9223034976,
+    "zhangs_metric":0.8420315204,
+    "jaccard":0.1566212055,
+    "certainty":0.4797907816,
+    "kulczynski":0.3565343268,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Green Regency Teacup And Saucer"
+    ],
+    "consequents":[
+      "Pink Regency Teacup And Saucer"
+    ],
+    "antecedent support":0.0338931607,
+    "consequent support":0.0259004452,
+    "support":0.0216005666,
+    "confidence":0.6373134328,
+    "lift":24.6062733209,
+    "representativity":1.0,
+    "leverage":0.0207227186,
+    "conviction":2.6857888961,
+    "zhangs_metric":0.9930164224,
+    "jaccard":0.5655629139,
+    "certainty":0.627669918,
+    "kulczynski":0.7356489039,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Pink Regency Teacup And Saucer"
+    ],
+    "consequents":[
+      "Green Regency Teacup And Saucer"
+    ],
+    "antecedent support":0.0259004452,
+    "consequent support":0.0338931607,
+    "support":0.0216005666,
+    "confidence":0.833984375,
+    "lift":24.6062733209,
+    "representativity":1.0,
+    "leverage":0.0207227186,
+    "conviction":5.8193729616,
+    "zhangs_metric":0.9848684895,
+    "jaccard":0.5655629139,
+    "certainty":0.8281601804,
+    "kulczynski":0.7356489039,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Roses Regency Teacup And Saucer"
+    ],
+    "consequents":[
+      "Pink Regency Teacup And Saucer"
+    ],
+    "antecedent support":0.0356636989,
+    "consequent support":0.0259004452,
+    "support":0.0203358964,
+    "confidence":0.570212766,
+    "lift":22.0155585106,
+    "representativity":1.0,
+    "leverage":0.0194121907,
+    "conviction":2.2664692613,
+    "zhangs_metric":0.9898803731,
+    "jaccard":0.4932515337,
+    "certainty":0.5587851037,
+    "kulczynski":0.677684508,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Pink Regency Teacup And Saucer"
+    ],
+    "consequents":[
+      "Roses Regency Teacup And Saucer"
+    ],
+    "antecedent support":0.0259004452,
+    "consequent support":0.0356636989,
+    "support":0.0203358964,
+    "confidence":0.78515625,
+    "lift":22.0155585106,
+    "representativity":1.0,
+    "leverage":0.0194121907,
+    "conviction":4.4885471469,
+    "zhangs_metric":0.9799589506,
+    "jaccard":0.4932515337,
+    "certainty":0.7772107617,
+    "kulczynski":0.677684508,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Roses Regency Teacup And Saucer",
+      "Green Regency Teacup And Saucer"
+    ],
+    "consequents":[
+      "Pink Regency Teacup And Saucer"
+    ],
+    "antecedent support":0.0258751518,
+    "consequent support":0.0259004452,
+    "support":0.0183630109,
+    "confidence":0.7096774194,
+    "lift":27.4002016129,
+    "representativity":1.0,
+    "leverage":0.017692833,
+    "conviction":3.3552318,
+    "zhangs_metric":0.9890969519,
+    "jaccard":0.5495836488,
+    "certainty":0.7019579988,
+    "kulczynski":0.7093308972,
+    "antecedent_len":2,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Green Regency Teacup And Saucer",
+      "Pink Regency Teacup And Saucer"
+    ],
+    "consequents":[
+      "Roses Regency Teacup And Saucer"
+    ],
+    "antecedent support":0.0216005666,
+    "consequent support":0.0356636989,
+    "support":0.0183630109,
+    "confidence":0.850117096,
+    "lift":23.8370422044,
+    "representativity":1.0,
+    "leverage":0.0175926548,
+    "conviction":6.4339312589,
+    "zhangs_metric":0.9791997559,
+    "jaccard":0.4720416125,
+    "certainty":0.8445740311,
+    "kulczynski":0.6825053565,
+    "antecedent_len":2,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Roses Regency Teacup And Saucer",
+      "Pink Regency Teacup And Saucer"
+    ],
+    "consequents":[
+      "Green Regency Teacup And Saucer"
+    ],
+    "antecedent support":0.0203358964,
+    "consequent support":0.0338931607,
+    "support":0.0183630109,
+    "confidence":0.9029850746,
+    "lift":26.6421029182,
+    "representativity":1.0,
+    "leverage":0.0176737631,
+    "conviction":9.9583320362,
+    "zhangs_metric":0.9824443111,
+    "jaccard":0.5119887165,
+    "certainty":0.8995815769,
+    "kulczynski":0.7223880597,
+    "antecedent_len":2,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Green Regency Teacup And Saucer"
+    ],
+    "consequents":[
+      "Roses Regency Teacup And Saucer",
+      "Pink Regency Teacup And Saucer"
+    ],
+    "antecedent support":0.0338931607,
+    "consequent support":0.0203358964,
+    "support":0.0183630109,
+    "confidence":0.5417910448,
+    "lift":26.6421029182,
+    "representativity":1.0,
+    "leverage":0.0176737631,
+    "conviction":2.1380291512,
+    "zhangs_metric":0.9962308372,
+    "jaccard":0.5119887165,
+    "certainty":0.5322795297,
+    "kulczynski":0.7223880597,
+    "antecedent_len":1,
+    "consequent_len":2
+  },
+  {
+    "antecedents":[
+      "Roses Regency Teacup And Saucer"
+    ],
+    "consequents":[
+      "Green Regency Teacup And Saucer",
+      "Pink Regency Teacup And Saucer"
+    ],
+    "antecedent support":0.0356636989,
+    "consequent support":0.0216005666,
+    "support":0.0183630109,
+    "confidence":0.514893617,
+    "lift":23.8370422044,
+    "representativity":1.0,
+    "leverage":0.0175926548,
+    "conviction":2.016876025,
+    "zhangs_metric":0.9934796454,
+    "jaccard":0.4720416125,
+    "certainty":0.5041837041,
+    "kulczynski":0.6825053565,
+    "antecedent_len":1,
+    "consequent_len":2
+  },
+  {
+    "antecedents":[
+      "Pink Regency Teacup And Saucer"
+    ],
+    "consequents":[
+      "Roses Regency Teacup And Saucer",
+      "Green Regency Teacup And Saucer"
+    ],
+    "antecedent support":0.0259004452,
+    "consequent support":0.0258751518,
+    "support":0.0183630109,
+    "confidence":0.708984375,
+    "lift":27.4002016129,
+    "representativity":1.0,
+    "leverage":0.017692833,
+    "conviction":3.3473283376,
+    "zhangs_metric":0.9891226347,
+    "jaccard":0.5495836488,
+    "certainty":0.7012542843,
+    "kulczynski":0.7093308972,
+    "antecedent_len":1,
+    "consequent_len":2
+  },
+  {
+    "antecedents":[
+      "Hand Warmer Scotty Dog Design"
+    ],
+    "consequents":[
+      "Hand Warmer Owl Design"
+    ],
+    "antecedent support":0.027392756,
+    "consequent support":0.030655605,
+    "support":0.0164154189,
+    "confidence":0.5992613112,
+    "lift":19.5481808569,
+    "representativity":1.0,
+    "leverage":0.0155756774,
+    "conviction":2.4188939626,
+    "zhangs_metric":0.9755678365,
+    "jaccard":0.3942891859,
+    "certainty":0.5865879135,
+    "kulczynski":0.5673699295,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Hand Warmer Owl Design"
+    ],
+    "consequents":[
+      "Hand Warmer Scotty Dog Design"
+    ],
+    "antecedent support":0.030655605,
+    "consequent support":0.027392756,
+    "support":0.0164154189,
+    "confidence":0.5354785479,
+    "lift":19.5481808569,
+    "representativity":1.0,
+    "leverage":0.0155756774,
+    "conviction":2.0937832678,
+    "zhangs_metric":0.9788516338,
+    "jaccard":0.3942891859,
+    "certainty":0.5223956484,
+    "kulczynski":0.5673699295,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Hand Warmer Bird Design"
+    ],
+    "consequents":[
+      "Hand Warmer Owl Design"
+    ],
+    "antecedent support":0.0266592473,
+    "consequent support":0.030655605,
+    "support":0.0157577904,
+    "confidence":0.5910815939,
+    "lift":19.2813547009,
+    "representativity":1.0,
+    "leverage":0.014940535,
+    "conviction":2.3705081028,
+    "zhangs_metric":0.9741053394,
+    "jaccard":0.3791844187,
+    "certainty":0.578149512,
+    "kulczynski":0.5525539983,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Hand Warmer Owl Design"
+    ],
+    "consequents":[
+      "Hand Warmer Bird Design"
+    ],
+    "antecedent support":0.030655605,
+    "consequent support":0.0266592473,
+    "support":0.0157577904,
+    "confidence":0.5140264026,
+    "lift":19.2813547009,
+    "representativity":1.0,
+    "leverage":0.014940535,
+    "conviction":2.0028675591,
+    "zhangs_metric":0.9781213253,
+    "jaccard":0.3791844187,
+    "certainty":0.5007158634,
+    "kulczynski":0.5525539983,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Hot Water Bottle I Am So Poorly"
+    ],
+    "consequents":[
+      "Chocolate Hot Water Bottle"
+    ],
+    "antecedent support":0.0255716309,
+    "consequent support":0.0435299474,
+    "support":0.0154795629,
+    "confidence":0.6053412463,
+    "lift":13.9063169746,
+    "representativity":1.0,
+    "leverage":0.0143664312,
+    "conviction":2.4235369002,
+    "zhangs_metric":0.9524458271,
+    "jaccard":0.2886792453,
+    "certainty":0.5873799157,
+    "kulczynski":0.4804742257,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Chocolate Hot Water Bottle"
+    ],
+    "consequents":[
+      "Hot Water Bottle I Am So Poorly"
+    ],
+    "antecedent support":0.0435299474,
+    "consequent support":0.0255716309,
+    "support":0.0154795629,
+    "confidence":0.3556072051,
+    "lift":13.9063169746,
+    "representativity":1.0,
+    "leverage":0.0143664312,
+    "conviction":1.5121652148,
+    "zhangs_metric":0.9703285863,
+    "jaccard":0.2886792453,
+    "certainty":0.3386965986,
+    "kulczynski":0.4804742257,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Paper Chain Kit 50'S Christmas"
+    ],
+    "consequents":[
+      "Paper Chain Kit Vintage Christmas"
+    ],
+    "antecedent support":0.0510420882,
+    "consequent support":0.0360936868,
+    "support":0.0212211655,
+    "confidence":0.4157581764,
+    "lift":11.5188614314,
+    "representativity":1.0,
+    "leverage":0.0193788684,
+    "conviction":1.6498413402,
+    "zhangs_metric":0.9623038629,
+    "jaccard":0.3219493477,
+    "certainty":0.3938811111,
+    "kulczynski":0.5018524589,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Paper Chain Kit Vintage Christmas"
+    ],
+    "consequents":[
+      "Paper Chain Kit 50'S Christmas"
+    ],
+    "antecedent support":0.0360936868,
+    "consequent support":0.0510420882,
+    "support":0.0212211655,
+    "confidence":0.5879467414,
+    "lift":11.5188614314,
+    "representativity":1.0,
+    "leverage":0.0193788684,
+    "conviction":2.3029981975,
+    "zhangs_metric":0.9473803125,
+    "jaccard":0.3219493477,
+    "certainty":0.5657834205,
+    "kulczynski":0.5018524589,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Bag Pink Polkadot"
+    ],
+    "consequents":[
+      "Jumbo Bag Red Retrospot"
+    ],
+    "antecedent support":0.0364983812,
+    "consequent support":0.082684136,
+    "support":0.0244334278,
+    "confidence":0.6694386694,
+    "lift":8.0963374839,
+    "representativity":1.0,
+    "leverage":0.0214155906,
+    "conviction":2.7750247207,
+    "zhangs_metric":0.9096895584,
+    "jaccard":0.2578750667,
+    "certainty":0.6396428498,
+    "kulczynski":0.4824709407,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Jumbo Bag Pink Polkadot"
+    ],
+    "consequents":[
+      "Jumbo Storage Bag Suki"
+    ],
+    "antecedent support":0.0364983812,
+    "consequent support":0.0589083367,
+    "support":0.0151001619,
+    "confidence":0.4137214137,
+    "lift":7.0231386058,
+    "representativity":1.0,
+    "leverage":0.0129501029,
+    "conviction":1.6051953548,
+    "zhangs_metric":0.8901007545,
+    "jaccard":0.1880314961,
+    "certainty":0.377022867,
+    "kulczynski":0.335027302,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Lunch Bag Pink Polkadot"
+    ],
+    "consequents":[
+      "Lunch Bag  Black Skull."
+    ],
+    "antecedent support":0.0324008499,
+    "consequent support":0.0594647916,
+    "support":0.0161371914,
+    "confidence":0.4980483997,
+    "lift":8.3755174522,
+    "representativity":1.0,
+    "leverage":0.0142104816,
+    "conviction":1.8737567682,
+    "zhangs_metric":0.910092151,
+    "jaccard":0.2130928524,
+    "certainty":0.4663128017,
+    "kulczynski":0.3847111416,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Lunch Bag Red Retrospot"
+    ],
+    "consequents":[
+      "Lunch Bag Pink Polkadot"
+    ],
+    "antecedent support":0.0464639822,
+    "consequent support":0.0324008499,
+    "support":0.0181859571,
+    "confidence":0.3913990201,
+    "lift":12.0798998129,
+    "representativity":1.0,
+    "leverage":0.0166804846,
+    "conviction":1.5898744533,
+    "zhangs_metric":0.9619121243,
+    "jaccard":0.2997082118,
+    "certainty":0.371019518,
+    "kulczynski":0.476339635,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Lunch Bag Pink Polkadot"
+    ],
+    "consequents":[
+      "Lunch Bag Red Retrospot"
+    ],
+    "antecedent support":0.0324008499,
+    "consequent support":0.0464639822,
+    "support":0.0181859571,
+    "confidence":0.5612802498,
+    "lift":12.0798998129,
+    "representativity":1.0,
+    "leverage":0.0166804846,
+    "conviction":2.1734513146,
+    "zhangs_metric":0.9479316475,
+    "jaccard":0.2997082118,
+    "certainty":0.5399022774,
+    "kulczynski":0.476339635,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Charlotte Bag Pink Polkadot"
+    ],
+    "consequents":[
+      "Red Retrospot Charlotte Bag"
+    ],
+    "antecedent support":0.0229158236,
+    "consequent support":0.0317432214,
+    "support":0.0162130716,
+    "confidence":0.7075055188,
+    "lift":22.288396964,
+    "representativity":1.0,
+    "leverage":0.0154856496,
+    "conviction":3.3103420432,
+    "zhangs_metric":0.9775346168,
+    "jaccard":0.4217105263,
+    "certainty":0.6979164126,
+    "kulczynski":0.6091312454,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Red Retrospot Charlotte Bag"
+    ],
+    "consequents":[
+      "Charlotte Bag Pink Polkadot"
+    ],
+    "antecedent support":0.0317432214,
+    "consequent support":0.0229158236,
+    "support":0.0162130716,
+    "confidence":0.5107569721,
+    "lift":22.288396964,
+    "representativity":1.0,
+    "leverage":0.0154856496,
+    "conviction":1.9971345952,
+    "zhangs_metric":0.9864465987,
+    "jaccard":0.4217105263,
+    "certainty":0.499282621,
+    "kulczynski":0.6091312454,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Pack Of 72 Retrospot Cake Cases"
+    ],
+    "consequents":[
+      "60 Teatime Fairy Cake Cases"
+    ],
+    "antecedent support":0.0432011331,
+    "consequent support":0.0537990692,
+    "support":0.0150242817,
+    "confidence":0.3477751756,
+    "lift":6.4643344355,
+    "representativity":1.0,
+    "leverage":0.0127001009,
+    "conviction":1.4507281776,
+    "zhangs_metric":0.883472026,
+    "jaccard":0.1832767664,
+    "certainty":0.3106909927,
+    "kulczynski":0.3135208741,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Lunch Bag Red Retrospot"
+    ],
+    "consequents":[
+      "Jumbo Bag Red Retrospot"
+    ],
+    "antecedent support":0.0464639822,
+    "consequent support":0.082684136,
+    "support":0.017553622,
+    "confidence":0.3777898748,
+    "lift":4.5690732609,
+    "representativity":1.0,
+    "leverage":0.0137117878,
+    "conviction":1.4742863011,
+    "zhangs_metric":0.8192005567,
+    "jaccard":0.1572982774,
+    "certainty":0.3217056964,
+    "kulczynski":0.2950436067,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Lunch Bag Cars Blue"
+    ],
+    "consequents":[
+      "Lunch Bag Red Retrospot"
+    ],
+    "antecedent support":0.052281465,
+    "consequent support":0.0464639822,
+    "support":0.016238365,
+    "confidence":0.3105950653,
+    "lift":6.6846415363,
+    "representativity":1.0,
+    "leverage":0.01380916,
+    "conviction":1.3831290869,
+    "zhangs_metric":0.897316361,
+    "jaccard":0.1968117719,
+    "certainty":0.2770016845,
+    "kulczynski":0.3300389589,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Lunch Bag Red Retrospot"
+    ],
+    "consequents":[
+      "Lunch Bag Cars Blue"
+    ],
+    "antecedent support":0.0464639822,
+    "consequent support":0.052281465,
+    "support":0.016238365,
+    "confidence":0.3494828525,
+    "lift":6.6846415363,
+    "representativity":1.0,
+    "leverage":0.01380916,
+    "conviction":1.4568694132,
+    "zhangs_metric":0.8918418719,
+    "jaccard":0.1968117719,
+    "certainty":0.3135966814,
+    "kulczynski":0.3300389589,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Lunch Bag Spaceboy Design"
+    ],
+    "consequents":[
+      "Lunch Bag Red Retrospot"
+    ],
+    "antecedent support":0.0533184945,
+    "consequent support":0.0464639822,
+    "support":0.0161624848,
+    "confidence":0.3031309298,
+    "lift":6.5239980622,
+    "representativity":1.0,
+    "leverage":0.0136850952,
+    "conviction":1.368314449,
+    "zhangs_metric":0.8944082602,
+    "jaccard":0.1932849365,
+    "certainty":0.2691738359,
+    "kulczynski":0.3254903424,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Lunch Bag Red Retrospot"
+    ],
+    "consequents":[
+      "Lunch Bag Spaceboy Design"
+    ],
+    "antecedent support":0.0464639822,
+    "consequent support":0.0533184945,
+    "support":0.0161624848,
+    "confidence":0.347849755,
+    "lift":6.5239980622,
+    "representativity":1.0,
+    "leverage":0.0136850952,
+    "conviction":1.4516309896,
+    "zhangs_metric":0.8879787889,
+    "jaccard":0.1932849365,
+    "certainty":0.3111196942,
+    "kulczynski":0.3254903424,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Lunch Bag  Black Skull."
+    ],
+    "consequents":[
+      "Lunch Bag Red Retrospot"
+    ],
+    "antecedent support":0.0594647916,
+    "consequent support":0.0464639822,
+    "support":0.0190459328,
+    "confidence":0.3202892386,
+    "lift":6.8932799881,
+    "representativity":1.0,
+    "leverage":0.0162829618,
+    "conviction":1.4028555556,
+    "zhangs_metric":0.9089837057,
+    "jaccard":0.2192139738,
+    "certainty":0.2871682362,
+    "kulczynski":0.3650983482,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Lunch Bag Red Retrospot"
+    ],
+    "consequents":[
+      "Lunch Bag  Black Skull."
+    ],
+    "antecedent support":0.0464639822,
+    "consequent support":0.0594647916,
+    "support":0.0190459328,
+    "confidence":0.4099074578,
+    "lift":6.8932799881,
+    "representativity":1.0,
+    "leverage":0.0162829618,
+    "conviction":1.5938774704,
+    "zhangs_metric":0.8965903365,
+    "jaccard":0.2192139738,
+    "certainty":0.3725992,
+    "kulczynski":0.3650983482,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Lunch Bag Woodland"
+    ],
+    "consequents":[
+      "Lunch Bag Red Retrospot"
+    ],
+    "antecedent support":0.0487150951,
+    "consequent support":0.0464639822,
+    "support":0.0156819102,
+    "confidence":0.3219106957,
+    "lift":6.9281770642,
+    "representativity":1.0,
+    "leverage":0.0134184128,
+    "conviction":1.4062100845,
+    "zhangs_metric":0.8994801486,
+    "jaccard":0.1972637607,
+    "certainty":0.2888687039,
+    "kulczynski":0.3297087502,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Lunch Bag Red Retrospot"
+    ],
+    "consequents":[
+      "Lunch Bag Woodland"
+    ],
+    "antecedent support":0.0464639822,
+    "consequent support":0.0487150951,
+    "support":0.0156819102,
+    "confidence":0.3375068046,
+    "lift":6.9281770642,
+    "representativity":1.0,
+    "leverage":0.0134184128,
+    "conviction":1.4359164916,
+    "zhangs_metric":0.897356651,
+    "jaccard":0.1972637607,
+    "certainty":0.3035806707,
+    "kulczynski":0.3297087502,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Charlotte Bag Suki Design"
+    ],
+    "consequents":[
+      "Red Retrospot Charlotte Bag"
+    ],
+    "antecedent support":0.0354866451,
+    "consequent support":0.0317432214,
+    "support":0.0157072036,
+    "confidence":0.4426229508,
+    "lift":13.9438573575,
+    "representativity":1.0,
+    "leverage":0.0145807431,
+    "conviction":1.7371665734,
+    "zhangs_metric":0.9624375116,
+    "jaccard":0.3048600884,
+    "certainty":0.4243499643,
+    "kulczynski":0.468721834,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Red Retrospot Charlotte Bag"
+    ],
+    "consequents":[
+      "Charlotte Bag Suki Design"
+    ],
+    "antecedent support":0.0317432214,
+    "consequent support":0.0354866451,
+    "support":0.0157072036,
+    "confidence":0.4948207171,
+    "lift":13.9438573575,
+    "representativity":1.0,
+    "leverage":0.0145807431,
+    "conviction":1.9092496221,
+    "zhangs_metric":0.958716586,
+    "jaccard":0.3048600884,
+    "certainty":0.4762340197,
+    "kulczynski":0.468721834,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Alarm Clock Bakelike Green"
+    ],
+    "consequents":[
+      "Alarm Clock Bakelike Red"
+    ],
+    "antecedent support":0.0321985026,
+    "consequent support":0.0344749089,
+    "support":0.0211452853,
+    "confidence":0.6567164179,
+    "lift":19.0491124714,
+    "representativity":1.0,
+    "leverage":0.0200352449,
+    "conviction":2.8126165696,
+    "zhangs_metric":0.97902733,
+    "jaccard":0.4644444444,
+    "certainty":0.6444591805,
+    "kulczynski":0.635034658,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Alarm Clock Bakelike Red"
+    ],
+    "consequents":[
+      "Alarm Clock Bakelike Green"
+    ],
+    "antecedent support":0.0344749089,
+    "consequent support":0.0321985026,
+    "support":0.0211452853,
+    "confidence":0.613352898,
+    "lift":19.0491124714,
+    "representativity":1.0,
+    "leverage":0.0200352449,
+    "conviction":2.5030615577,
+    "zhangs_metric":0.9813355704,
+    "jaccard":0.4644444444,
+    "certainty":0.6004892501,
+    "kulczynski":0.635034658,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Alarm Clock Bakelike Pink"
+    ],
+    "consequents":[
+      "Alarm Clock Bakelike Red"
+    ],
+    "antecedent support":0.024509308,
+    "consequent support":0.0344749089,
+    "support":0.0150242817,
+    "confidence":0.613003096,
+    "lift":17.7811374926,
+    "representativity":1.0,
+    "leverage":0.0141793255,
+    "conviction":2.4949168353,
+    "zhangs_metric":0.9674727151,
+    "jaccard":0.3417721519,
+    "certainty":0.5991850366,
+    "kulczynski":0.5244032354,
+    "antecedent_len":1,
+    "consequent_len":1
+  },
+  {
+    "antecedents":[
+      "Alarm Clock Bakelike Red"
+    ],
+    "consequents":[
+      "Alarm Clock Bakelike Pink"
+    ],
+    "antecedent support":0.0344749089,
+    "consequent support":0.024509308,
+    "support":0.0150242817,
+    "confidence":0.4358033749,
+    "lift":17.7811374926,
+    "representativity":1.0,
+    "leverage":0.0141793255,
+    "conviction":1.7289906544,
+    "zhangs_metric":0.9774584183,
+    "jaccard":0.3417721519,
+    "certainty":0.4216278744,
+    "kulczynski":0.5244032354,
+    "antecedent_len":1,
+    "consequent_len":1
+  }
+]

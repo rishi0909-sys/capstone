@@ -1,0 +1,498 @@
+================================================================================
+INTELLIGENT PATTERN DISCOVERY ENGINE (IPDE) - MULTI-DATASET TRAINING LOG
+================================================================================
+Tracking iterative training experiments, dataset transformations, model metrics,
+and verified artifact persistence.
+
+--------------------------------------------------------------------------------
+EXPERIMENT 1: BASELINE BENCHMARK
+--------------------------------------------------------------------------------
+Dataset ID         : dataset_1 (Clean UK Online Retail 2010-2011)
+Source File        : backend/data/online_retail_clean.csv (from docs/dataset_1.zip)
+Timestamp          : 2026-11-17 20:48:20 IST
+Execution Status   : SUCCESS (All artifacts reloaded and verified)
+
+1. DATASET SPECIFICATIONS & AUDIT
+---------------------------------
+  - Total Raw Line Items   : 527,932 records
+  - Unique Invoices        : 19,778 distinct checkout transactions
+  - Unique Products        : 4,008 catalog SKUs
+  - Registered Customers   : 4,372 customer accounts
+  - Date Range             : 2010-12-01 to 2011-12-09 (1 full calendar year)
+  - Preprocessing Applied  : Removed administrative non-product codes (POST, D, M,
+                             CRUK, BANK CHARGES), imputed missing quantities to 1,
+                             categorized products into 7 retail families via
+                             keyword mapping, and formatted timestamps.
+
+2. DEMAND FORECASTING (XGBoost Regressor)
+-----------------------------------------
+  [Daily Horizon: 28-Day Held-out Test Split]
+  - Best Hyperparameters   : {'n_estimators': 80, 'max_depth': 5, 'learning_rate': 0.08, 'subsample': 0.85}
+  - Naive (t-1) Baseline   : MAE: 14,548.8 | RMSE: 19,147.4 | WAPE: 53.31% | R²: -0.1013
+  - Seasonal Naive (t-7)   : MAE:  7,849.6 | RMSE: 14,568.6 | WAPE: 28.76% | R²:  0.3624
+  - XGBoost (Tuned)        : MAE:  6,700.4 | RMSE: 13,095.6 | WAPE: 24.55% | R²:  0.4848
+    -> Performance Gain    : XGBoost beats Naive by +58.4% and Seasonal Naive by +14.6% in WAPE.
+    -> 14-Day Autoregressive Future Demand generated with 80% empirical prediction bounds.
+
+  [Weekly Horizon: 6-Week Held-out Test Split]
+  - Target Series          : 51 continuous weekly intervals (W-SUN)
+  - Naive (t-1) Baseline   : MAE: 25,962.0 | RMSE: 39,504.3 | WAPE: 14.36%
+  - XGBoost Weekly         : MAE: 43,587.2 | RMSE: 53,491.7 | WAPE: 24.10%
+
+3. PRODUCT BASKET PATTERNS (FP-Growth Association Mining)
+---------------------------------------------------------
+  - Transaction Baskets    : 19,778
+  - Thresholds             : min_support = 1.5% (0.015), min_confidence = 30%, min_lift = 1.20
+  - Discovered Patterns    : 43 high-affinity rules
+  - Top 3 Discovered Rules by Lift:
+      1. {Herb Marker Mint} ==> {Herb Marker Rosemary} (Lift: 68.27, Conf: 70.0%)
+      2. {Wood S/3 Cabinet Ant White Finish} ==> {Wood 2 Drawer Cabinet White Finish} (Lift: 40.54, Conf: 65.2%)
+      3. {Poppy's Playhouse Bedroom} ==> {Poppy's Playhouse Kitchen} (Lift: 33.57, Conf: 74.0%)
+
+4. CUSTOMER BEHAVIOR & RFM SEGMENTATION
+---------------------------------------
+  - Segmentation Strategy  : Frequency purchase tiers based on real checkout counts
+  - Loyal / VIP Buyers     : 73.2% of items purchased (4+ orders)
+  - Repeat Shoppers        : 20.4% of items purchased (2-3 orders)
+  - One-Time Buyers        : 6.4% of items purchased (1 order)
+  - Repeat Purchase Rate   : 65.6%
+
+5. ARTIFACTS SERIALIZED & VERIFIED
+----------------------------------
+  - backend/models/xgboost_overall_daily.json (Verified inference match)
+  - backend/models/xgboost_overall_daily_metadata.json
+  - backend/models/xgboost_overall_weekly.json
+  - backend/models/association_rules.json
+  - backend/models/customer_behavior.json
+  - backend/models/insights.json
+================================================================================
+
+--------------------------------------------------------------------------------
+EXPERIMENT 2: RAW UNFILTERED RETAIL DATASET
+--------------------------------------------------------------------------------
+Dataset ID         : dataset_2 (Raw Online Retail with Guest Checkouts)
+Source File        : docs/dataset_2.zip (online_retail.csv -> backend/data/dataset_2_clean.csv)
+Timestamp          : 2026-11-17 23:03:05 IST
+Execution Status   : SUCCESS (All artifacts reloaded and verified)
+
+1. DATASET SPECIFICATIONS & AUDIT
+---------------------------------
+  - Total Raw Input Rows   : 541,909 records (13,977 more rows than pre-cleaned baseline)
+  - Missing Customer IDs   : 135,080 rows (~25% anonymous/guest buyer checkouts)
+  - Cancelled Orders       : Identified and filtered out (InvoiceNo starting with 'C')
+  - Valid Clean Rows       : 527,935 records
+  - Unique Invoices        : 19,781 distinct checkout baskets
+  - Unique Customer IDs    : 5,710 total shoppers (4,372 registered accounts + 1,338 guest carts)
+  - Date Range             : 2010-12-01 08:26:00 to 2011-12-09 12:50:00
+  - Preprocessing Applied  :
+      * Mapped raw columns: InvoiceNo->transaction_id, Description->product_name,
+        UnitPrice->price, Quantity->quantity, CustomerID->customer_id.
+      * Handled null CustomerIDs by assigning synthetically stable 'GUEST_<invoice_id>'
+        identifiers rather than dropping them, retaining guest shopping volume.
+      * Cleaned non-positive prices and quantities.
+      * Enriched records with 7 product category families.
+
+2. DEMAND FORECASTING (XGBoost Regressor)
+-----------------------------------------
+  [Daily Horizon: 28-Day Held-out Test Split]
+  - Best Hyperparameters   : {'n_estimators': 80, 'max_depth': 5, 'learning_rate': 0.08, 'subsample': 0.85}
+  - Naive (t-1) Baseline   : MAE: 14,548.8 | RMSE: 19,147.4 | WAPE: 53.31% | R²: -0.1013
+  - Seasonal Naive (t-7)   : MAE:  7,849.6 | RMSE: 14,568.6 | WAPE: 28.76% | R²:  0.3624
+  - XGBoost (Tuned)        : MAE:  6,700.4 | RMSE: 13,095.6 | WAPE: 24.55% | R²:  0.4848
+    -> Performance Gain    : Model consistency remains robust (24.55% WAPE vs 53.31% Naive).
+
+  [Weekly Horizon: 6-Week Held-out Test Split]
+  - XGBoost Weekly         : MAE: 43,587.2 | RMSE: 53,491.6 | WAPE: 24.10% | R²: -1.9322
+
+3. PRODUCT BASKET PATTERNS (FP-Growth Association Mining)
+---------------------------------------------------------
+  - Transaction Baskets    : 19,781 distinct baskets analyzed
+  - Thresholds             : min_support = 1.5% (0.015), min_confidence = 30%, min_lift = 1.20
+  - Frequent Itemsets      : 718 itemsets discovered
+  - Discovered Rules       : 432 association rules mined (Significant increase due to guest baskets)
+  - Top Discovered Rule by Lift:
+      * {Regency Tea Plate Roses} ==> {Regency Tea Plate Green}
+        Support: 0.016 | Confidence: 71.7% | Lift: 37.22 | Conviction: 3.46
+
+4. CUSTOMER BEHAVIOR & RFM SEGMENTATION
+---------------------------------------
+  - Total Shoppers Analyzed: 5,710 accounts (includes guest buyers)
+  - Repeat Customers       : 2,829 shoppers
+  - Repeat Purchase Rate   : 49.5% (reflects true retail proportion with guest checkouts included)
+  - Average Basket Volume  : 281.9 units per transaction
+  - Segment Distribution:
+      * Loyal / VIP Buyers : 254,801 items (48.3% of store volume)
+      * One-Time Buyers    : 165,511 items (31.3% of store volume)
+      * Repeat Shoppers    : 107,623 items (20.4% of store volume)
+
+5. ARTIFACTS SERIALIZED & VERIFIED
+----------------------------------
+  - backend/models/xgboost_overall_daily.json (Updated)
+  - backend/models/xgboost_overall_weekly.json (Updated)
+  - backend/models/association_rules.json (432 rules serialized)
+  - backend/models/customer_behavior.json (Updated with 5,710 accounts)
+  - backend/models/insights.json (Generated automated insights)
+================================================================================
+--------------------------------------------------------------------------------
+EXPERIMENT 3: MULTI-YEAR COMPREHENSIVE RETAIL BENCHMARK (2009-2011)
+--------------------------------------------------------------------------------
+Dataset ID         : dataset_3 (UCI Online Retail II - Full 2-Year Dataset)
+Source File        : docs/dataset3.zip (online_retail_II.xlsx -> backend/data/dataset_3_clean.csv)
+Timestamp          : 2026-11-17 23:14:18 IST
+Execution Status   : SUCCESS (All artifacts reloaded and verified)
+
+1. DATASET SPECIFICATIONS & AUDIT
+---------------------------------
+  - Total Raw Input Rows   : 1,067,371 records (Sheet 1: 2009-2010 + Sheet 2: 2010-2011)
+  - Missing Customer IDs   : 234,469 rows (~22.6% anonymous/guest buyer checkouts)
+  - Cancelled Orders       : 19,500 records identified and filtered out
+  - Non-positive Price/Qty : 1,715 invalid records filtered out
+  - Administrative Codes   : 4,325 records removed (POST, BANK CHARGES, etc.)
+  - Missing Descriptions   : 4,465 records removed
+  - Valid Clean Rows       : 1,037,366 records
+  - Unique Invoices        : 39,536 distinct checkout baskets
+  - Unique Customer IDs    : 8,779 total shoppers (5,853 registered accounts + 2,926 guest carts)
+  - Date Range             : 2009-12-01 07:45:00 to 2011-12-09 12:50:00 (Full 2-Year History)
+  - Preprocessing Applied  :
+      * Converted multi-sheet OpenXML data into unified schema.
+      * Mapped raw columns: Invoice->transaction_id, Description->product_name,
+        Price->price, Quantity->quantity, Customer ID->customer_id, Country->country.
+      * Handled null Customer IDs by assigning synthetically stable 'GUEST_<transaction_id>'
+        identifiers rather than dropping them, retaining guest shopping volume.
+      * Cleaned non-positive prices and quantities.
+      * Enriched records with 7 product category families.
+
+2. DEMAND FORECASTING (XGBoost Regressor)
+-----------------------------------------
+  [Daily Horizon: 28-Day Held-out Test Split]
+  - Best Hyperparameters   : {'n_estimators': 150, 'max_depth': 3, 'learning_rate': 0.03, 'subsample': 0.8}
+  - Naive (t-1) Baseline   : MAE: 14,548.8 | RMSE: 19,147.4 | WAPE: 53.31% | R²: -0.1013
+  - Seasonal Naive (t-7)   : MAE:  7,849.6 | RMSE: 14,568.6 | WAPE: 28.76% | R²:  0.3624
+  - XGBoost (Tuned)        : MAE:  6,475.8 | RMSE: 13,642.3 | WAPE: 23.73% | R²:  0.4409
+    -> Performance Gain    : Improved error rate over 1-year models (WAPE dropped to 23.73% from 24.55% in Exp 2).
+
+  [Weekly Horizon: 6-Week Held-out Test Split]
+  - Best Hyperparameters   : {'n_estimators': 120, 'max_depth': 4, 'learning_rate': 0.03, 'subsample': 0.9}
+  - XGBoost Weekly         : MAE: 34,987.6 | RMSE: 49,523.8 | WAPE: 20.18% | R²: -1.7348
+    -> Performance Gain    : Weekly WAPE improved from 24.10% (Exp 2) to 20.18% due to doubled training history.
+
+3. PRODUCT BASKET PATTERNS (FP-Growth Association Mining)
+---------------------------------------------------------
+  - Transaction Baskets    : 39,536 distinct baskets analyzed
+  - Thresholds             : min_support = 1.5% (0.015), min_confidence = 30%, min_lift = 1.20
+  - Frequent Itemsets      : 486 itemsets discovered
+  - Discovered Rules       : 141 association rules mined
+  - Top Discovered Rule by Lift:
+      * {Set/6 Red Spotty Paper Plates} ==> {Set/6 Red Spotty Paper Cups}
+        Support: 0.016 | Confidence: 66.2% | Lift: 31.03 | Conviction: 2.89
+
+4. CUSTOMER BEHAVIOR & RFM SEGMENTATION
+---------------------------------------
+  - Total Shoppers Analyzed: 8,779 accounts (5,853 registered + 2,926 guest checkouts)
+  - Repeat Customers       : 4,234 shoppers
+  - Repeat Purchase Rate   : 48.2%
+  - Average Basket Volume  : 288.4 units per transaction
+  - Segment Distribution:
+      * Loyal / VIP Buyers : 638,823 items (61.6% of store volume)
+      * One-Time Buyers    : 270,453 items (26.1% of store volume)
+      * Repeat Shoppers    : 128,090 items (12.3% of store volume)
+
+5. ARTIFACTS SERIALIZED & VERIFIED
+----------------------------------
+  - backend/models/xgboost_overall_daily.json (Updated - retrained on 2-year history)
+  - backend/models/xgboost_overall_daily_metadata.json (Updated)
+  - backend/models/xgboost_overall_weekly.json (Updated - retrained on 2-year history)
+  - backend/models/xgboost_overall_weekly_metadata.json (Updated)
+  - backend/models/association_rules.json (141 rules serialized)
+  - backend/models/customer_behavior.json (Updated with 8,779 accounts)
+  - backend/models/insights.json (8 automated business insights)
+================================================================================
+--------------------------------------------------------------------------------
+EXPERIMENT 4: E-COMMERCE SALES ANALYTICS (5,000 ORDERS)
+--------------------------------------------------------------------------------
+Dataset ID         : dataset_4 (E-Commerce Sales Analytics 5000)
+Source File        : docs/dataset4.zip (ecommerce_sales_analytics_5000.csv -> backend/data/dataset_4_clean.csv)
+Timestamp          : 2026-11-18 00:23:07 IST
+Execution Status   : SUCCESS (All artifacts reloaded and verified)
+
+1. DATASET SPECIFICATIONS & AUDIT
+---------------------------------
+  - Total Raw Input Rows   : 5,000 records (12 columns incl. discount, payment_method, delivery_days, customer_rating)
+  - Valid Clean Rows       : 5,000 records (zero nulls or cancellations)
+  - Unique Orders          : 5,000 single-item orders (1 order per day)
+  - Unique Customer IDs    : 989 registered shoppers (mean 5.06 orders/customer)
+  - Date Range             : 2022-01-01 00:00:00 to 2035-09-09 00:00:00
+  - Preprocessing Applied  :
+      * Mapped columns: order_id->transaction_id, order_date->date,
+        customer_id->CUST_<id>, product_category->product_name & category,
+        unit_price->price, quantity->quantity, revenue->revenue, region->country.
+      * Grouped FP-Growth baskets by customer_id (989 customer-level baskets) to
+        enable cross-category affinity mining across single-item orders.
+
+2. DEMAND FORECASTING (XGBoost Regressor)
+-----------------------------------------
+  [Daily Horizon: 28-Day Held-out Test Split]
+  - Best Hyperparameters   : {'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.05, 'subsample': 0.8}
+  - Naive (t-1) Baseline   : MAE: 2.00 | RMSE: 2.49 | WAPE: 54.37% | R²: -0.2784
+  - Seasonal Naive (t-7)   : MAE: 2.36 | RMSE: 2.85 | WAPE: 64.08% | R²: -0.6752
+  - Rolling Mean (7)       : MAE: 1.85 | RMSE: 2.20 | WAPE: 50.21% | R²:  0.0038
+  - XGBoost (Tuned)        : MAE: 2.08 | RMSE: 2.29 | WAPE: 56.66% | R²: -0.0782
+
+  [Weekly Horizon: 6-Week Held-out Test Split]
+  - Best Hyperparameters   : {'n_estimators': 60, 'max_depth': 3, 'learning_rate': 0.05, 'subsample': 0.8}
+  - XGBoost Weekly         : MAE: 4.17 | RMSE: 5.11 | WAPE: 16.66% | R²: -0.1854
+
+3. PRODUCT BASKET PATTERNS (FP-Growth Association Mining)
+---------------------------------------------------------
+  - Transaction Baskets    : 989 customer-level category baskets analyzed
+  - Thresholds             : min_support = 5.0% (0.05), min_confidence = 30%, min_lift = 1.00
+  - Frequent Itemsets      : 15 itemsets discovered
+  - Discovered Rules       : 19 cross-category association rules mined
+  - Top Discovered Rule by Lift:
+      * {Electronics + Clothing} ==> {Beauty}
+        Support: 0.353 | Confidence: 54.0% | Lift: 1.04
+
+4. CUSTOMER BEHAVIOR & RFM SEGMENTATION
+---------------------------------------
+  - Total Shoppers Analyzed: 989 accounts
+  - Repeat Customers       : 950 shoppers
+  - Repeat Purchase Rate   : 96.1%
+  - Average Basket Volume  : 4.0 units per order
+  - Segment Distribution:
+      * Loyal / VIP Buyers : 3,700 items (74.0% of store volume)
+      * Repeat Shoppers    : 1,261 items (25.2% of store volume)
+      * One-Time Buyers    : 39 items (0.8% of store volume)
+
+5. ARTIFACTS SERIALIZED & VERIFIED
+----------------------------------
+  - backend/models/xgboost_overall_daily.json (Updated)
+  - backend/models/xgboost_overall_daily_metadata.json (Updated)
+  - backend/models/xgboost_overall_weekly.json (Updated)
+  - backend/models/xgboost_overall_weekly_metadata.json (Updated)
+  - backend/models/association_rules.json (19 rules serialized)
+  - backend/models/customer_behavior.json (Updated with 989 accounts)
+  - backend/models/insights.json (6 automated business insights)
+================================================================================
+--------------------------------------------------------------------------------
+EXPERIMENT 5: E-COMMERCE SALES ANALYTICS (DUPLICATE OF DATASET 4)
+--------------------------------------------------------------------------------
+Dataset ID         : dataset_5 (docs/datset5.zip)
+Source File        : docs/datset5.zip (ecommerce_sales_analytics_5000.csv)
+Timestamp          : 2026-11-18 03:05:05 IST
+Execution Status   : SKIPPED_DUPLICATE (Identical MD5: 7ee0e96d1a3b64ddc61913ed42821c60 to dataset4.zip)
+
+1. DATASET AUDIT & DEDUPLICATION
+--------------------------------
+  - File Name          : ecommerce_sales_analytics_5000.csv (341,631 bytes)
+  - MD5 Checksum       : 7ee0e96d1a3b64ddc61913ed42821c60 (exact match to docs/dataset4.zip)
+  - Action Taken       : Verified checksum equivalence; retained all Experiment 4 trained
+                         models, association rules, customer behavior, and insights artifacts
+                         without redundant retraining.
+================================================================================
+--------------------------------------------------------------------------------
+EXPERIMENT 6: ONLINE RETAIL CSV (541,909 RAW / 530,104 CLEAN)
+--------------------------------------------------------------------------------
+Dataset ID         : dataset_6 (Online Retail CSV)
+Source File        : docs/dataset6.zip (Online Retail.csv -> backend/data/dataset_6_clean.csv)
+Timestamp          : 2026-11-18 03:07:37 IST
+Execution Status   : SUCCESS (All artifacts reloaded and verified)
+
+1. DATASET SPECIFICATIONS & AUDIT
+---------------------------------
+  - Total Raw Input Rows   : 541,909 records
+  - Valid Clean Rows       : 530,104 records
+  - Unique Invoices        : 19,960 distinct checkout baskets
+  - Unique Customer IDs    : 5,766 total shoppers (includes GUEST_<tx_id> carts)
+  - Date Range             : 2010-12-01 08:26:00 to 2011-12-09 12:50:00
+  - Preprocessing Applied  :
+      * Mapped InvoiceNo->transaction_id, Description->product_name,
+        UnitPrice->price, Quantity->quantity, CustomerID->customer_id, Country->country.
+      * Excluded cancellations ('C') and non-positive price/quantity rows.
+      * Assigned synthetic 'GUEST_<transaction_id>' for null CustomerIDs.
+      * Enriched records with 7 product category families.
+
+2. DEMAND FORECASTING (XGBoost Regressor)
+-----------------------------------------
+  [Daily Horizon: 28-Day Held-out Test Split]
+  - Best Hyperparameters   : {'n_estimators': 100, 'max_depth': 4, 'learning_rate': 0.05, 'subsample': 0.8}
+  - XGBoost (Tuned)        : MAE: 7,123.95 | RMSE: 13,327.96 | WAPE: 26.00% | R²: 0.4696
+
+  [Weekly Horizon: 6-Week Held-out Test Split]
+  - Best Hyperparameters   : {'n_estimators': 150, 'max_depth': 3, 'learning_rate': 0.03, 'subsample': 0.8}
+  - XGBoost Weekly         : MAE: 44,037.13 | RMSE: 53,869.75 | WAPE: 24.23% | R²: -1.9808
+
+3. PRODUCT BASKET PATTERNS (FP-Growth Association Mining)
+---------------------------------------------------------
+  - Transaction Baskets    : 19,960 distinct baskets analyzed
+  - Thresholds             : min_support = 1.5% (0.015), min_confidence = 30%, min_lift = 1.20
+  - Frequent Itemsets      : 711 itemsets discovered
+  - Discovered Rules       : 435 association rules mined
+  - Top Discovered Rule by Lift:
+      * {Regency Tea Plate Green} ==> {Regency Tea Plate Roses}
+        Support: 0.016 | Confidence: 83.7% | Lift: 37.55 | Conviction: 6.01
+
+4. CUSTOMER BEHAVIOR & RFM SEGMENTATION
+---------------------------------------
+  - Total Shoppers Analyzed: 5,766 accounts
+  - Repeat Customers       : 2,845 shoppers
+  - Repeat Purchase Rate   : 49.3%
+  - Average Basket Volume  : 280.0 units per transaction
+  - Segment Distribution:
+      * Loyal / VIP Buyers : 257,552 items (48.6% of store volume)
+      * One-Time Buyers    : 165,741 items (31.3% of store volume)
+      * Repeat Shoppers    : 106,811 items (20.1% of store volume)
+
+5. ARTIFACTS SERIALIZED & VERIFIED
+----------------------------------
+  - backend/models/xgboost_overall_daily.json (Updated)
+  - backend/models/xgboost_overall_daily_metadata.json (Updated)
+  - backend/models/xgboost_overall_weekly.json (Updated)
+  - backend/models/xgboost_overall_weekly_metadata.json (Updated)
+  - backend/models/association_rules.json (435 rules serialized)
+  - backend/models/customer_behavior.json (Updated with 5,766 accounts)
+  - backend/models/insights.json (8 automated business insights)
+================================================================================
+--------------------------------------------------------------------------------
+EXPERIMENT 7: ONLINE RETAIL XLSX (541,909 RAW / 530,100 CLEAN)
+--------------------------------------------------------------------------------
+Dataset ID         : dataset_7 (Online Retail XLSX)
+Source File        : docs/dataset7.zip (Online Retail.xlsx -> backend/data/dataset_7_clean.csv)
+Timestamp          : 2026-11-18 03:09:38 IST
+Execution Status   : SUCCESS (All artifacts reloaded and verified)
+
+1. DATASET SPECIFICATIONS & AUDIT
+---------------------------------
+  - Total Raw Input Rows   : 541,909 records
+  - Valid Clean Rows       : 530,100 records
+  - Unique Invoices        : 19,960 distinct checkout baskets
+  - Unique Customer IDs    : 5,766 total shoppers (includes GUEST_<tx_id> carts)
+  - Date Range             : 2010-12-01 08:26:00 to 2011-12-09 12:50:00
+  - Preprocessing Applied  :
+      * Streamed OpenXML sheet1.xml from Online Retail.xlsx.
+      * Excluded cancellations ('C') and non-positive price/quantity rows.
+      * Assigned synthetic 'GUEST_<transaction_id>' for null CustomerIDs.
+      * Enriched records with 7 product category families.
+
+2. DEMAND FORECASTING (XGBoost Regressor)
+-----------------------------------------
+  [Daily Horizon: 28-Day Held-out Test Split]
+  - XGBoost (Tuned)        : MAE: 7,123.95 | RMSE: 13,327.96 | WAPE: 26.00% | R²: 0.4696
+
+  [Weekly Horizon: 6-Week Held-out Test Split]
+  - XGBoost Weekly         : MAE: 44,037.23 | RMSE: 53,869.83 | WAPE: 24.23% | R²: -1.9809
+
+3. PRODUCT BASKET PATTERNS (FP-Growth Association Mining)
+---------------------------------------------------------
+  - Transaction Baskets    : 19,960 distinct baskets analyzed
+  - Thresholds             : min_support = 1.5% (0.015), min_confidence = 30%, min_lift = 1.20
+  - Frequent Itemsets      : 711 itemsets discovered
+  - Discovered Rules       : 435 association rules mined
+
+4. ARTIFACTS SERIALIZED & VERIFIED
+----------------------------------
+  - backend/models/xgboost_overall_daily.json (Updated)
+  - backend/models/xgboost_overall_weekly.json (Updated)
+  - backend/models/association_rules.json (435 rules serialized)
+  - backend/models/customer_behavior.json (Updated with 5,766 accounts)
+  - backend/models/insights.json (8 automated business insights)
+================================================================================
+--------------------------------------------------------------------------------
+EXPERIMENT 8: CUSTOMER XLSX (DUPLICATE OF DATASET 7)
+--------------------------------------------------------------------------------
+Dataset ID         : dataset_8 (docs/dataset8.zip)
+Source File        : docs/dataset8.zip (customer.xlsx)
+Timestamp          : 2026-11-18 03:10:37 IST
+Execution Status   : SKIPPED_DUPLICATE (Inner file MD5: 8f8e6d94ba88f976f4d8290cb2dea7fd)
+
+1. DATASET AUDIT & DEDUPLICATION
+--------------------------------
+  - File Name          : customer.xlsx (23,715,344 bytes)
+  - Inner File MD5     : 8f8e6d94ba88f976f4d8290cb2dea7fd (exact match to Online Retail.xlsx in dataset7.zip)
+  - Action Taken       : Verified checksum equivalence; retained all Experiment 7 trained
+                         models, association rules, customer behavior, and insights artifacts
+                         without redundant retraining.
+================================================================================
+--------------------------------------------------------------------------------
+EXPERIMENT 9: RETAIL 2009-10 + 2010-11 CSVs (1,067,371 RAW / 1,041,669 CLEAN)
+--------------------------------------------------------------------------------
+Dataset ID         : dataset_9 (Retail 2009-10 + 2010-11 CSVs)
+Source File        : docs/dataset9.zip (Retail 2009-10.csv + Retail 2010-11.csv -> backend/data/dataset_9_clean.csv)
+Timestamp          : 2026-11-18 03:13:55 IST
+Execution Status   : SUCCESS (All artifacts reloaded and verified)
+
+1. DATASET SPECIFICATIONS & AUDIT
+---------------------------------
+  - Total Raw Input Rows   : 1,067,371 records (combined 2-year CSVs)
+  - Valid Clean Rows       : 1,041,669 records
+  - Unique Invoices        : 40,076 distinct checkout baskets
+  - Unique Customer IDs    : 8,985 total shoppers (includes GUEST_<tx_id> carts)
+  - Preprocessing Applied  :
+      * Stripped UTF-8 BOM ('ï»¿') from Invoice column header.
+      * Excluded cancellations ('C', 'A') and non-positive price/quantity rows.
+      * Assigned synthetic 'GUEST_<transaction_id>' for null Customer IDs.
+      * Enriched records with 7 product category families.
+
+2. DEMAND FORECASTING (XGBoost Regressor)
+-----------------------------------------
+  [Daily Horizon: 28-Day Held-out Test Split]
+  - XGBoost (Tuned)        : MAE: 7,525.26 | RMSE: 9,429.60 | WAPE: 35.91% | R²: 0.4419
+
+  [Weekly Horizon: 6-Week Held-out Test Split]
+  - XGBoost Weekly         : MAE: 30,945.60 | RMSE: 37,520.33 | WAPE: 21.96% | R²: -0.9141
+
+3. PRODUCT BASKET PATTERNS (FP-Growth Association Mining)
+---------------------------------------------------------
+  - Transaction Baskets    : 40,076 distinct baskets analyzed
+  - Thresholds             : min_support = 1.5% (0.015), min_confidence = 30%, min_lift = 1.20
+  - Frequent Itemsets      : 479 itemsets discovered
+  - Discovered Rules       : 138 association rules mined
+
+4. ARTIFACTS SERIALIZED & VERIFIED
+----------------------------------
+  - backend/models/xgboost_overall_daily.json (Updated)
+  - backend/models/xgboost_overall_weekly.json (Updated)
+  - backend/models/association_rules.json (138 rules serialized)
+  - backend/models/customer_behavior.json (Updated with 8,985 accounts)
+  - backend/models/insights.json (8 automated business insights)
+================================================================================
+--------------------------------------------------------------------------------
+EXPERIMENT 10: DATASET CSV (541,909 RAW / 530,104 CLEAN)
+--------------------------------------------------------------------------------
+Dataset ID         : dataset_10 (Dataset.csv)
+Source File        : docs/dataset10.zip (Dataset.csv -> backend/data/dataset_10_clean.csv)
+Timestamp          : 2026-11-18 03:15:18 IST
+Execution Status   : SUCCESS (All artifacts reloaded and verified)
+
+1. DATASET SPECIFICATIONS & AUDIT
+---------------------------------
+  - Total Raw Input Rows   : 541,909 records
+  - Valid Clean Rows       : 530,104 records
+  - Unique Invoices        : 19,960 distinct checkout baskets
+  - Unique Customer IDs    : 5,766 total shoppers (includes GUEST_<tx_id> carts)
+  - Preprocessing Applied  :
+      * Excluded cancellations ('C') and non-positive price/quantity rows.
+      * Assigned synthetic 'GUEST_<transaction_id>' for null CustomerIDs.
+      * Enriched records with 7 product category families.
+
+2. DEMAND FORECASTING (XGBoost Regressor)
+-----------------------------------------
+  [Daily Horizon: 28-Day Held-out Test Split]
+  - XGBoost (Tuned)        : MAE: 7,123.95 | RMSE: 13,327.96 | WAPE: 26.00% | R²: 0.4696
+
+  [Weekly Horizon: 6-Week Held-out Test Split]
+  - XGBoost Weekly         : MAE: 44,037.13 | RMSE: 53,869.75 | WAPE: 24.23% | R²: -1.9808
+
+3. PRODUCT BASKET PATTERNS (FP-Growth Association Mining)
+---------------------------------------------------------
+  - Transaction Baskets    : 19,960 distinct baskets analyzed
+  - Frequent Itemsets      : 711 itemsets discovered
+  - Discovered Rules       : 435 association rules mined
+
+4. ARTIFACTS SERIALIZED & VERIFIED
+----------------------------------
+  - backend/models/xgboost_overall_daily.json (Updated)
+  - backend/models/xgboost_overall_weekly.json (Updated)
+  - backend/models/association_rules.json (435 rules serialized)
+  - backend/models/customer_behavior.json (Updated with 5,766 accounts)
+  - backend/models/insights.json (8 automated business insights)
+================================================================================

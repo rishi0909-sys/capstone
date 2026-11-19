@@ -1,0 +1,110 @@
+{
+  "timestamp": "2026-10-14 23:31:00 IST",
+  "operating_system": {
+    "system": "Darwin",
+    "node": "Unknown_e2:09:32:be:9e:5b",
+    "release": "25.6.0",
+    "version": "Darwin Kernel Version 25.6.0: Fri Jul 31 19:18:43 PDT 2026; root:xnu-12377.161.14~5/RELEASE_ARM64_T8112",
+    "machine": "arm64",
+    "macos_product_version": "26.6.2"
+  },
+  "cpu": {
+    "model": "Apple M2",
+    "architecture": "arm64",
+    "logical_cores": 8,
+    "physical_cores": 8,
+    "performance_levels": "2",
+    "cpu_features": ""
+  },
+  "memory": {
+    "total_ram_gb": 8.0,
+    "available_estimate_gb": 1.3,
+    "free_ram_gb": 0.11,
+    "active_ram_gb": 1.29,
+    "wired_ram_gb": 1.79,
+    "compressed_memory_gb": 17.39,
+    "swap_usage": "total = 7168.00M  used = 6174.38M  free = 993.62M  (encrypted)",
+    "unified_memory": true
+  },
+  "gpu": {
+    "gpu_model": "Apple M2",
+    "gpu_cores": "8",
+    "metal_support": "Metal 4",
+    "cuda_available": false,
+    "vram_architecture": "Unified Memory (shared with host RAM)",
+    "compute_capability": "None (Apple Metal, no NVIDIA CUDA/Tensor Cores)"
+  },
+  "disk": {
+    "path": "/Users/rishabhmudgal/Documents/components/capstone/backend",
+    "total_gb": 228.27,
+    "used_gb": 214.18,
+    "free_gb": 14.09,
+    "percent_used": 93.8
+  },
+  "python_environment": {
+    "python_executable": "/Users/rishabhmudgal/Documents/components/capstone/backend/venv/bin/python3",
+    "python_version": "3.13.1",
+    "python_architecture": "64bit",
+    "in_virtual_env": true,
+    "installed_packages": {
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1",
+      "sklearn": "1.9.1",
+      "xgboost": "3.4.1",
+      "mlxtend": "0.25.0",
+      "fastapi": "0.141.1",
+      "uvicorn": "0.53.0",
+      "pydantic": "2.13.5"
+    },
+    "xgboost_smoke_test": {
+      "passed": true,
+      "detected_backend": "CPU (OpenMP Multi-threaded)",
+      "error": null
+    }
+  },
+  "workload_verdicts": {
+    "1_fp_growth_mining": {
+      "classification": "COMPATIBLE WITH LIMITATIONS",
+      "reason": "FP-Growth on transactions creates a sparse one-hot matrix. With ~20,000 baskets and ~4,000 products, mlxtend executes fast (< 2s) when min_support >= 0.01. However, setting min_support < 0.002 will blow up the frequent itemset tree and risk out-of-memory on 8 GB Unified RAM.",
+      "estimated_resource_requirements": "RAM: ~600 MB - 1.5 GB | Runtime: 1 - 5 seconds",
+      "bottlenecks": "RAM exhaustion if min_support is configured too low (< 0.005).",
+      "recommended_configuration": "Keep min_support >= 0.010 (1.0%) and filter to top 1,000 frequent items if scaling up."
+    },
+    "2_daily_demand_forecasting_xgboost": {
+      "classification": "COMPATIBLE",
+      "reason": "Resampling to daily granularity generates ~365 time-series observations. Feature matrix (lags, rolling means, calendar features) is compact (< 400 rows x 15 columns). Training on 8 CPU cores takes under 200 ms.",
+      "estimated_resource_requirements": "RAM: < 300 MB | Runtime: < 1 second",
+      "bottlenecks": "Dataset historical depth (1 year = 365 daily points); cannot fit multi-year seasonal cycles.",
+      "recommended_configuration": "XGBRegressor(n_estimators=100, max_depth=4, learning_rate=0.05, subsample=0.8)."
+    },
+    "3_weekly_demand_forecasting_xgboost": {
+      "classification": "COMPATIBLE",
+      "reason": "Aggregating to weekly granularity yields 51 data points. The dataset is extremely lightweight. XGBoost trains instantaneously on CPU.",
+      "estimated_resource_requirements": "RAM: < 200 MB | Runtime: < 0.5 seconds",
+      "bottlenecks": "Low sample count (51 points). After 8 lag steps, only 43 training/test instances remain.",
+      "recommended_configuration": "XGBRegressor(n_estimators=60, max_depth=3, learning_rate=0.08) to prevent overfitting."
+    },
+    "4_individual_product_level_forecasting": {
+      "classification": "COMPATIBLE WITH LIMITATIONS",
+      "reason": "Training models for top 10 - 20 individual high-volume products is fast and feasible. However, attempting to train 4,000 separate XGBoost models in a synchronous loop would take 30+ minutes and create excessive CPU thrashing.",
+      "estimated_resource_requirements": "RAM: ~500 MB | Runtime: 5 - 15 seconds (for top 5-10 products)",
+      "bottlenecks": "Zero-sales intermittency (intermittent demand) for low-velocity catalog items.",
+      "recommended_configuration": "Restrict dedicated forecasting models to the Top 5 to 10 selling products with continuous sales."
+    },
+    "5_hyperparameter_tuning_cross_validation": {
+      "classification": "COMPATIBLE WITH LIMITATIONS",
+      "reason": "Expanding-window rolling-origin cross-validation with a moderate grid (e.g., 30 - 50 parameter combinations) runs smoothly on 8 CPU cores in < 30 seconds. A brute-force grid with > 1,000 combinations or nested CV is unnecessary and not recommended.",
+      "estimated_resource_requirements": "RAM: ~500 MB - 1.0 GB | Runtime: 15 - 45 seconds",
+      "bottlenecks": "CPU core contention if running parallel n_jobs=-1 alongside Next.js and IDE.",
+      "recommended_configuration": "Use TimeSeriesSplit(n_splits=4) or expanding origin with 36 parameter trials, n_jobs=4."
+    },
+    "6_neural_network_gpu_experiments": {
+      "classification": "NOT RECOMMENDED ON THIS MACHINE",
+      "reason": "Apple M2 has unified memory with Metal 4, but lacks NVIDIA CUDA/Tensor Cores. XGBoost on macOS does not have Metal acceleration and runs strictly on CPU. Furthermore, for 51 weekly points or 365 daily points, deep learning (e.g. LSTM, Transformer, N-BEATS) is mathematically unjustified, severely prone to overfitting, and adds huge overhead.",
+      "estimated_resource_requirements": "RAM: > 3.0 GB | Runtime: Minutes to Hours (PyTorch MPS/CPU)",
+      "bottlenecks": "Lack of CUDA, extreme overfitting risk on small tabular time-series.",
+      "recommended_configuration": "Stick with tree-based Gradient Boosting (XGBoost) and statistical baselines."
+    }
+  }
+}

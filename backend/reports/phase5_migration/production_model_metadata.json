@@ -1,0 +1,114 @@
+{
+  "daily": {
+    "model_type": "HistGradientBoostingRegressor",
+    "model_version": "1.0.0",
+    "granularity": "D",
+    "feature_names": [
+      "month",
+      "day_of_month",
+      "day_of_week",
+      "quarter",
+      "is_weekend",
+      "trend_step",
+      "lag_1",
+      "lag_2",
+      "lag_3",
+      "lag_7",
+      "lag_14",
+      "rolling_mean_7",
+      "rolling_std_7",
+      "rolling_mean_14"
+    ],
+    "target_col": "quantity",
+    "time_col": "date",
+    "dataset_id": "dataset_3_clean.csv",
+    "date_range": "2009-12-15 to 2011-12-09",
+    "training_config": {
+      "test_horizon": 28,
+      "val_horizon": 28,
+      "tune": true
+    },
+    "hyperparameters": {
+      "max_iter": 200,
+      "max_depth": 4,
+      "learning_rate": 0.03
+    },
+    "library_versions": {
+      "python": "3.13.1",
+      "scikit_learn": "1.9.1",
+      "numpy": "2.5.3",
+      "pandas": "3.0.5"
+    },
+    "training_timestamp": "2026-11-18 04:03:42 IST",
+    "evaluation_metrics": {
+      "MAE": 6672.14,
+      "RMSE": 13729.28,
+      "R2": 0.4338,
+      "WAPE": 24.45,
+      "MAPE": 20.23,
+      "sMAPE": 41.4
+    },
+    "calibration_metadata": {
+      "interval_methodology": "approximate_experimental_out_of_sample_residual_std",
+      "nominal_coverage": 0.8,
+      "is_guaranteed_coverage": false,
+      "residual_std": 6535.871082834262,
+      "residual_q80": 7852.0534331577455,
+      "calibration_samples": 28
+    }
+  },
+  "weekly": {
+    "model_type": "HistGradientBoostingRegressor",
+    "model_version": "1.0.0",
+    "granularity": "W",
+    "feature_names": [
+      "month",
+      "day_of_week",
+      "quarter",
+      "trend_step",
+      "lag_1",
+      "lag_2",
+      "lag_3",
+      "lag_4",
+      "rolling_mean_4",
+      "rolling_mean_8"
+    ],
+    "target_col": "quantity",
+    "time_col": "date",
+    "dataset_id": "dataset_3_clean.csv",
+    "date_range": "2010-01-31 to 2011-12-11",
+    "training_config": {
+      "test_horizon": 8,
+      "val_horizon": 8,
+      "tune": true
+    },
+    "hyperparameters": {
+      "max_iter": 150,
+      "max_depth": 4,
+      "learning_rate": 0.05
+    },
+    "library_versions": {
+      "python": "3.13.1",
+      "scikit_learn": "1.9.1",
+      "numpy": "2.5.3",
+      "pandas": "3.0.5"
+    },
+    "training_timestamp": "2026-11-18 04:03:44 IST",
+    "evaluation_metrics": {
+      "MAE": 35379.57,
+      "RMSE": 46352.27,
+      "R2": -1.3957,
+      "WAPE": 20.4,
+      "MAPE": 18.45,
+      "sMAPE": 21.27
+    },
+    "calibration_metadata": {
+      "interval_methodology": "approximate_experimental_out_of_sample_residual_std",
+      "nominal_coverage": 0.8,
+      "is_guaranteed_coverage": false,
+      "residual_std": 24523.04730516045,
+      "residual_q80": 33675.378655891334,
+      "calibration_samples": 8
+    }
+  }
+}

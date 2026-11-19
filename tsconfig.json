@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -16,6 +15,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "types": ["node", "vite/client", "react", "react-dom"],
+    "baseUrl": "./frontend",
     "paths": {
       "@/*": ["./src/*"],
       "next": ["./src/shims/next"],
@@ -23,11 +23,7 @@
     }
   },
   "include": [
-    "src",
-    "vite.config.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist"
+    "frontend/src",
+    "frontend/vite.config.ts"
   ]
 }

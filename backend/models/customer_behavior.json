@@ -1,0 +1,192 @@
+{
+  "summary": {
+    "status": "Success",
+    "segmentation_type": "Behavioral & Frequency Tiers",
+    "total_unique_customers": 8779,
+    "repeat_customers": 4234,
+    "repeat_purchase_rate_percent": 48.2,
+    "average_units_per_basket": 288.4,
+    "segments": {
+      "Loyal / VIP": 638823,
+      "One-Time Buyer": 270453,
+      "Repeat Shopper": 128090
+    },
+    "countries": {
+      "United Kingdom": 956127,
+      "EIRE": 17307,
+      "Germany": 16034,
+      "France": 13454,
+      "Netherlands": 4983
+    }
+  },
+  "preferences": [
+    {
+      "customer_segment": "Loyal / VIP",
+      "category": "Fashion & Accessories",
+      "purchase_count": 57888,
+      "total_segment_purchases": 638823,
+      "probability": 0.09061664968230637,
+      "age_group": "Loyal / VIP"
+    },
+    {
+      "customer_segment": "Loyal / VIP",
+      "category": "General Merchandise",
+      "purchase_count": 112600,
+      "total_segment_purchases": 638823,
+      "probability": 0.17626165620210918,
+      "age_group": "Loyal / VIP"
+    },
+    {
+      "customer_segment": "Loyal / VIP",
+      "category": "Home & Living",
+      "purchase_count": 190989,
+      "total_segment_purchases": 638823,
+      "probability": 0.29897013726806954,
+      "age_group": "Loyal / VIP"
+    },
+    {
+      "customer_segment": "Loyal / VIP",
+      "category": "Kitchen & Dining",
+      "purchase_count": 135006,
+      "total_segment_purchases": 638823,
+      "probability": 0.21133553425596763,
+      "age_group": "Loyal / VIP"
+    },
+    {
+      "customer_segment": "Loyal / VIP",
+      "category": "Seasonal & Holiday",
+      "purchase_count": 45796,
+      "total_segment_purchases": 638823,
+      "probability": 0.07168808887594842,
+      "age_group": "Loyal / VIP"
+    },
+    {
+      "customer_segment": "Loyal / VIP",
+      "category": "Stationery & Crafts",
+      "purchase_count": 77740,
+      "total_segment_purchases": 638823,
+      "probability": 0.12169255020561251,
+      "age_group": "Loyal / VIP"
+    },
+    {
+      "customer_segment": "Loyal / VIP",
+      "category": "Toys & Games",
+      "purchase_count": 18804,
+      "total_segment_purchases": 638823,
+      "probability": 0.029435383509986333,
+      "age_group": "Loyal / VIP"
+    },
+    {
+      "customer_segment": "One-Time Buyer",
+      "category": "Fashion & Accessories",
+      "purchase_count": 27415,
+      "total_segment_purchases": 270453,
+      "probability": 0.10136696579442639,
+      "age_group": "One-Time Buyer"
+    },
+    {
+      "customer_segment": "One-Time Buyer",
+      "category": "General Merchandise",
+      "purchase_count": 51345,
+      "total_segment_purchases": 270453,
+      "probability": 0.18984814367006467,
+      "age_group": "One-Time Buyer"
+    },
+    {
+      "customer_segment": "One-Time Buyer",
+      "category": "Home & Living",
+      "purchase_count": 72393,
+      "total_segment_purchases": 270453,
+      "probability": 0.2676731261993766,
+      "age_group": "One-Time Buyer"
+    },
+    {
+      "customer_segment": "One-Time Buyer",
+      "category": "Kitchen & Dining",
+      "purchase_count": 57486,
+      "total_segment_purchases": 270453,
+      "probability": 0.21255449190802098,
+      "age_group": "One-Time Buyer"
+    },
+    {
+      "customer_segment": "One-Time Buyer",
+      "category": "Seasonal & Holiday",
+      "purchase_count": 22113,
+      "total_segment_purchases": 270453,
+      "probability": 0.08176282015729165,
+      "age_group": "One-Time Buyer"
+    },
+    {
+      "customer_segment": "One-Time Buyer",
+      "category": "Stationery & Crafts",
+      "purchase_count": 32765,
+      "total_segment_purchases": 270453,
+      "probability": 0.12114859143732923,
+      "age_group": "One-Time Buyer"
+    },
+    {
+      "customer_segment": "One-Time Buyer",
+      "category": "Toys & Games",
+      "purchase_count": 6936,
+      "total_segment_purchases": 270453,
+      "probability": 0.025645860833490478,
+      "age_group": "One-Time Buyer"
+    },
+    {
+      "customer_segment": "Repeat Shopper",
+      "category": "Fashion & Accessories",
+      "purchase_count": 8822,
+      "total_segment_purchases": 128090,
+      "probability": 0.06887344835662425,
+      "age_group": "Repeat Shopper"
+    },
+    {
+      "customer_segment": "Repeat Shopper",
+      "category": "General Merchandise",
+      "purchase_count": 23622,
+      "total_segment_purchases": 128090,
+      "probability": 0.1844172066515731,
+      "age_group": "Repeat Shopper"
+    },
+    {
+      "customer_segment": "Repeat Shopper",
+      "category": "Home & Living",
+      "purchase_count": 36192,
+      "total_segment_purchases": 128090,
+      "probability": 0.2825513310953236,
+      "age_group": "Repeat Shopper"
+    },
+    {
+      "customer_segment": "Repeat Shopper",
+      "category": "Kitchen & Dining",
+      "purchase_count": 26843,
+      "total_segment_purchases": 128090,
+      "probability": 0.2095635881021157,
+      "age_group": "Repeat Shopper"
+    },
+    {
+      "customer_segment": "Repeat Shopper",
+      "category": "Seasonal & Holiday",
+      "purchase_count": 11708,
+      "total_segment_purchases": 128090,
+      "probability": 0.09140448122413927,
+      "age_group": "Repeat Shopper"
+    },
+    {
+      "customer_segment": "Repeat Shopper",
+      "category": "Stationery & Crafts",
+      "purchase_count": 16730,
+      "total_segment_purchases": 128090,
+      "probability": 0.13061128893746585,
+      "age_group": "Repeat Shopper"
+    },
+    {
+      "customer_segment": "Repeat Shopper",
+      "category": "Toys & Games",
+      "purchase_count": 4173,
+      "total_segment_purchases": 128090,
+      "probability": 0.03257865563275822,
+      "age_group": "Repeat Shopper"
+    }
+  ]
+}

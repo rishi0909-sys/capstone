@@ -1,0 +1,8 @@
+{
+  "dataset_id": "dataset_3_clean.csv",
+  "frequent_itemsets": 486,
+  "association_rules": 141,
+  "unique_customers": 8779,
+  "repeat_purchase_rate_percent": 48.2,
+  "insights_count": 8
+}

@@ -1,0 +1,21 @@
+{
+  "daily_metrics": {
+    "MAE": 6672.14,
+    "RMSE": 13729.28,
+    "R2": 0.4338,
+    "WAPE": 24.45,
+    "MAPE": 20.23,
+    "sMAPE": 41.4
+  },
+  "weekly_metrics": {
+    "MAE": 35379.57,
+    "RMSE": 46352.27,
+    "R2": -1.3957,
+    "WAPE": 20.4,
+    "MAPE": 18.45,
+    "sMAPE": 21.27
+  },
+  "daily_artifact": "/Users/rishabhmudgal/Documents/components/capstone/backend/models/production/hgb_overall_daily.joblib",
+  "weekly_artifact": "/Users/rishabhmudgal/Documents/components/capstone/backend/models/production/hgb_overall_weekly.joblib",
+  "duration_seconds": 5.91
+}

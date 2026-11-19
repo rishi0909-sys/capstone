@@ -1,0 +1,126 @@
+{
+  "daily": {
+    "Days 1-3": {
+      "HistGradientBoosting": {
+        "MAE": 4354.62,
+        "RMSE": 6230.18,
+        "R2": 0.7332,
+        "WAPE": 35.04,
+        "MAPE": 45.82,
+        "sMAPE": 74.42
+      },
+      "XGBoost": {
+        "MAE": 4625.58,
+        "RMSE": 6119.68,
+        "R2": 0.7426,
+        "WAPE": 37.22,
+        "MAPE": 44.33,
+        "sMAPE": 91.24
+      },
+      "gaussian_cov_pct": 83.33,
+      "normalized_conformal_cov_pct": 83.33
+    },
+    "Days 4-7": {
+      "HistGradientBoosting": {
+        "MAE": 5972.67,
+        "RMSE": 8316.48,
+        "R2": 0.189,
+        "WAPE": 23.56,
+        "MAPE": 24.71,
+        "sMAPE": 23.6
+      },
+      "XGBoost": {
+        "MAE": 6094.32,
+        "RMSE": 8233.32,
+        "R2": 0.2051,
+        "WAPE": 24.04,
+        "MAPE": 24.83,
+        "sMAPE": 24.38
+      },
+      "gaussian_cov_pct": 82.5,
+      "normalized_conformal_cov_pct": 77.5
+    },
+    "Days 8-14": {
+      "HistGradientBoosting": {
+        "MAE": 6926.43,
+        "RMSE": 11215.93,
+        "R2": 0.4439,
+        "WAPE": 34.29,
+        "MAPE": 40.4,
+        "sMAPE": 57.29
+      },
+      "XGBoost": {
+        "MAE": 7379.41,
+        "RMSE": 11373.82,
+        "R2": 0.4281,
+        "WAPE": 36.54,
+        "MAPE": 43.36,
+        "sMAPE": 62.28
+      },
+      "gaussian_cov_pct": 84.29,
+      "normalized_conformal_cov_pct": 75.71
+    }
+  },
+  "weekly": {
+    "Week 1": {
+      "HistGradientBoosting": {
+        "MAE": 14909.81,
+        "RMSE": 20813.56,
+        "R2": 0.7812,
+        "WAPE": 12.9,
+        "MAPE": 10.77,
+        "sMAPE": 11.57
+      },
+      "XGBoost": {
+        "MAE": 22813.95,
+        "RMSE": 30334.28,
+        "R2": 0.5353,
+        "WAPE": 19.73,
+        "MAPE": 19.39,
+        "sMAPE": 20.41
+      },
+      "gaussian_cov_pct": 75.0,
+      "normalized_conformal_cov_pct": 87.5
+    },
+    "Week 2": {
+      "HistGradientBoosting": {
+        "MAE": 15105.13,
+        "RMSE": 17363.35,
+        "R2": 0.5224,
+        "WAPE": 13.29,
+        "MAPE": 14.52,
+        "sMAPE": 15.44
+      },
+      "XGBoost": {
+        "MAE": 13256.03,
+        "RMSE": 16259.61,
+        "R2": 0.5812,
+        "WAPE": 11.66,
+        "MAPE": 13.29,
+        "sMAPE": 13.73
+      },
+      "gaussian_cov_pct": 75.0,
+      "normalized_conformal_cov_pct": 62.5
+    },
+    "Weeks 3-4": {
+      "HistGradientBoosting": {
+        "MAE": 22231.43,
+        "RMSE": 32292.95,
+        "R2": 0.4573,
+        "WAPE": 17.57,
+        "MAPE": 15.13,
+        "sMAPE": 16.88
+      },
+      "XGBoost": {
+        "MAE": 20260.81,
+        "RMSE": 29599.23,
+        "R2": 0.5441,
+        "WAPE": 16.01,
+        "MAPE": 14.21,
+        "sMAPE": 15.35
+      },
+      "gaussian_cov_pct": 62.5,
+      "normalized_conformal_cov_pct": 56.25
+    }
+  }
+}

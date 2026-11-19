@@ -1,0 +1,5 @@
+{
+  "phase5_vs_phase3_metric_explanation": "Phase 5 daily WAPE (24.45%) and weekly WAPE (20.40%) were evaluated on a single chronological holdout split (28 days daily / 6 weeks weekly) at the end of dataset_3_clean.csv after tuning on a preceding validation window and refitting on Train+Val. Phase 3 WAPE (30.51% daily / 15.44% weekly) was aggregated across 10 daily / 8 weekly rolling-origin windows. Because the evaluation protocols differ, the numbers are not directly comparable.",
+  "hgb_active": true,
+  "xgboost_fallback_verified": true
+}

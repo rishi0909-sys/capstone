@@ -1,0 +1,16 @@
+{
+  "dataset": "backend/data/dataset_3_clean.csv",
+  "daily": {
+    "horizon": 14,
+    "n_origins": 10,
+    "step_size": 14,
+    "cal_window": 28
+  },
+  "weekly": {
+    "horizon": 4,
+    "n_origins": 8,
+    "step_size": 4,
+    "cal_window": 8
+  },
+  "random_seed": 42
+}

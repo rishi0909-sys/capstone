@@ -1,0 +1,247 @@
+[
+  {
+    "age_group":"18-25",
+    "category":"Fashion & Accessories",
+    "purchase_count":7432,
+    "total_age_purchases":80404,
+    "probability":0.0924332123
+  },
+  {
+    "age_group":"18-25",
+    "category":"General Retail",
+    "purchase_count":13883,
+    "total_age_purchases":80404,
+    "probability":0.172665539
+  },
+  {
+    "age_group":"18-25",
+    "category":"Home & Living",
+    "purchase_count":24641,
+    "total_age_purchases":80404,
+    "probability":0.3064648525
+  },
+  {
+    "age_group":"18-25",
+    "category":"Kitchen & Dining",
+    "purchase_count":17021,
+    "total_age_purchases":80404,
+    "probability":0.2116934481
+  },
+  {
+    "age_group":"18-25",
+    "category":"Seasonal & Holiday",
+    "purchase_count":6251,
+    "total_age_purchases":80404,
+    "probability":0.0777448883
+  },
+  {
+    "age_group":"18-25",
+    "category":"Stationery & Crafts",
+    "purchase_count":9037,
+    "total_age_purchases":80404,
+    "probability":0.1123949057
+  },
+  {
+    "age_group":"18-25",
+    "category":"Toys & Games",
+    "purchase_count":2139,
+    "total_age_purchases":80404,
+    "probability":0.0266031541
+  },
+  {
+    "age_group":"26-35",
+    "category":"Fashion & Accessories",
+    "purchase_count":15110,
+    "total_age_purchases":168054,
+    "probability":0.089911576
+  },
+  {
+    "age_group":"26-35",
+    "category":"General Retail",
+    "purchase_count":29324,
+    "total_age_purchases":168054,
+    "probability":0.1744915325
+  },
+  {
+    "age_group":"26-35",
+    "category":"Home & Living",
+    "purchase_count":48262,
+    "total_age_purchases":168054,
+    "probability":0.2871815012
+  },
+  {
+    "age_group":"26-35",
+    "category":"Kitchen & Dining",
+    "purchase_count":35419,
+    "total_age_purchases":168054,
+    "probability":0.2107596368
+  },
+  {
+    "age_group":"26-35",
+    "category":"Seasonal & Holiday",
+    "purchase_count":14230,
+    "total_age_purchases":168054,
+    "probability":0.0846751639
+  },
+  {
+    "age_group":"26-35",
+    "category":"Stationery & Crafts",
+    "purchase_count":21025,
+    "total_age_purchases":168054,
+    "probability":0.125108596
+  },
+  {
+    "age_group":"26-35",
+    "category":"Toys & Games",
+    "purchase_count":4684,
+    "total_age_purchases":168054,
+    "probability":0.0278719935
+  },
+  {
+    "age_group":"36-45",
+    "category":"Fashion & Accessories",
+    "purchase_count":14139,
+    "total_age_purchases":151629,
+    "probability":0.093247334
+  },
+  {
+    "age_group":"36-45",
+    "category":"General Retail",
+    "purchase_count":26067,
+    "total_age_purchases":151629,
+    "probability":0.1719130246
+  },
+  {
+    "age_group":"36-45",
+    "category":"Home & Living",
+    "purchase_count":44580,
+    "total_age_purchases":151629,
+    "probability":0.2940070831
+  },
+  {
+    "age_group":"36-45",
+    "category":"Kitchen & Dining",
+    "purchase_count":31120,
+    "total_age_purchases":151629,
+    "probability":0.2052377843
+  },
+  {
+    "age_group":"36-45",
+    "category":"Seasonal & Holiday",
+    "purchase_count":12484,
+    "total_age_purchases":151629,
+    "probability":0.0823325353
+  },
+  {
+    "age_group":"36-45",
+    "category":"Stationery & Crafts",
+    "purchase_count":18893,
+    "total_age_purchases":151629,
+    "probability":0.1246001754
+  },
+  {
+    "age_group":"36-45",
+    "category":"Toys & Games",
+    "purchase_count":4346,
+    "total_age_purchases":151629,
+    "probability":0.0286620633
+  },
+  {
+    "age_group":"46-55",
+    "category":"Fashion & Accessories",
+    "purchase_count":8335,
+    "total_age_purchases":90821,
+    "probability":0.0917739289
+  },
+  {
+    "age_group":"46-55",
+    "category":"General Retail",
+    "purchase_count":16035,
+    "total_age_purchases":90821,
+    "probability":0.1765560828
+  },
+  {
+    "age_group":"46-55",
+    "category":"Home & Living",
+    "purchase_count":26637,
+    "total_age_purchases":90821,
+    "probability":0.2932911992
+  },
+  {
+    "age_group":"46-55",
+    "category":"Kitchen & Dining",
+    "purchase_count":18681,
+    "total_age_purchases":90821,
+    "probability":0.2056903139
+  },
+  {
+    "age_group":"46-55",
+    "category":"Seasonal & Holiday",
+    "purchase_count":7557,
+    "total_age_purchases":90821,
+    "probability":0.0832076282
+  },
+  {
+    "age_group":"46-55",
+    "category":"Stationery & Crafts",
+    "purchase_count":11158,
+    "total_age_purchases":90821,
+    "probability":0.1228570485
+  },
+  {
+    "age_group":"46-55",
+    "category":"Toys & Games",
+    "purchase_count":2418,
+    "total_age_purchases":90821,
+    "probability":0.0266237985
+  },
+  {
+    "age_group":"56+",
+    "category":"Fashion & Accessories",
+    "purchase_count":2922,
+    "total_age_purchases":31724,
+    "probability":0.0921069222
+  },
+  {
+    "age_group":"56+",
+    "category":"General Retail",
+    "purchase_count":5520,
+    "total_age_purchases":31724,
+    "probability":0.1740007565
+  },
+  {
+    "age_group":"56+",
+    "category":"Home & Living",
+    "purchase_count":9213,
+    "total_age_purchases":31724,
+    "probability":0.2904110453
+  },
+  {
+    "age_group":"56+",
+    "category":"Kitchen & Dining",
+    "purchase_count":6667,
+    "total_age_purchases":31724,
+    "probability":0.2101563485
+  },
+  {
+    "age_group":"56+",
+    "category":"Seasonal & Holiday",
+    "purchase_count":2588,
+    "total_age_purchases":31724,
+    "probability":0.0815786156
+  },
+  {
+    "age_group":"56+",
+    "category":"Stationery & Crafts",
+    "purchase_count":3919,
+    "total_age_purchases":31724,
+    "probability":0.1235342328
+  },
+  {
+    "age_group":"56+",
+    "category":"Toys & Games",
+    "purchase_count":895,
+    "total_age_purchases":31724,
+    "probability":0.0282120792
+  }
+]

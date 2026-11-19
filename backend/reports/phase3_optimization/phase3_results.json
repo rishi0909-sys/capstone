@@ -1,0 +1,385 @@
+{
+  "daily": {
+    "granularity": "D",
+    "n_origins": 10,
+    "horizon": 14,
+    "overall_models": {
+      "XGBoost": {
+        "MAE": 6422.13,
+        "RMSE": 9595.57,
+        "R2": 0.5131,
+        "WAPE": 32.1,
+        "MAPE": 37.29,
+        "sMAPE": 57.66
+      },
+      "HistGradientBoosting": {
+        "MAE": 6102.82,
+        "RMSE": 9538.2,
+        "R2": 0.519,
+        "WAPE": 30.51,
+        "MAPE": 36.03,
+        "sMAPE": 50.56
+      },
+      "RandomForest": {
+        "MAE": 6832.09,
+        "RMSE": 10259.16,
+        "R2": 0.4435,
+        "WAPE": 34.15,
+        "MAPE": 43.71,
+        "sMAPE": 42.0
+      },
+      "ExtraTrees": {
+        "MAE": 6133.57,
+        "RMSE": 9774.34,
+        "R2": 0.4948,
+        "WAPE": 30.66,
+        "MAPE": 38.37,
+        "sMAPE": 32.71
+      },
+      "Ridge": {
+        "MAE": 6912.15,
+        "RMSE": 9750.65,
+        "R2": 0.4973,
+        "WAPE": 34.55,
+        "MAPE": 31.97,
+        "sMAPE": 57.72
+      },
+      "XGBoost_Enhanced": {
+        "MAE": 6422.4,
+        "RMSE": 9447.44,
+        "R2": 0.5281,
+        "WAPE": 32.1,
+        "MAPE": 36.12,
+        "sMAPE": 57.34
+      }
+    },
+    "baselines": {
+      "Naive (t-1)": {
+        "MAE": 10048.38,
+        "RMSE": 13571.55,
+        "R2": 0.0261,
+        "WAPE": 50.23,
+        "MAPE": 39.12,
+        "sMAPE": 63.98
+      },
+      "Rolling Mean (7)": {
+        "MAE": 10022.12,
+        "RMSE": 13283.51,
+        "R2": 0.067,
+        "WAPE": 50.1,
+        "MAPE": 40.66,
+        "sMAPE": 63.59
+      },
+      "Seasonal Naive (t-7)": {
+        "MAE": 6755.86,
+        "RMSE": 10660.82,
+        "R2": 0.3991,
+        "WAPE": 33.77,
+        "MAPE": 41.45,
+        "sMAPE": 39.86
+      }
+    },
+    "per_origin_wape": {
+      "XGBoost": [
+        42.09,
+        57.37,
+        44.19,
+        30.77,
+        29.85,
+        33.47,
+        31.62,
+        23.34,
+        20.07,
+        28.86
+      ],
+      "HistGradientBoosting": [
+        34.5,
+        56.02,
+        41.87,
+        30.41,
+        29.6,
+        33.31,
+        29.01,
+        25.91,
+        15.24,
+        28.05
+      ],
+      "RandomForest": [
+        54.56,
+        49.09,
+        89.69,
+        30.38,
+        25.99,
+        30.49,
+        21.12,
+        24.26,
+        19.69,
+        32.74
+      ],
+      "ExtraTrees": [
+        35.27,
+        60.7,
+        38.6,
+        27.75,
+        36.74,
+        27.92,
+        24.31,
+        23.38,
+        18.96,
+        30.34
+      ],
+      "Ridge": [
+        48.65,
+        55.74,
+        41.09,
+        36.19,
+        31.48,
+        32.65,
+        29.46,
+        30.66,
+        24.96,
+        31.72
+      ],
+      "XGBoost_Enhanced": [
+        44.04,
+        52.06,
+        45.44,
+        35.89,
+        29.04,
+        31.37,
+        32.24,
+        23.85,
+        19.79,
+        28.33
+      ]
+    },
+    "intervals": {
+      "gaussian": {
+        "coverage_pct": 80.0,
+        "avg_width": 19326.94,
+        "low_demand_cov_pct": 84.29,
+        "high_demand_cov_pct": 75.71
+      },
+      "normalized_conformal": {
+        "coverage_pct": 73.57,
+        "avg_width": 15293.81,
+        "low_demand_cov_pct": 80.0,
+        "high_demand_cov_pct": 67.14
+      },
+      "regime_conformal": {
+        "coverage_pct": 75.71,
+        "avg_width": 16610.48,
+        "low_demand_cov_pct": 81.43,
+        "high_demand_cov_pct": 70.0
+      }
+    },
+    "permutation_importance": {
+      "day_of_week": 0.3472,
+      "lag_7": 0.3044,
+      "lag_3": 0.0608,
+      "lag_14": 0.0489,
+      "lag_1": 0.0274,
+      "is_weekend": 0.0266,
+      "momentum_7_14": 0.0246,
+      "day_of_month": 0.0168,
+      "lag_2": 0.01,
+      "trend_step": 0.0025,
+      "month": 0.0016,
+      "rolling_mean_14": 0.0012,
+      "is_q4_peak": 0.0006,
+      "quarter": 0.0,
+      "rolling_std_7": 0.0,
+      "is_month_end": 0.0,
+      "is_quarter_end": 0.0,
+      "is_uk_holiday": 0.0,
+      "rolling_mean_7": -0.0029
+    }
+  },
+  "weekly": {
+    "granularity": "W",
+    "n_origins": 8,
+    "horizon": 4,
+    "overall_models": {
+      "XGBoost": {
+        "MAE": 19147.9,
+        "RMSE": 27096.0,
+        "R2": 0.5549,
+        "WAPE": 15.88,
+        "MAPE": 15.28,
+        "sMAPE": 16.21
+      },
+      "HistGradientBoosting": {
+        "MAE": 18619.45,
+        "RMSE": 26553.53,
+        "R2": 0.5725,
+        "WAPE": 15.44,
+        "MAPE": 13.89,
+        "sMAPE": 15.19
+      },
+      "RandomForest": {
+        "MAE": 19371.57,
+        "RMSE": 26325.42,
+        "R2": 0.5798,
+        "WAPE": 16.07,
+        "MAPE": 16.02,
+        "sMAPE": 16.3
+      },
+      "ExtraTrees": {
+        "MAE": 21666.64,
+        "RMSE": 28033.94,
+        "R2": 0.5235,
+        "WAPE": 17.97,
+        "MAPE": 18.12,
+        "sMAPE": 18.31
+      },
+      "Ridge": {
+        "MAE": 20368.72,
+        "RMSE": 29332.34,
+        "R2": 0.4784,
+        "WAPE": 16.89,
+        "MAPE": 15.69,
+        "sMAPE": 16.21
+      },
+      "XGBoost_Enhanced": {
+        "MAE": 19577.03,
+        "RMSE": 27089.02,
+        "R2": 0.5551,
+        "WAPE": 16.24,
+        "MAPE": 15.62,
+        "sMAPE": 16.58
+      }
+    },
+    "baselines": {
+      "Naive (t-1)": {
+        "MAE": 24421.03,
+        "RMSE": 31037.74,
+        "R2": 0.416,
+        "WAPE": 20.25,
+        "MAPE": 20.02,
+        "sMAPE": 22.6
+      },
+      "Rolling Mean (4)": {
+        "MAE": 20616.06,
+        "RMSE": 28768.92,
+        "R2": 0.4982,
+        "WAPE": 17.1,
+        "MAPE": 16.81,
+        "sMAPE": 17.91
+      },
+      "Seasonal Naive (t-4)": {
+        "MAE": 23524.84,
+        "RMSE": 30000.56,
+        "R2": 0.4543,
+        "WAPE": 19.51,
+        "MAPE": 19.21,
+        "sMAPE": 21.1
+      },
+      "Seasonal Naive (t-52)": {
+        "MAE": 26658.06,
+        "RMSE": 37354.1,
+        "R2": 0.1541,
+        "WAPE": 22.11,
+        "MAPE": 23.02,
+        "sMAPE": 21.23
+      }
+    },
+    "per_origin_wape": {
+      "XGBoost": [
+        17.06,
+        20.79,
+        13.1,
+        13.47,
+        11.86,
+        21.61,
+        8.96,
+        19.48
+      ],
+      "HistGradientBoosting": [
+        17.01,
+        17.5,
+        11.97,
+        6.54,
+        13.24,
+        17.51,
+        14.27,
+        20.9
+      ],
+      "RandomForest": [
+        16.83,
+        23.69,
+        12.78,
+        12.26,
+        11.9,
+        23.7,
+        6.88,
+        20.23
+      ],
+      "ExtraTrees": [
+        18.76,
+        30.12,
+        12.96,
+        13.12,
+        10.24,
+        27.62,
+        11.84,
+        19.22
+      ],
+      "Ridge": [
+        10.03,
+        18.73,
+        16.88,
+        3.24,
+        11.83,
+        19.95,
+        21.37,
+        23.6
+      ],
+      "XGBoost_Enhanced": [
+        17.2,
+        20.82,
+        10.42,
+        14.73,
+        12.94,
+        25.49,
+        8.55,
+        18.6
+      ]
+    },
+    "intervals": {
+      "gaussian": {
+        "coverage_pct": 81.25,
+        "avg_width": 57500.24,
+        "low_demand_cov_pct": 93.75,
+        "high_demand_cov_pct": 68.75
+      },
+      "normalized_conformal": {
+        "coverage_pct": 84.38,
+        "avg_width": 63760.45,
+        "low_demand_cov_pct": 93.75,
+        "high_demand_cov_pct": 75.0
+      },
+      "regime_conformal": {
+        "coverage_pct": 71.88,
+        "avg_width": 57199.74,
+        "low_demand_cov_pct": 81.25,
+        "high_demand_cov_pct": 62.5
+      }
+    },
+    "permutation_importance": {
+      "momentum_4_8": 0.4001,
+      "lag_3": 0.3173,
+      "lag_1": 0.2411,
+      "lag_4": 0.141,
+      "month": 0.1117,
+      "lag_2": 0.0277,
+      "rolling_mean_4": 0.0274,
+      "trend_step": 0.0255,
+      "rolling_mean_8": 0.0122,
+      "day_of_week": 0.0,
+      "is_month_end": 0.0,
+      "is_quarter_end": 0.0,
+      "is_q4_peak": 0.0,
+      "quarter": -0.0017
+    }
+  }
+}

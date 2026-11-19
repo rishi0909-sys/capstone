@@ -1,0 +1,18 @@
+{
+  "dataset_id": "dataset_3_clean.csv",
+  "dataset_filename": "backend/data/dataset_3_clean.csv",
+  "dataset_version": "2.0.0-uci-2yr",
+  "date_range": "2009-12-01 07:45:00 to 2011-12-09 12:50:00",
+  "row_count": 1037366,
+  "unique_transaction_count": 39536,
+  "unique_customer_count": 8779,
+  "unique_product_count": 5345,
+  "cleaning_rules": [
+    "Exclude cancellations (Invoice starting with C/A)",
+    "Exclude non-positive quantity and price",
+    "Exclude administrative stock codes (POST, BANK CHARGES, etc.)",
+    "Retain guest checkouts via synthetic GUEST_<transaction_id>"
+  ],
+  "generation_timestamp": "2026-11-18 04:10:19 IST",
+  "sha256_checksum": "ef9da22d8b606f86b076f813ed4b576eea605cc2f0deb6cc5f4a0b638bb5e637"
+}

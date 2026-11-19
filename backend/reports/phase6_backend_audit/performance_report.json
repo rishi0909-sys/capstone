@@ -1,0 +1,6 @@
+{
+  "hgb_14d_total_ms": 260.22,
+  "hgb_14x_predict_ms": 230.97,
+  "xgb_14d_total_ms": 35.15,
+  "overhead_explanation": "HistGradientBoostingRegressor.predict() validates DataFrame/feature names and bins per call in scikit-learn (~15-18ms per single-row call), whereas XGBoost's C++ DMatrix/inplace_predict executes in ~2ms."
+}

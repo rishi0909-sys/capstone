@@ -1,37 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Intelligent Pattern Discovery Engine
 
-## Getting Started
+## Overview
+This is an Explainable AI / Machine Learning academic project for discovering hidden patterns in enterprise/e-commerce transaction datasets. It provides automated mining, predictive analytics, and natural language explanations.
 
-First, run the development server:
+## Problem Statement
+Traditional analytics dashboards often present raw statistics without explaining *why* they matter or contextualizing their importance. Furthermore, identifying association rules manually or running predictive models requires significant data science overhead. This engine automates the process and uses an LLM to generate plain-English, evidence-backed explanations of complex statistical patterns (Explainable AI).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Architecture
+The application uses a decoupled Next.js + FastAPI full-stack architecture.
+
+```mermaid
+graph TD
+    A[Next.js Frontend] <-->|REST API| B(FastAPI Backend)
+    
+    B --> C[Data Preprocessing]
+    C --> D[FP-Growth Mining]
+    C --> E[XGBoost Forecasting]
+    C --> F[Demographic Analysis]
+    C --> G[Temporal Trends]
+    
+    D --> H[Insight Engine]
+    H --> I((LLM Explainer))
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technology Stack
+- **Frontend**: Next.js (App Router), React, TypeScript, Tailwind CSS, shadcn/ui, Recharts
+- **Backend API**: FastAPI, Uvicorn, Pydantic
+- **Data & ML**: pandas, numpy, scikit-learn, xgboost, mlxtend
+- **Explainable AI**: OpenAI API (configurable for Llama/Ollama via Base URL)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Installation & Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+You will need to run two separate processes for the backend and frontend.
 
-## Learn More
+### 1. Backend (FastAPI)
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone & Environment**
+   ```bash
+   cd backend
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Configuration**
+   Copy `.env.example` to `.env`:
+   ```bash
+   cp .env.example .env
+   ```
+   Add your API keys if you wish to use the natural language explanation feature. The analytical pipeline functions perfectly without an API key.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Run Backend Server**
+   ```bash
+   uvicorn main:app --reload --port 8000
+   ```
 
-## Deploy on Vercel
+### 2. Frontend (Next.js)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Install Dependencies**
+   ```bash
+   cd frontend
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# capstone
+2. **Environment**
+   (Optional) If your backend is running on a different port, set `NEXT_PUBLIC_API_URL` in `.env.local`.
+
+3. **Run Frontend Server**
+   ```bash
+   npm run dev
+   ```
+   
+Open `http://localhost:3000` in your browser.
+
+## Synthetic Demo Data
+The backend includes a pre-generated synthetic dataset (`backend/data/sample_transactions.csv`) that simulates an e-commerce electronics store. It is completely reproducible via `backend/src/utils/data_generator.py` and strictly used for academic demonstration.
+
+## Academic Note
+This project emphasizes reproducibility, correctness, and evidence-grounded AI. It does not fabricate benchmark results or claim causal inference from observational correlations.

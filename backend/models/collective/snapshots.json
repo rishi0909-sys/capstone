@@ -1,0 +1,166 @@
+[
+  {
+    "version_id": "v1.0",
+    "timestamp": "2026-11-19 20:48:19 IST",
+    "datasets_processed": 4,
+    "dataset_ids": [
+      "dataset_1",
+      "dataset_2",
+      "dataset_3",
+      "dataset_4"
+    ],
+    "total_records": 2098233,
+    "canonical_categories_count": 9,
+    "canonical_products_tracked": 77,
+    "categories": {
+      "Home & Living": {
+        "occurrences": 610381,
+        "coverage": 4
+      },
+      "Kitchen & Dining": {
+        "occurrences": 439283,
+        "coverage": 3
+      },
+      "General Merchandise": {
+        "occurrences": 372234,
+        "coverage": 3
+      },
+      "Stationery & Crafts": {
+        "occurrences": 256485,
+        "coverage": 3
+      },
+      "Fashion & Accessories": {
+        "occurrences": 192249,
+        "coverage": 4
+      },
+      "Seasonal & Holiday": {
+        "occurrences": 166825,
+        "coverage": 3
+      },
+      "Toys & Games": {
+        "occurrences": 58276,
+        "coverage": 3
+      },
+      "Electronics": {
+        "occurrences": 1777,
+        "coverage": 1
+      },
+      "Beauty & Personal Care": {
+        "occurrences": 723,
+        "coverage": 1
+      }
+    }
+  },
+  {
+    "version_id": "v2.0",
+    "timestamp": "2026-11-19 20:48:30 IST",
+    "datasets_processed": 8,
+    "dataset_ids": [
+      "dataset_1",
+      "dataset_2",
+      "dataset_3",
+      "dataset_4",
+      "dataset_6",
+      "dataset_7",
+      "dataset_9",
+      "dataset_10"
+    ],
+    "total_records": 4730210,
+    "canonical_categories_count": 9,
+    "canonical_products_tracked": 78,
+    "categories": {
+      "Home & Living": {
+        "occurrences": 1374735,
+        "coverage": 8
+      },
+      "Kitchen & Dining": {
+        "occurrences": 988540,
+        "coverage": 7
+      },
+      "General Merchandise": {
+        "occurrences": 846050,
+        "coverage": 7
+      },
+      "Stationery & Crafts": {
+        "occurrences": 577763,
+        "coverage": 7
+      },
+      "Fashion & Accessories": {
+        "occurrences": 431175,
+        "coverage": 8
+      },
+      "Seasonal & Holiday": {
+        "occurrences": 377254,
+        "coverage": 7
+      },
+      "Toys & Games": {
+        "occurrences": 132193,
+        "coverage": 7
+      },
+      "Electronics": {
+        "occurrences": 1777,
+        "coverage": 1
+      },
+      "Beauty & Personal Care": {
+        "occurrences": 723,
+        "coverage": 1
+      }
+    }
+  },
+  {
+    "version_id": "v3.0",
+    "timestamp": "2026-11-19 20:54:58 IST",
+    "datasets_processed": 8,
+    "dataset_ids": [
+      "dataset_1",
+      "dataset_2",
+      "dataset_3",
+      "dataset_4",
+      "dataset_6",
+      "dataset_7",
+      "dataset_9",
+      "dataset_10"
+    ],
+    "total_records": 4730210,
+    "canonical_categories_count": 9,
+    "canonical_products_tracked": 5374,
+    "categories": {
+      "Home & Living": {
+        "occurrences": 1374735,
+        "coverage": 8
+      },
+      "Kitchen & Dining": {
+        "occurrences": 988540,
+        "coverage": 7
+      },
+      "General Merchandise": {
+        "occurrences": 846050,
+        "coverage": 7
+      },
+      "Stationery & Crafts": {
+        "occurrences": 577763,
+        "coverage": 7
+      },
+      "Fashion & Accessories": {
+        "occurrences": 431175,
+        "coverage": 8
+      },
+      "Seasonal & Holiday": {
+        "occurrences": 377254,
+        "coverage": 7
+      },
+      "Toys & Games": {
+        "occurrences": 132193,
+        "coverage": 7
+      },
+      "Electronics": {
+        "occurrences": 1777,
+        "coverage": 1
+      },
+      "Beauty & Personal Care": {
+        "occurrences": 723,
+        "coverage": 1
+      }
+    }
+  }
+]

@@ -93,7 +93,7 @@ function ForecastingContent() {
 
         <div className="flex items-center gap-2 text-xs font-mono bg-card border px-3 py-2 rounded-lg text-zinc-300">
           <Cpu className="h-3.5 w-3.5 text-indigo-400" />
-          <span>Powered by XGBoost Machine Learning</span>
+          <span>Powered by HistGradientBoosting (XGBoost Fallback)</span>
         </div>
       </div>
 
@@ -214,7 +214,7 @@ function ForecastingContent() {
 
                 <h3 className="text-base font-semibold text-foreground tracking-tight flex items-center gap-2">
                   <Loader2 className="h-4 w-4 animate-spin text-indigo-400" />
-                  <span>Calculating Future Sales with XGBoost...</span>
+                  <span>Calculating Future Sales with HistGradientBoosting...</span>
                 </h3>
                 
                 <p className="text-xs text-zinc-400 mt-1 mb-8 text-center max-w-sm">
@@ -483,11 +483,11 @@ function ForecastResults({ data, granularity }: { data: ForecastResponse; granul
       <motion.div variants={item} className="mt-4 pt-5 border-t border-border/60">
          <div className="flex justify-between items-center mb-3">
            <div>
-             <h4 className="font-semibold text-sm text-foreground">XGBoost Model Performance & Accuracy</h4>
+             <h4 className="font-semibold text-sm text-foreground">HistGradientBoosting Model Performance & Accuracy</h4>
              <p className="text-xs text-muted-foreground">Tested against real held-out past transactions to prove predictive power</p>
            </div>
            <div className="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">
-             XGBoost Model • Proven Accuracy
+             HGB Production (XGBoost Fallback) • Proven Accuracy
            </div>
          </div>
 
@@ -525,8 +525,57 @@ function ForecastResults({ data, granularity }: { data: ForecastResponse; granul
            <div>
              <span className="font-semibold text-white">What this means for your business: </span>
              <span>
-               This XGBoost machine learning model predicts future sales within tight daily error margins (~24% WAPE), enabling store owners to automate purchase orders 14 to 60 days ahead without over-stocking or running out of hot items.
+               This model predicts future sales within tight daily error margins (~24% WAPE), enabling store owners to automate purchase orders 14 to 60 days ahead without over-stocking or running out of hot items.
              </span>
+           </div>
+         </div>
+
+         {/* Collective Multi-Dataset Evaluation (Datasets 1-10) */}
+         <div className="mt-6 pt-5 border-t border-border/50">
+           <div className="flex items-center justify-between mb-3">
+             <div className="text-xs font-semibold text-white uppercase tracking-wider">
+               Collective Model Evaluation Across All 10 Trained Datasets
+             </div>
+             <span className="text-[11px] px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+               HGB Production + XGBoost Fallback
+             </span>
+           </div>
+           <div className="overflow-x-auto">
+             <table className="w-full text-left text-xs border-collapse">
+               <thead>
+                 <tr className="border-b border-border/50 text-zinc-400">
+                   <th className="py-2 pr-3">Experiment / Dataset</th>
+                   <th className="py-2 px-3">Clean Rows</th>
+                   <th className="py-2 px-3">Daily WAPE</th>
+                   <th className="py-2 px-3">Weekly WAPE</th>
+                   <th className="py-2 px-3">FP-Growth Rules</th>
+                   <th className="py-2 pl-3">Shoppers</th>
+                 </tr>
+               </thead>
+               <tbody className="divide-y divide-border/30 text-zinc-200 font-mono text-[11px]">
+                 {[
+                   ["Exp 1 · Clean UK Retail", "397,884", "24.55%", "24.10%", "43", "4,338"],
+                   ["Exp 2 · Raw + Guest Carts", "527,935", "24.55%", "24.10%", "432", "5,710"],
+                   ["Exp 3 · UCI 2-Year (Active)", "1,037,366", "23.73%", "20.18%", "141", "8,779"],
+                   ["Exp 4 · E-Commerce 5K", "5,000", "56.66%", "16.66%", "19", "989"],
+                   ["Exp 5 · E-Com (Deduped)", "5,000", "56.66%", "16.66%", "19", "989"],
+                   ["Exp 6 · Online Retail CSV", "530,104", "26.00%", "24.23%", "435", "5,766"],
+                   ["Exp 7 · Online Retail XLSX", "530,100", "26.00%", "24.23%", "435", "5,766"],
+                   ["Exp 8 · Customer XLSX (Deduped)", "530,100", "26.00%", "24.23%", "435", "5,766"],
+                   ["Exp 9 · Retail 2009-11 CSVs", "1,041,669", "35.91%", "21.96%", "138", "8,985"],
+                   ["Exp 10 · Unified Dataset CSV", "530,104", "26.00%", "24.23%", "435", "5,766"],
+                 ].map(([name, rows, dw, ww, rules, cust]) => (
+                   <tr key={name} className="hover:bg-secondary/20">
+                     <td className="py-1.5 pr-3 font-sans font-medium text-white">{name}</td>
+                     <td className="py-1.5 px-3">{rows}</td>
+                     <td className="py-1.5 px-3 text-emerald-400">{dw}</td>
+                     <td className="py-1.5 px-3 text-indigo-300">{ww}</td>
+                     <td className="py-1.5 px-3">{rules}</td>
+                     <td className="py-1.5 pl-3">{cust}</td>
+                   </tr>
+                 ))}
+               </tbody>
+             </table>
            </div>
          </div>
       </motion.div>

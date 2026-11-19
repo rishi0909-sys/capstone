@@ -14,6 +14,8 @@ import ForecastingPage from '@/app/forecasting/page';
 import DemographicsPage from '@/app/demographics/page';
 import TemporalPage from '@/app/temporal/page';
 import InsightsPage from '@/app/insights/page';
+import LearningPage from '@/app/learning/page';
+import VoicePage from '@/app/voice/page';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -29,6 +31,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
               <Route path="/demographics" element={<DemographicsPage />} />
               <Route path="/temporal" element={<TemporalPage />} />
               <Route path="/insights" element={<InsightsPage />} />
+              <Route path="/learning" element={<LearningPage />} />
+              <Route path="/voice" element={<VoicePage />} />
               <Route path="*" element={<LandingPage />} />
             </Routes>
           </AppShell>

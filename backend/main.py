@@ -3,7 +3,7 @@ import json
 import uuid
 import pandas as pd
 from typing import Dict, List, Optional, Any
-from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi import FastAPI, UploadFile, File, HTTPException, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from dotenv import load_dotenv
@@ -25,7 +25,7 @@ app.add_middleware(
 
 # Constants & Storage
 MODELS_DIR = os.path.join(os.path.dirname(__file__), "models")
-CLEAN_DATA_PATH = os.path.join(os.path.dirname(__file__), "data", "online_retail_clean.csv")
+CLEAN_DATA_PATH = os.path.join(os.path.dirname(__file__), "data", "dataset_3_clean.csv")
 
 # In-memory session store (Dataset ID -> session state)
 sessions: Dict[str, Dict[str, Any]] = {}
@@ -39,7 +39,7 @@ def _get_clean_df() -> Optional[pd.DataFrame]:
         return _CLEAN_DF_CACHE
     if os.path.exists(CLEAN_DATA_PATH):
         try:
-            _CLEAN_DF_CACHE = pd.read_csv(CLEAN_DATA_PATH)
+            _CLEAN_DF_CACHE = pd.read_csv(CLEAN_DATA_PATH, low_memory=False)
             return _CLEAN_DF_CACHE
         except Exception as e:
             print(f"[Warning] Error loading clean retail dataset: {e}")
@@ -697,3 +697,222 @@ def explain_with_llm(req: ExplainRequest):
         evidence=rule_data,
         validated=True,
     )
+
+
+@app.get("/api/collective/overview")
+def get_collective_overview():
+    """Returns the persisted Multi-Dataset Collective Intelligence learning report."""
+    from src.collective.engine import CollectiveIntelligenceEngine
+    eng = CollectiveIntelligenceEngine(MODELS_DIR, os.path.dirname(CLEAN_DATA_PATH))
+    report = eng.load_report()
+    if report is None:
+        raise HTTPException(status_code=404, detail="Collective learning report not found.")
+    return report
+
+
+@app.get("/api/collective/evolution")
+def get_collective_evolution(v1: str = "v1.0", v2: str = "v2.0"):
+    """Returns versioned training snapshots and a before/after knowledge comparison."""
+    from src.collective.engine import CollectiveIntelligenceEngine
+    eng = CollectiveIntelligenceEngine(MODELS_DIR, os.path.dirname(CLEAN_DATA_PATH))
+    snapshots = eng.load_snapshots()
+    s1 = next((s for s in snapshots if s["version_id"] == v1), snapshots[0] if snapshots else None)
+    s2 = next((s for s in snapshots if s["version_id"] == v2), snapshots[-1] if snapshots else None)
+    diff = []
+    if s1 and s2:
+        all_cats = set(s1.get("categories", {}).keys()) | set(s2.get("categories", {}).keys())
+        for c in sorted(all_cats):
+            c1 = s1.get("categories", {}).get(c, {"occurrences": 0, "coverage": 0})
+            c2 = s2.get("categories", {}).get(c, {"occurrences": 0, "coverage": 0})
+            diff.append({
+                "category": c,
+                "v1_occurrences": c1["occurrences"],
+                "v2_occurrences": c2["occurrences"],
+                "delta_occurrences": c2["occurrences"] - c1["occurrences"],
+                "v1_coverage": c1["coverage"],
+                "v2_coverage": c2["coverage"],
+                "status": "Newly Discovered" if c1["occurrences"] == 0 else ("Strengthened" if c2["occurrences"] > c1["occurrences"] else "Unchanged"),
+            })
+    return {"snapshots": snapshots, "v1": v1, "v2": v2, "category_evolution": diff}
+
+
+@app.get("/api/collective/graph")
+def get_collective_graph(category: Optional[str] = None, limit: int = 25):
+    """Returns nodes and weighted edges for the Cross-Dataset Relationship Graph."""
+    from src.collective.engine import CollectiveIntelligenceEngine
+    eng = CollectiveIntelligenceEngine(MODELS_DIR, os.path.dirname(CLEAN_DATA_PATH))
+    report = eng.load_report()
+    if not report:
+        return {"nodes": [], "edges": []}
+
+    nodes = {}
+    edges = []
+    for ds in report.get("registry", []):
+        nodes[ds["dataset_id"]] = {"id": ds["dataset_id"], "label": ds["dataset_name"], "type": "dataset", "records": ds["records"]}
+
+    cats = report.get("categories", [])
+    if category:
+        cats = [c for c in cats if c["canonical_category"].lower() == category.lower()]
+    for c in cats[:limit]:
+        cid = f"cat:{c['canonical_category']}"
+        nodes[cid] = {"id": cid, "label": c["canonical_category"], "type": "category", "occurrences": c["total_occurrences"], "coverage": f"{c['dataset_coverage']}/{c['total_datasets']}"}
+        for contrib in c.get("contributions", []):
+            edges.append({
+                "source": contrib["dataset_id"],
+                "target": cid,
+                "weight": contrib["occurrences"],
+                "label": f"{contrib['contribution_pct']}%",
+                "type": "contribution",
+            })
+
+    return {"nodes": list(nodes.values()), "edges": edges}
+
+
+@app.get("/api/collective/predictive")
+def get_collective_predictive():
+    """Returns persisted emerging patterns, statistical anomalies, and top product associations."""
+    pred_path = os.path.join(MODELS_DIR, "collective", "predictive_intelligence.json")
+    if os.path.exists(pred_path):
+        with open(pred_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    from src.collective.predictive import build_predictive_intelligence
+    return build_predictive_intelligence(MODELS_DIR, os.path.dirname(CLEAN_DATA_PATH))
+
+
+@app.get("/api/collective/products")
+def get_collective_products(
+    search: Optional[str] = None,
+    category: Optional[str] = None,
+    sort_by: str = "occurrences",
+    limit: int = 25,
+    offset: int = 0,
+):
+    """Returns paginated, searchable, filterable canonical product catalogue."""
+    cat_path = os.path.join(MODELS_DIR, "collective", "product_catalogue.json")
+    if not os.path.exists(cat_path):
+        raise HTTPException(status_code=404, detail="Product catalogue not found.")
+    with open(cat_path, "r", encoding="utf-8") as f:
+        products = json.load(f)
+
+    if search:
+        q = search.strip().lower()
+        products = [p for p in products if q in p["canonical_product"].lower()]
+    if category and category != "All":
+        products = [p for p in products if p.get("canonical_category", "").lower() == category.lower()]
+
+    if sort_by == "coverage":
+        products = sorted(products, key=lambda x: (x["dataset_coverage"], x["total_occurrences"]), reverse=True)
+    else:
+        products = sorted(products, key=lambda x: (x["total_occurrences"], x["dataset_coverage"]), reverse=True)
+
+    total = len(products)
+    return {"total": total, "limit": limit, "offset": offset, "products": products[offset : offset + limit]}
+
+
+@app.websocket("/ws/chat")
+async def websocket_chat(websocket: WebSocket):
+    """WebSocket endpoint for plain-English Q&A grounded in collective intelligence context."""
+    await websocket.accept()
+    from src.llm.explainer import LLMExplainer
+    explainer = LLMExplainer()
+
+    context = {}
+    for fname, key in [
+        ("collective/learning_report.json", "collective_overview"),
+        ("collective/predictive_intelligence.json", "predictive_and_anomalies"),
+        ("customer_behavior.json", "customer_behavior"),
+    ]:
+        fpath = os.path.join(MODELS_DIR, fname)
+        if os.path.exists(fpath):
+            try:
+                with open(fpath, "r", encoding="utf-8") as f:
+                    d = json.load(f)
+                    if key == "collective_overview":
+                        context[key] = {
+                            "overview": d.get("overview"),
+                            "top_categories": d.get("categories", [])[:5],
+                            "discoveries": d.get("discoveries", []),
+                        }
+                    elif key == "customer_behavior":
+                        context[key] = d.get("summary")
+                    else:
+                        context[key] = {
+                            "emerging_patterns": d.get("emerging_patterns", [])[:5],
+                            "top_anomalies": d.get("anomalies", [])[:3],
+                            "top_associations": d.get("top_associations", [])[:3],
+                        }
+            except Exception:
+                pass
+
+    try:
+        while True:
+            question = await websocket.receive_text()
+            answer = explainer.chat_with_context(question, context)
+            await websocket.send_text(answer)
+    except WebSocketDisconnect:
+        pass
+
+
+_CHAT_SESSIONS: Dict[str, List[Dict[str, str]]] = {}
+
+
+@app.post("/api/voice/transcribe")
+def voice_transcribe(req: Dict[str, Any]):
+    """Transcribes a recorded audio clip (base64) with Gemini."""
+    audio = req.get("audio_base64")
+    if not audio:
+        raise HTTPException(status_code=400, detail="audio_base64 is required.")
+    from src.llm.gemini_agent import transcribe_audio
+    try:
+        text = transcribe_audio(audio, str(req.get("mime_type", "audio/webm")).split(";")[0])
+    except Exception as e:
+        raise HTTPException(status_code=503, detail=str(e))
+    return {"text": text}
+
+
+@app.get("/api/insights/workspace")
+def get_insights_workspace():
+    """Returns deduplicated, categorized business insights and executive overview."""
+    from src.llm.retrieval import StructuredRetriever
+    retriever = StructuredRetriever(MODELS_DIR)
+    return retriever.build_workspace_insights()
+
+
+@app.post("/api/insights/ask")
+def ask_insights_assistant(req: Dict[str, Any]):
+    """Context-aware Gemini Q&A grounded in StructuredRetriever evidence."""
+    question = str(req.get("question", "")).strip()
+    session_id = str(req.get("conversation_id", "default"))
+    if not question:
+        raise HTTPException(status_code=400, detail="Question is required.")
+
+    from src.llm.retrieval import StructuredRetriever
+    from src.llm.explainer import LLMExplainer
+
+    retriever = StructuredRetriever(MODELS_DIR)
+    history = _CHAT_SESSIONS.setdefault(session_id, [])[-4:]
+
+    evidence = {
+        "categories": retriever.get_category_performance()[:5],
+        "top_relationships": retriever.get_product_relationships(product_query="", limit=5),
+        "customer_summary": retriever.get_customer_segment_summary(),
+        "emerging_and_anomalies": retriever.get_emerging_and_anomalies(),
+        "recent_history": history,
+    }
+
+    explainer = LLMExplainer()
+    answer = explainer.chat_with_context(question, evidence)
+    history.append({"q": question, "a": answer})
+    _CHAT_SESSIONS[session_id] = history[-4:]
+
+    return {
+        "conversation_id": session_id,
+        "answer": answer,
+        "source_references": [
+            "backend/models/collective/learning_report.json",
+            "backend/models/association_rules.json",
+            "backend/models/customer_behavior.json",
+            "backend/models/collective/predictive_intelligence.json",
+        ],
+        "confidence": "Evidence-Grounded" if explainer.is_available() else "Fallback",
+    }

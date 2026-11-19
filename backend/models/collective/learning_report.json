@@ -1,0 +1,2371 @@
+{
+  "overview": {
+    "datasets_processed": 8,
+    "total_records_ingested": 4730210,
+    "canonical_categories_count": 9,
+    "canonical_products_tracked": 5374,
+    "training_duration_sec": 16.59,
+    "generated_at": "2026-11-19 20:54:58 IST"
+  },
+  "registry": [
+    {
+      "dataset_id": "dataset_1",
+      "dataset_name": "Dataset 1 (Clean UK Retail)",
+      "filename": "online_retail_clean.csv",
+      "records": 527932,
+      "unique_transactions": 19778,
+      "unique_customers": 4335,
+      "date_range": "2010-12-01 to 2011-12-09",
+      "columns": [
+        "transaction_id",
+        "customer_id",
+        "date",
+        "product_name",
+        "category",
+        "price",
+        "quantity",
+        "revenue",
+        "country"
+      ],
+      "status": "Processed"
+    },
+    {
+      "dataset_id": "dataset_2",
+      "dataset_name": "Dataset 2 (Raw + Guest Carts)",
+      "filename": "dataset_2_clean.csv",
+      "records": 527935,
+      "unique_transactions": 19781,
+      "unique_customers": 5710,
+      "date_range": "2010-12-01 to 2011-12-09",
+      "columns": [
+        "transaction_id",
+        "customer_id",
+        "date",
+        "product_name",
+        "category",
+        "price",
+        "quantity",
+        "revenue",
+        "country"
+      ],
+      "status": "Processed"
+    },
+    {
+      "dataset_id": "dataset_3",
+      "dataset_name": "Dataset 3 (UCI 2-Year Benchmark)",
+      "filename": "dataset_3_clean.csv",
+      "records": 1037366,
+      "unique_transactions": 39536,
+      "unique_customers": 8779,
+      "date_range": "2009-12-01 to 2011-12-09",
+      "columns": [
+        "transaction_id",
+        "customer_id",
+        "date",
+        "product_name",
+        "category",
+        "price",
+        "quantity",
+        "revenue",
+        "country"
+      ],
+      "status": "Processed"
+    },
+    {
+      "dataset_id": "dataset_4",
+      "dataset_name": "Dataset 4 (E-Commerce 5K)",
+      "filename": "dataset_4_clean.csv",
+      "records": 5000,
+      "unique_transactions": 5000,
+      "unique_customers": 989,
+      "date_range": "2022-01-01 to 2035-09-09",
+      "columns": [
+        "transaction_id",
+        "customer_id",
+        "date",
+        "product_name",
+        "category",
+        "price",
+        "quantity",
+        "revenue",
+        "country"
+      ],
+      "status": "Processed"
+    },
+    {
+      "dataset_id": "dataset_6",
+      "dataset_name": "Dataset 6 (Online Retail CSV)",
+      "filename": "dataset_6_clean.csv",
+      "records": 530104,
+      "unique_transactions": 19960,
+      "unique_customers": 5766,
+      "date_range": "2010-12-01 to 2011-12-09",
+      "columns": [
+        "transaction_id",
+        "customer_id",
+        "date",
+        "product_name",
+        "category",
+        "price",
+        "quantity",
+        "revenue",
+        "country"
+      ],
+      "status": "Processed"
+    },
+    {
+      "dataset_id": "dataset_7",
+      "dataset_name": "Dataset 7 (Online Retail XLSX)",
+      "filename": "dataset_7_clean.csv",
+      "records": 530100,
+      "unique_transactions": 19960,
+      "unique_customers": 5766,
+      "date_range": "2010-12-01 to 2011-12-09",
+      "columns": [
+        "transaction_id",
+        "customer_id",
+        "date",
+        "product_name",
+        "category",
+        "price",
+        "quantity",
+        "revenue",
+        "country"
+      ],
+      "status": "Processed"
+    },
+    {
+      "dataset_id": "dataset_9",
+      "dataset_name": "Dataset 9 (Retail 2009-11 CSVs)",
+      "filename": "dataset_9_clean.csv",
+      "records": 1041669,
+      "unique_transactions": 40076,
+      "unique_customers": 8985,
+      "date_range": "2009-01-12 to 2011-12-10",
+      "columns": [
+        "transaction_id",
+        "customer_id",
+        "date",
+        "product_name",
+        "category",
+        "price",
+        "quantity",
+        "revenue",
+        "country"
+      ],
+      "status": "Processed"
+    },
+    {
+      "dataset_id": "dataset_10",
+      "dataset_name": "Dataset 10 (Unified Dataset CSV)",
+      "filename": "dataset_10_clean.csv",
+      "records": 530104,
+      "unique_transactions": 19960,
+      "unique_customers": 5766,
+      "date_range": "2010-12-01 to 2011-12-09",
+      "columns": [
+        "transaction_id",
+        "customer_id",
+        "date",
+        "product_name",
+        "category",
+        "price",
+        "quantity",
+        "revenue",
+        "country"
+      ],
+      "status": "Processed"
+    }
+  ],
+  "categories": [
+    {
+      "canonical_category": "Home & Living",
+      "total_occurrences": 1374735,
+      "dataset_coverage": 8,
+      "total_datasets": 8,
+      "coverage_pct": 100.0,
+      "share_pct": 29.06,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_4",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 299591,
+          "contribution_pct": 21.79
+        },
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 299574,
+          "contribution_pct": 21.79
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 154922,
+          "contribution_pct": 11.27
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 154922,
+          "contribution_pct": 11.27
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 154919,
+          "contribution_pct": 11.27
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 154919,
+          "contribution_pct": 11.27
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 154919,
+          "contribution_pct": 11.27
+        },
+        {
+          "dataset_id": "dataset_4",
+          "occurrences": 969,
+          "contribution_pct": 0.07
+        }
+      ],
+      "status": "Established"
+    },
+    {
+      "canonical_category": "Kitchen & Dining",
+      "total_occurrences": 988540,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "share_pct": 20.9,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 219335,
+          "contribution_pct": 22.19
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 219335,
+          "contribution_pct": 22.19
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 109974,
+          "contribution_pct": 11.12
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 109974,
+          "contribution_pct": 11.12
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 109974,
+          "contribution_pct": 11.12
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 109974,
+          "contribution_pct": 11.12
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 109974,
+          "contribution_pct": 11.12
+        }
+      ],
+      "status": "Established"
+    },
+    {
+      "canonical_category": "General Merchandise",
+      "total_occurrences": 846050,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "share_pct": 17.89,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 191853,
+          "contribution_pct": 22.68
+        },
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 187567,
+          "contribution_pct": 22.17
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 93988,
+          "contribution_pct": 11.11
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 93988,
+          "contribution_pct": 11.11
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 93987,
+          "contribution_pct": 11.11
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 92845,
+          "contribution_pct": 10.97
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 91822,
+          "contribution_pct": 10.85
+        }
+      ],
+      "status": "Established"
+    },
+    {
+      "canonical_category": "Stationery & Crafts",
+      "total_occurrences": 577763,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "share_pct": 12.21,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 127235,
+          "contribution_pct": 22.02
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 127235,
+          "contribution_pct": 22.02
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 64681,
+          "contribution_pct": 11.2
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 64681,
+          "contribution_pct": 11.2
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 64681,
+          "contribution_pct": 11.2
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 64681,
+          "contribution_pct": 11.2
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 64569,
+          "contribution_pct": 11.18
+        }
+      ],
+      "status": "Established"
+    },
+    {
+      "canonical_category": "Fashion & Accessories",
+      "total_occurrences": 431175,
+      "dataset_coverage": 8,
+      "total_datasets": 8,
+      "coverage_pct": 100.0,
+      "share_pct": 9.12,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_4",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 94125,
+          "contribution_pct": 21.83
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 94125,
+          "contribution_pct": 21.83
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 48326,
+          "contribution_pct": 11.21
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 48267,
+          "contribution_pct": 11.19
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 48267,
+          "contribution_pct": 11.19
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 48267,
+          "contribution_pct": 11.19
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 48267,
+          "contribution_pct": 11.19
+        },
+        {
+          "dataset_id": "dataset_4",
+          "occurrences": 1531,
+          "contribution_pct": 0.36
+        }
+      ],
+      "status": "Established"
+    },
+    {
+      "canonical_category": "Seasonal & Holiday",
+      "total_occurrences": 377254,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "share_pct": 7.98,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 79617,
+          "contribution_pct": 21.1
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 79617,
+          "contribution_pct": 21.1
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 43604,
+          "contribution_pct": 11.56
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 43604,
+          "contribution_pct": 11.56
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 43604,
+          "contribution_pct": 11.56
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 43604,
+          "contribution_pct": 11.56
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 43604,
+          "contribution_pct": 11.56
+        }
+      ],
+      "status": "Established"
+    },
+    {
+      "canonical_category": "Toys & Games",
+      "total_occurrences": 132193,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "share_pct": 2.79,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 29913,
+          "contribution_pct": 22.63
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 29913,
+          "contribution_pct": 22.63
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 14668,
+          "contribution_pct": 11.1
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 14668,
+          "contribution_pct": 11.1
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 14668,
+          "contribution_pct": 11.1
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 14668,
+          "contribution_pct": 11.1
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 13695,
+          "contribution_pct": 10.36
+        }
+      ],
+      "status": "Established"
+    },
+    {
+      "canonical_category": "Electronics",
+      "total_occurrences": 1777,
+      "dataset_coverage": 1,
+      "total_datasets": 8,
+      "coverage_pct": 12.5,
+      "share_pct": 0.04,
+      "contributing_datasets": [
+        "dataset_4"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_4",
+          "occurrences": 1777,
+          "contribution_pct": 100.0
+        }
+      ],
+      "status": "Emerging"
+    },
+    {
+      "canonical_category": "Beauty & Personal Care",
+      "total_occurrences": 723,
+      "dataset_coverage": 1,
+      "total_datasets": 8,
+      "coverage_pct": 12.5,
+      "share_pct": 0.02,
+      "contributing_datasets": [
+        "dataset_4"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_4",
+          "occurrences": 723,
+          "contribution_pct": 100.0
+        }
+      ],
+      "status": "Emerging"
+    }
+  ],
+  "top_products": [
+    {
+      "canonical_product": "White Hanging Heart T-Light Holder",
+      "canonical_category": "Home & Living",
+      "original_names": [
+        "White Hanging Heart T-Light Holder"
+      ],
+      "total_occurrences": 23171,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 5778,
+          "contribution_pct": 24.94
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 5778,
+          "contribution_pct": 24.94
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 2323,
+          "contribution_pct": 10.03
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 2323,
+          "contribution_pct": 10.03
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 2323,
+          "contribution_pct": 10.03
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 2323,
+          "contribution_pct": 10.03
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 2323,
+          "contribution_pct": 10.03
+        }
+      ]
+    },
+    {
+      "canonical_product": "Regency Cakestand 3 Tier",
+      "canonical_category": "Kitchen & Dining",
+      "original_names": [
+        "Regency Cakestand 3 Tier"
+      ],
+      "total_occurrences": 18207,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 4061,
+          "contribution_pct": 22.3
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 4061,
+          "contribution_pct": 22.3
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 2017,
+          "contribution_pct": 11.08
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 2017,
+          "contribution_pct": 11.08
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 2017,
+          "contribution_pct": 11.08
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 2017,
+          "contribution_pct": 11.08
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 2017,
+          "contribution_pct": 11.08
+        }
+      ]
+    },
+    {
+      "canonical_product": "Jumbo Bag Red Retrospot",
+      "canonical_category": "Fashion & Accessories",
+      "original_names": [
+        "Jumbo Bag Red Retrospot"
+      ],
+      "total_occurrences": 17342,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 3391,
+          "contribution_pct": 19.55
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 3391,
+          "contribution_pct": 19.55
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 2112,
+          "contribution_pct": 12.18
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 2112,
+          "contribution_pct": 12.18
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 2112,
+          "contribution_pct": 12.18
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 2112,
+          "contribution_pct": 12.18
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 2112,
+          "contribution_pct": 12.18
+        }
+      ]
+    },
+    {
+      "canonical_product": "Party Bunting",
+      "canonical_category": "Kitchen & Dining",
+      "original_names": [
+        "Party Bunting"
+      ],
+      "total_occurrences": 14010,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 2740,
+          "contribution_pct": 19.56
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 2740,
+          "contribution_pct": 19.56
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 1706,
+          "contribution_pct": 12.18
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 1706,
+          "contribution_pct": 12.18
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 1706,
+          "contribution_pct": 12.18
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 1706,
+          "contribution_pct": 12.18
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 1706,
+          "contribution_pct": 12.18
+        }
+      ]
+    },
+    {
+      "canonical_product": "Assorted Colour Bird Ornament",
+      "canonical_category": "General Merchandise",
+      "original_names": [
+        "Assorted Colour Bird Ornament"
+      ],
+      "total_occurrences": 13321,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 2938,
+          "contribution_pct": 22.06
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 2938,
+          "contribution_pct": 22.06
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 1489,
+          "contribution_pct": 11.18
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 1489,
+          "contribution_pct": 11.18
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 1489,
+          "contribution_pct": 11.18
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 1489,
+          "contribution_pct": 11.18
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 1489,
+          "contribution_pct": 11.18
+        }
+      ]
+    },
+    {
+      "canonical_product": "Lunch Bag Red Retrospot",
+      "canonical_category": "Fashion & Accessories",
+      "original_names": [
+        "Lunch Bag Red Retrospot"
+      ],
+      "total_occurrences": 11834,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 1932,
+          "contribution_pct": 16.33
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 1932,
+          "contribution_pct": 16.33
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 1594,
+          "contribution_pct": 13.47
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 1594,
+          "contribution_pct": 13.47
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 1594,
+          "contribution_pct": 13.47
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 1594,
+          "contribution_pct": 13.47
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 1594,
+          "contribution_pct": 13.47
+        }
+      ]
+    },
+    {
+      "canonical_product": "Lunch Bag  Black Skull.",
+      "canonical_category": "Fashion & Accessories",
+      "original_names": [
+        "Lunch Bag  Black Skull."
+      ],
+      "total_occurrences": 11608,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 2484,
+          "contribution_pct": 21.4
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 2484,
+          "contribution_pct": 21.4
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 1328,
+          "contribution_pct": 11.44
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 1328,
+          "contribution_pct": 11.44
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 1328,
+          "contribution_pct": 11.44
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 1328,
+          "contribution_pct": 11.44
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 1328,
+          "contribution_pct": 11.44
+        }
+      ]
+    },
+    {
+      "canonical_product": "Jumbo Storage Bag Suki",
+      "canonical_category": "Fashion & Accessories",
+      "original_names": [
+        "Jumbo Storage Bag Suki"
+      ],
+      "total_occurrences": 10781,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 2398,
+          "contribution_pct": 22.24
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 2398,
+          "contribution_pct": 22.24
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 1197,
+          "contribution_pct": 11.1
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 1197,
+          "contribution_pct": 11.1
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 1197,
+          "contribution_pct": 11.1
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 1197,
+          "contribution_pct": 11.1
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 1197,
+          "contribution_pct": 11.1
+        }
+      ]
+    },
+    {
+      "canonical_product": "Heart Of Wicker Small",
+      "canonical_category": "Home & Living",
+      "original_names": [
+        "Heart Of Wicker Small"
+      ],
+      "total_occurrences": 10716,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 2293,
+          "contribution_pct": 21.4
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 2293,
+          "contribution_pct": 21.4
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 1226,
+          "contribution_pct": 11.44
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 1226,
+          "contribution_pct": 11.44
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 1226,
+          "contribution_pct": 11.44
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 1226,
+          "contribution_pct": 11.44
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 1226,
+          "contribution_pct": 11.44
+        }
+      ]
+    },
+    {
+      "canonical_product": "Natural Slate Heart Chalkboard",
+      "canonical_category": "Home & Living",
+      "original_names": [
+        "Natural Slate Heart Chalkboard"
+      ],
+      "total_occurrences": 10553,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 2119,
+          "contribution_pct": 20.08
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 2119,
+          "contribution_pct": 20.08
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 1263,
+          "contribution_pct": 11.97
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 1263,
+          "contribution_pct": 11.97
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 1263,
+          "contribution_pct": 11.97
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 1263,
+          "contribution_pct": 11.97
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 1263,
+          "contribution_pct": 11.97
+        }
+      ]
+    },
+    {
+      "canonical_product": "Pack Of 72 Retrospot Cake Cases",
+      "canonical_category": "Kitchen & Dining",
+      "original_names": [
+        "Pack Of 72 Retrospot Cake Cases"
+      ],
+      "total_occurrences": 10518,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 1834,
+          "contribution_pct": 17.44
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 1834,
+          "contribution_pct": 17.44
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 1370,
+          "contribution_pct": 13.03
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 1370,
+          "contribution_pct": 13.03
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 1370,
+          "contribution_pct": 13.03
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 1370,
+          "contribution_pct": 13.03
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 1370,
+          "contribution_pct": 13.03
+        }
+      ]
+    },
+    {
+      "canonical_product": "Jumbo Shopper Vintage Red Paisley",
+      "canonical_category": "General Merchandise",
+      "original_names": [
+        "Jumbo Shopper Vintage Red Paisley"
+      ],
+      "total_occurrences": 10498,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 2274,
+          "contribution_pct": 21.66
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 2274,
+          "contribution_pct": 21.66
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 1190,
+          "contribution_pct": 11.34
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 1190,
+          "contribution_pct": 11.34
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 1190,
+          "contribution_pct": 11.34
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 1190,
+          "contribution_pct": 11.34
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 1190,
+          "contribution_pct": 11.34
+        }
+      ]
+    },
+    {
+      "canonical_product": "Paper Chain Kit 50'S Christmas",
+      "canonical_category": "Seasonal & Holiday",
+      "original_names": [
+        "Paper Chain Kit 50'S Christmas"
+      ],
+      "total_occurrences": 10396,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 2198,
+          "contribution_pct": 21.14
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 2198,
+          "contribution_pct": 21.14
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 1200,
+          "contribution_pct": 11.54
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 1200,
+          "contribution_pct": 11.54
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 1200,
+          "contribution_pct": 11.54
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 1200,
+          "contribution_pct": 11.54
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 1200,
+          "contribution_pct": 11.54
+        }
+      ]
+    },
+    {
+      "canonical_product": "Lunch Bag Spaceboy Design",
+      "canonical_category": "Home & Living",
+      "original_names": [
+        "Lunch Bag Spaceboy Design"
+      ],
+      "total_occurrences": 10265,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 2185,
+          "contribution_pct": 21.29
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 2185,
+          "contribution_pct": 21.29
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 1179,
+          "contribution_pct": 11.49
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 1179,
+          "contribution_pct": 11.49
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 1179,
+          "contribution_pct": 11.49
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 1179,
+          "contribution_pct": 11.49
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 1179,
+          "contribution_pct": 11.49
+        }
+      ]
+    },
+    {
+      "canonical_product": "Lunch Bag Cars Blue",
+      "canonical_category": "Fashion & Accessories",
+      "original_names": [
+        "Lunch Bag Cars Blue"
+      ],
+      "total_occurrences": 10152,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 2141,
+          "contribution_pct": 21.09
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 2141,
+          "contribution_pct": 21.09
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 1174,
+          "contribution_pct": 11.56
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 1174,
+          "contribution_pct": 11.56
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 1174,
+          "contribution_pct": 11.56
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 1174,
+          "contribution_pct": 11.56
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 1174,
+          "contribution_pct": 11.56
+        }
+      ]
+    },
+    {
+      "canonical_product": "Set Of 3 Cake Tins Pantry Design",
+      "canonical_category": "Home & Living",
+      "original_names": [
+        "Set Of 3 Cake Tins Pantry Design"
+      ],
+      "total_occurrences": 9793,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 1399,
+          "contribution_pct": 14.29
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 1399,
+          "contribution_pct": 14.29
+        },
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 1399,
+          "contribution_pct": 14.29
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 1399,
+          "contribution_pct": 14.29
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 1399,
+          "contribution_pct": 14.29
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 1399,
+          "contribution_pct": 14.29
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 1399,
+          "contribution_pct": 14.29
+        }
+      ]
+    },
+    {
+      "canonical_product": "Wooden Picture Frame White Finish",
+      "canonical_category": "Home & Living",
+      "original_names": [
+        "Wooden Picture Frame White Finish"
+      ],
+      "total_occurrences": 9725,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 2085,
+          "contribution_pct": 21.44
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 2085,
+          "contribution_pct": 21.44
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 1111,
+          "contribution_pct": 11.42
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 1111,
+          "contribution_pct": 11.42
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 1111,
+          "contribution_pct": 11.42
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 1111,
+          "contribution_pct": 11.42
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 1111,
+          "contribution_pct": 11.42
+        }
+      ]
+    },
+    {
+      "canonical_product": "Lunch Bag Woodland",
+      "canonical_category": "Fashion & Accessories",
+      "original_names": [
+        "Lunch Bag Woodland"
+      ],
+      "total_occurrences": 9223,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 2009,
+          "contribution_pct": 21.78
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 2009,
+          "contribution_pct": 21.78
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 1041,
+          "contribution_pct": 11.29
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 1041,
+          "contribution_pct": 11.29
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 1041,
+          "contribution_pct": 11.29
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 1041,
+          "contribution_pct": 11.29
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 1041,
+          "contribution_pct": 11.29
+        }
+      ]
+    },
+    {
+      "canonical_product": "Wooden Frame Antique White",
+      "canonical_category": "Home & Living",
+      "original_names": [
+        "Wooden Frame Antique White"
+      ],
+      "total_occurrences": 9212,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 2151,
+          "contribution_pct": 23.35
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 2151,
+          "contribution_pct": 23.35
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 982,
+          "contribution_pct": 10.66
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 982,
+          "contribution_pct": 10.66
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 982,
+          "contribution_pct": 10.66
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 982,
+          "contribution_pct": 10.66
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 982,
+          "contribution_pct": 10.66
+        }
+      ]
+    },
+    {
+      "canonical_product": "Rex Cash+Carry Jumbo Shopper",
+      "canonical_category": "General Merchandise",
+      "original_names": [
+        "Rex Cash+Carry Jumbo Shopper"
+      ],
+      "total_occurrences": 9198,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 2189,
+          "contribution_pct": 23.8
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 2189,
+          "contribution_pct": 23.8
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 964,
+          "contribution_pct": 10.48
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 964,
+          "contribution_pct": 10.48
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 964,
+          "contribution_pct": 10.48
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 964,
+          "contribution_pct": 10.48
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 964,
+          "contribution_pct": 10.48
+        }
+      ]
+    },
+    {
+      "canonical_product": "Jumbo Bag Pink Polkadot",
+      "canonical_category": "Fashion & Accessories",
+      "original_names": [
+        "Jumbo Bag Pink Polkadot"
+      ],
+      "total_occurrences": 9192,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 1501,
+          "contribution_pct": 16.33
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 1501,
+          "contribution_pct": 16.33
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 1238,
+          "contribution_pct": 13.47
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 1238,
+          "contribution_pct": 13.47
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 1238,
+          "contribution_pct": 13.47
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 1238,
+          "contribution_pct": 13.47
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 1238,
+          "contribution_pct": 13.47
+        }
+      ]
+    },
+    {
+      "canonical_product": "Recipe Box Pantry Yellow Design",
+      "canonical_category": "Home & Living",
+      "original_names": [
+        "Recipe Box Pantry Yellow Design"
+      ],
+      "total_occurrences": 9108,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 1739,
+          "contribution_pct": 19.09
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 1739,
+          "contribution_pct": 19.09
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 1126,
+          "contribution_pct": 12.36
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 1126,
+          "contribution_pct": 12.36
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 1126,
+          "contribution_pct": 12.36
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 1126,
+          "contribution_pct": 12.36
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 1126,
+          "contribution_pct": 12.36
+        }
+      ]
+    },
+    {
+      "canonical_product": "Victorian Glass Hanging T-Light",
+      "canonical_category": "Home & Living",
+      "original_names": [
+        "Victorian Glass Hanging T-Light"
+      ],
+      "total_occurrences": 9013,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 1889,
+          "contribution_pct": 20.96
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 1889,
+          "contribution_pct": 20.96
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 1047,
+          "contribution_pct": 11.62
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 1047,
+          "contribution_pct": 11.62
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 1047,
+          "contribution_pct": 11.62
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 1047,
+          "contribution_pct": 11.62
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 1047,
+          "contribution_pct": 11.62
+        }
+      ]
+    },
+    {
+      "canonical_product": "Heart Of Wicker Large",
+      "canonical_category": "Home & Living",
+      "original_names": [
+        "Heart Of Wicker Large"
+      ],
+      "total_occurrences": 8890,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 2085,
+          "contribution_pct": 23.45
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 2085,
+          "contribution_pct": 23.45
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 944,
+          "contribution_pct": 10.62
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 944,
+          "contribution_pct": 10.62
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 944,
+          "contribution_pct": 10.62
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 944,
+          "contribution_pct": 10.62
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 944,
+          "contribution_pct": 10.62
+        }
+      ]
+    },
+    {
+      "canonical_product": "60 Teatime Fairy Cake Cases",
+      "canonical_category": "Kitchen & Dining",
+      "original_names": [
+        "60 Teatime Fairy Cake Cases"
+      ],
+      "total_occurrences": 8829,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 2257,
+          "contribution_pct": 25.56
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 2257,
+          "contribution_pct": 25.56
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 863,
+          "contribution_pct": 9.77
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 863,
+          "contribution_pct": 9.77
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 863,
+          "contribution_pct": 9.77
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 863,
+          "contribution_pct": 9.77
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 863,
+          "contribution_pct": 9.77
+        }
+      ]
+    },
+    {
+      "canonical_product": "Vintage Snap Cards",
+      "canonical_category": "Stationery & Crafts",
+      "original_names": [
+        "Vintage Snap Cards"
+      ],
+      "total_occurrences": 8650,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 1975,
+          "contribution_pct": 22.83
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 1975,
+          "contribution_pct": 22.83
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 940,
+          "contribution_pct": 10.87
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 940,
+          "contribution_pct": 10.87
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 940,
+          "contribution_pct": 10.87
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 940,
+          "contribution_pct": 10.87
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 940,
+          "contribution_pct": 10.87
+        }
+      ]
+    },
+    {
+      "canonical_product": "Baking Set 9 Piece Retrospot",
+      "canonical_category": "Kitchen & Dining",
+      "original_names": [
+        "Baking Set 9 Piece Retrospot"
+      ],
+      "total_occurrences": 8613,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 1939,
+          "contribution_pct": 22.51
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 1939,
+          "contribution_pct": 22.51
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 947,
+          "contribution_pct": 11.0
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 947,
+          "contribution_pct": 11.0
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 947,
+          "contribution_pct": 11.0
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 947,
+          "contribution_pct": 11.0
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 947,
+          "contribution_pct": 11.0
+        }
+      ]
+    },
+    {
+      "canonical_product": "Pack Of 60 Pink Paisley Cake Cases",
+      "canonical_category": "Kitchen & Dining",
+      "original_names": [
+        "Pack Of 60 Pink Paisley Cake Cases"
+      ],
+      "total_occurrences": 8612,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 2081,
+          "contribution_pct": 24.16
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 2081,
+          "contribution_pct": 24.16
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 890,
+          "contribution_pct": 10.33
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 890,
+          "contribution_pct": 10.33
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 890,
+          "contribution_pct": 10.33
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 890,
+          "contribution_pct": 10.33
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 890,
+          "contribution_pct": 10.33
+        }
+      ]
+    },
+    {
+      "canonical_product": "Jumbo  Bag Baroque Black White",
+      "canonical_category": "Fashion & Accessories",
+      "original_names": [
+        "Jumbo  Bag Baroque Black White"
+      ],
+      "total_occurrences": 8602,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 1936,
+          "contribution_pct": 22.51
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 1936,
+          "contribution_pct": 22.51
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 946,
+          "contribution_pct": 11.0
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 946,
+          "contribution_pct": 11.0
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 946,
+          "contribution_pct": 11.0
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 946,
+          "contribution_pct": 11.0
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 946,
+          "contribution_pct": 11.0
+        }
+      ]
+    },
+    {
+      "canonical_product": "6 Ribbons Rustic Charm",
+      "canonical_category": "Fashion & Accessories",
+      "original_names": [
+        "6 Ribbons Rustic Charm"
+      ],
+      "total_occurrences": 8578,
+      "dataset_coverage": 7,
+      "total_datasets": 8,
+      "coverage_pct": 87.5,
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "contributions": [
+        {
+          "dataset_id": "dataset_3",
+          "occurrences": 1839,
+          "contribution_pct": 21.44
+        },
+        {
+          "dataset_id": "dataset_9",
+          "occurrences": 1839,
+          "contribution_pct": 21.44
+        },
+        {
+          "dataset_id": "dataset_1",
+          "occurrences": 980,
+          "contribution_pct": 11.42
+        },
+        {
+          "dataset_id": "dataset_2",
+          "occurrences": 980,
+          "contribution_pct": 11.42
+        },
+        {
+          "dataset_id": "dataset_6",
+          "occurrences": 980,
+          "contribution_pct": 11.42
+        },
+        {
+          "dataset_id": "dataset_7",
+          "occurrences": 980,
+          "contribution_pct": 11.42
+        },
+        {
+          "dataset_id": "dataset_10",
+          "occurrences": 980,
+          "contribution_pct": 11.42
+        }
+      ]
+    }
+  ],
+  "discoveries": [
+    {
+      "title": "Dominant Global Category: Home & Living",
+      "statement": "Home & Living appeared in 8 out of 8 datasets (100.0%), accounting for 1,374,735 observed records (29.06% of total volume).",
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_4",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "method": "Canonical Entity Resolution & Cross-Dataset Aggregation",
+      "confidence": "High"
+    },
+    {
+      "title": "Emerging Niche Category: Electronics",
+      "statement": "Electronics was discovered in 1/8 datasets with 1,777 records, representing specialized e-commerce demand.",
+      "contributing_datasets": [
+        "dataset_4"
+      ],
+      "method": "Cross-Schema Category Normalization",
+      "confidence": "Medium"
+    },
+    {
+      "title": "Most Consistent Product: White Hanging Heart T-Light Holder",
+      "statement": "White Hanging Heart T-Light Holder appeared across 7 out of 8 datasets (87.5% coverage) with 23,171 total occurrences.",
+      "contributing_datasets": [
+        "dataset_1",
+        "dataset_10",
+        "dataset_2",
+        "dataset_3",
+        "dataset_6",
+        "dataset_7",
+        "dataset_9"
+      ],
+      "method": "Canonical Product Frequency & Coverage Tracking",
+      "confidence": "High"
+    }
+  ]
+}

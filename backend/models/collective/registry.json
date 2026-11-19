@@ -1,0 +1,170 @@
+[
+  {
+    "dataset_id": "dataset_1",
+    "dataset_name": "Dataset 1 (Clean UK Retail)",
+    "filename": "online_retail_clean.csv",
+    "records": 527932,
+    "unique_transactions": 19778,
+    "unique_customers": 4335,
+    "date_range": "2010-12-01 to 2011-12-09",
+    "columns": [
+      "transaction_id",
+      "customer_id",
+      "date",
+      "product_name",
+      "category",
+      "price",
+      "quantity",
+      "revenue",
+      "country"
+    ],
+    "status": "Processed"
+  },
+  {
+    "dataset_id": "dataset_2",
+    "dataset_name": "Dataset 2 (Raw + Guest Carts)",
+    "filename": "dataset_2_clean.csv",
+    "records": 527935,
+    "unique_transactions": 19781,
+    "unique_customers": 5710,
+    "date_range": "2010-12-01 to 2011-12-09",
+    "columns": [
+      "transaction_id",
+      "customer_id",
+      "date",
+      "product_name",
+      "category",
+      "price",
+      "quantity",
+      "revenue",
+      "country"
+    ],
+    "status": "Processed"
+  },
+  {
+    "dataset_id": "dataset_3",
+    "dataset_name": "Dataset 3 (UCI 2-Year Benchmark)",
+    "filename": "dataset_3_clean.csv",
+    "records": 1037366,
+    "unique_transactions": 39536,
+    "unique_customers": 8779,
+    "date_range": "2009-12-01 to 2011-12-09",
+    "columns": [
+      "transaction_id",
+      "customer_id",
+      "date",
+      "product_name",
+      "category",
+      "price",
+      "quantity",
+      "revenue",
+      "country"
+    ],
+    "status": "Processed"
+  },
+  {
+    "dataset_id": "dataset_4",
+    "dataset_name": "Dataset 4 (E-Commerce 5K)",
+    "filename": "dataset_4_clean.csv",
+    "records": 5000,
+    "unique_transactions": 5000,
+    "unique_customers": 989,
+    "date_range": "2022-01-01 to 2035-09-09",
+    "columns": [
+      "transaction_id",
+      "customer_id",
+      "date",
+      "product_name",
+      "category",
+      "price",
+      "quantity",
+      "revenue",
+      "country"
+    ],
+    "status": "Processed"
+  },
+  {
+    "dataset_id": "dataset_6",
+    "dataset_name": "Dataset 6 (Online Retail CSV)",
+    "filename": "dataset_6_clean.csv",
+    "records": 530104,
+    "unique_transactions": 19960,
+    "unique_customers": 5766,
+    "date_range": "2010-12-01 to 2011-12-09",
+    "columns": [
+      "transaction_id",
+      "customer_id",
+      "date",
+      "product_name",
+      "category",
+      "price",
+      "quantity",
+      "revenue",
+      "country"
+    ],
+    "status": "Processed"
+  },
+  {
+    "dataset_id": "dataset_7",
+    "dataset_name": "Dataset 7 (Online Retail XLSX)",
+    "filename": "dataset_7_clean.csv",
+    "records": 530100,
+    "unique_transactions": 19960,
+    "unique_customers": 5766,
+    "date_range": "2010-12-01 to 2011-12-09",
+    "columns": [
+      "transaction_id",
+      "customer_id",
+      "date",
+      "product_name",
+      "category",
+      "price",
+      "quantity",
+      "revenue",
+      "country"
+    ],
+    "status": "Processed"
+  },
+  {
+    "dataset_id": "dataset_9",
+    "dataset_name": "Dataset 9 (Retail 2009-11 CSVs)",
+    "filename": "dataset_9_clean.csv",
+    "records": 1041669,
+    "unique_transactions": 40076,
+    "unique_customers": 8985,
+    "date_range": "2009-01-12 to 2011-12-10",
+    "columns": [
+      "transaction_id",
+      "customer_id",
+      "date",
+      "product_name",
+      "category",
+      "price",
+      "quantity",
+      "revenue",
+      "country"
+    ],
+    "status": "Processed"
+  },
+  {
+    "dataset_id": "dataset_10",
+    "dataset_name": "Dataset 10 (Unified Dataset CSV)",
+    "filename": "dataset_10_clean.csv",
+    "records": 530104,
+    "unique_transactions": 19960,
+    "unique_customers": 5766,
+    "date_range": "2010-12-01 to 2011-12-09",
+    "columns": [
+      "transaction_id",
+      "customer_id",
+      "date",
+      "product_name",
+      "category",
+      "price",
+      "quantity",
+      "revenue",
+      "country"
+    ],
+    "status": "Processed"
+  }
+]

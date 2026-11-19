@@ -1,0 +1,369 @@
+{
+  "generated_at": "2026-11-19 20:52:35 IST",
+  "computation_sec": 1.27,
+  "emerging_patterns": [
+    {
+      "pattern_name": "Seasonal & Holiday Seasonal/Recent Surge",
+      "category": "Seasonal & Holiday",
+      "first_detected": "2009-12",
+      "historical_baseline_monthly": 27040.7,
+      "recent_3m_avg": 107407.0,
+      "growth_rate_pct": 297.21,
+      "status": "Emerging / Surging",
+      "supporting_datasets": [
+        "dataset_3",
+        "dataset_9"
+      ],
+      "confidence": "High"
+    },
+    {
+      "pattern_name": "Stationery & Crafts Seasonal/Recent Surge",
+      "category": "Stationery & Crafts",
+      "first_detected": "2009-12",
+      "historical_baseline_monthly": 60838.1,
+      "recent_3m_avg": 98070.3,
+      "growth_rate_pct": 61.2,
+      "status": "Emerging / Surging",
+      "supporting_datasets": [
+        "dataset_3",
+        "dataset_9"
+      ],
+      "confidence": "High"
+    },
+    {
+      "pattern_name": "Home & Living Seasonal/Recent Surge",
+      "category": "Home & Living",
+      "first_detected": "2009-12",
+      "historical_baseline_monthly": 122965.7,
+      "recent_3m_avg": 181689.3,
+      "growth_rate_pct": 47.76,
+      "status": "Emerging / Surging",
+      "supporting_datasets": [
+        "dataset_3",
+        "dataset_9"
+      ],
+      "confidence": "High"
+    },
+    {
+      "pattern_name": "Toys & Games Seasonal/Recent Surge",
+      "category": "Toys & Games",
+      "first_detected": "2009-12",
+      "historical_baseline_monthly": 12931.9,
+      "recent_3m_avg": 17790.0,
+      "growth_rate_pct": 37.57,
+      "status": "Emerging / Surging",
+      "supporting_datasets": [
+        "dataset_3",
+        "dataset_9"
+      ],
+      "confidence": "High"
+    },
+    {
+      "pattern_name": "Fashion & Accessories Seasonal/Recent Surge",
+      "category": "Fashion & Accessories",
+      "first_detected": "2009-12",
+      "historical_baseline_monthly": 43753.0,
+      "recent_3m_avg": 54976.7,
+      "growth_rate_pct": 25.65,
+      "status": "Emerging / Surging",
+      "supporting_datasets": [
+        "dataset_3",
+        "dataset_9"
+      ],
+      "confidence": "High"
+    },
+    {
+      "pattern_name": "General Merchandise Seasonal/Recent Surge",
+      "category": "General Merchandise",
+      "first_detected": "2009-12",
+      "historical_baseline_monthly": 76536.1,
+      "recent_3m_avg": 92277.3,
+      "growth_rate_pct": 20.57,
+      "status": "Growing",
+      "supporting_datasets": [
+        "dataset_3",
+        "dataset_9"
+      ],
+      "confidence": "High"
+    },
+    {
+      "pattern_name": "Kitchen & Dining Seasonal/Recent Surge",
+      "category": "Kitchen & Dining",
+      "first_detected": "2009-12",
+      "historical_baseline_monthly": 91551.6,
+      "recent_3m_avg": 95061.3,
+      "growth_rate_pct": 3.83,
+      "status": "Stable",
+      "supporting_datasets": [
+        "dataset_3",
+        "dataset_9"
+      ],
+      "confidence": "High"
+    }
+  ],
+  "anomalies": [
+    {
+      "category": "Seasonal & Holiday",
+      "period": "2011-11",
+      "observed_quantity": 133808,
+      "expected_median": 16962.0,
+      "robust_z_score": 8.05,
+      "direction": "Spike",
+      "explanation": "Seasonal & Holiday recorded 133,808 units in 2011-11 vs historical median 16,962 (robust z=8.05)."
+    },
+    {
+      "category": "Seasonal & Holiday",
+      "period": "2011-10",
+      "observed_quantity": 111091,
+      "expected_median": 16962.0,
+      "robust_z_score": 6.48,
+      "direction": "Spike",
+      "explanation": "Seasonal & Holiday recorded 111,091 units in 2011-10 vs historical median 16,962 (robust z=6.48)."
+    },
+    {
+      "category": "Seasonal & Holiday",
+      "period": "2010-11",
+      "observed_quantity": 102581,
+      "expected_median": 16962.0,
+      "robust_z_score": 5.9,
+      "direction": "Spike",
+      "explanation": "Seasonal & Holiday recorded 102,581 units in 2010-11 vs historical median 16,962 (robust z=5.90)."
+    },
+    {
+      "category": "Seasonal & Holiday",
+      "period": "2010-10",
+      "observed_quantity": 97817,
+      "expected_median": 16962.0,
+      "robust_z_score": 5.57,
+      "direction": "Spike",
+      "explanation": "Seasonal & Holiday recorded 97,817 units in 2010-10 vs historical median 16,962 (robust z=5.57)."
+    },
+    {
+      "category": "Seasonal & Holiday",
+      "period": "2011-09",
+      "observed_quantity": 77322,
+      "expected_median": 16962.0,
+      "robust_z_score": 4.16,
+      "direction": "Spike",
+      "explanation": "Seasonal & Holiday recorded 77,322 units in 2011-09 vs historical median 16,962 (robust z=4.16)."
+    },
+    {
+      "category": "Seasonal & Holiday",
+      "period": "2010-09",
+      "observed_quantity": 65299,
+      "expected_median": 16962.0,
+      "robust_z_score": 3.33,
+      "direction": "Spike",
+      "explanation": "Seasonal & Holiday recorded 65,299 units in 2010-09 vs historical median 16,962 (robust z=3.33)."
+    },
+    {
+      "category": "Kitchen & Dining",
+      "period": "2011-01",
+      "observed_quantity": 142345,
+      "expected_median": 85818.0,
+      "robust_z_score": 3.27,
+      "direction": "Spike",
+      "explanation": "Kitchen & Dining recorded 142,345 units in 2011-01 vs historical median 85,818 (robust z=3.27)."
+    },
+    {
+      "category": "General Merchandise",
+      "period": "2010-03",
+      "observed_quantity": 132226,
+      "expected_median": 70973.5,
+      "robust_z_score": 3.25,
+      "direction": "Spike",
+      "explanation": "General Merchandise recorded 132,226 units in 2010-03 vs historical median 70,974 (robust z=3.25)."
+    },
+    {
+      "category": "Stationery & Crafts",
+      "period": "2011-11",
+      "observed_quantity": 111836,
+      "expected_median": 57384.5,
+      "robust_z_score": 3.16,
+      "direction": "Spike",
+      "explanation": "Stationery & Crafts recorded 111,836 units in 2011-11 vs historical median 57,384 (robust z=3.16)."
+    },
+    {
+      "category": "Stationery & Crafts",
+      "period": "2010-11",
+      "observed_quantity": 109416,
+      "expected_median": 57384.5,
+      "robust_z_score": 3.02,
+      "direction": "Spike",
+      "explanation": "Stationery & Crafts recorded 109,416 units in 2010-11 vs historical median 57,384 (robust z=3.02)."
+    },
+    {
+      "category": "Kitchen & Dining",
+      "period": "2010-03",
+      "observed_quantity": 136736,
+      "expected_median": 85818.0,
+      "robust_z_score": 2.94,
+      "direction": "Spike",
+      "explanation": "Kitchen & Dining recorded 136,736 units in 2010-03 vs historical median 85,818 (robust z=2.94)."
+    },
+    {
+      "category": "Stationery & Crafts",
+      "period": "2011-10",
+      "observed_quantity": 104986,
+      "expected_median": 57384.5,
+      "robust_z_score": 2.77,
+      "direction": "Spike",
+      "explanation": "Stationery & Crafts recorded 104,986 units in 2011-10 vs historical median 57,384 (robust z=2.77)."
+    },
+    {
+      "category": "Fashion & Accessories",
+      "period": "2010-09",
+      "observed_quantity": 69771,
+      "expected_median": 45638.5,
+      "robust_z_score": 2.59,
+      "direction": "Spike",
+      "explanation": "Fashion & Accessories recorded 69,771 units in 2010-09 vs historical median 45,638 (robust z=2.59)."
+    },
+    {
+      "category": "Home & Living",
+      "period": "2011-11",
+      "observed_quantity": 212619,
+      "expected_median": 123161.5,
+      "robust_z_score": 2.58,
+      "direction": "Spike",
+      "explanation": "Home & Living recorded 212,619 units in 2011-11 vs historical median 123,162 (robust z=2.58)."
+    },
+    {
+      "category": "Kitchen & Dining",
+      "period": "2010-09",
+      "observed_quantity": 130123,
+      "expected_median": 85818.0,
+      "robust_z_score": 2.56,
+      "direction": "Spike",
+      "explanation": "Kitchen & Dining recorded 130,123 units in 2010-09 vs historical median 85,818 (robust z=2.56)."
+    }
+  ],
+  "top_associations": [
+    {
+      "antecedents": [
+        "Set/6 Red Spotty Paper Cups"
+      ],
+      "consequents": [
+        "Set/6 Red Spotty Paper Plates"
+      ],
+      "support": 0.0165,
+      "confidence": 0.7722,
+      "lift": 31.03,
+      "provenance": "dataset_3_clean.csv (39,536 baskets)"
+    },
+    {
+      "antecedents": [
+        "Set/6 Red Spotty Paper Plates"
+      ],
+      "consequents": [
+        "Set/6 Red Spotty Paper Cups"
+      ],
+      "support": 0.0165,
+      "confidence": 0.6616,
+      "lift": 31.03,
+      "provenance": "dataset_3_clean.csv (39,536 baskets)"
+    },
+    {
+      "antecedents": [
+        "Roses Regency Teacup And Saucer",
+        "Green Regency Teacup And Saucer"
+      ],
+      "consequents": [
+        "Pink Regency Teacup And Saucer"
+      ],
+      "support": 0.0184,
+      "confidence": 0.7097,
+      "lift": 27.4,
+      "provenance": "dataset_3_clean.csv (39,536 baskets)"
+    },
+    {
+      "antecedents": [
+        "Pink Regency Teacup And Saucer"
+      ],
+      "consequents": [
+        "Roses Regency Teacup And Saucer",
+        "Green Regency Teacup And Saucer"
+      ],
+      "support": 0.0184,
+      "confidence": 0.709,
+      "lift": 27.4,
+      "provenance": "dataset_3_clean.csv (39,536 baskets)"
+    },
+    {
+      "antecedents": [
+        "Roses Regency Teacup And Saucer",
+        "Pink Regency Teacup And Saucer"
+      ],
+      "consequents": [
+        "Green Regency Teacup And Saucer"
+      ],
+      "support": 0.0184,
+      "confidence": 0.903,
+      "lift": 26.64,
+      "provenance": "dataset_3_clean.csv (39,536 baskets)"
+    },
+    {
+      "antecedents": [
+        "Green Regency Teacup And Saucer"
+      ],
+      "consequents": [
+        "Roses Regency Teacup And Saucer",
+        "Pink Regency Teacup And Saucer"
+      ],
+      "support": 0.0184,
+      "confidence": 0.5418,
+      "lift": 26.64,
+      "provenance": "dataset_3_clean.csv (39,536 baskets)"
+    },
+    {
+      "antecedents": [
+        "Green Regency Teacup And Saucer"
+      ],
+      "consequents": [
+        "Pink Regency Teacup And Saucer"
+      ],
+      "support": 0.0216,
+      "confidence": 0.6373,
+      "lift": 24.61,
+      "provenance": "dataset_3_clean.csv (39,536 baskets)"
+    },
+    {
+      "antecedents": [
+        "Pink Regency Teacup And Saucer"
+      ],
+      "consequents": [
+        "Green Regency Teacup And Saucer"
+      ],
+      "support": 0.0216,
+      "confidence": 0.834,
+      "lift": 24.61,
+      "provenance": "dataset_3_clean.csv (39,536 baskets)"
+    },
+    {
+      "antecedents": [
+        "Green Regency Teacup And Saucer",
+        "Pink Regency Teacup And Saucer"
+      ],
+      "consequents": [
+        "Roses Regency Teacup And Saucer"
+      ],
+      "support": 0.0184,
+      "confidence": 0.8501,
+      "lift": 23.84,
+      "provenance": "dataset_3_clean.csv (39,536 baskets)"
+    },
+    {
+      "antecedents": [
+        "Roses Regency Teacup And Saucer"
+      ],
+      "consequents": [
+        "Green Regency Teacup And Saucer",
+        "Pink Regency Teacup And Saucer"
+      ],
+      "support": 0.0184,
+      "confidence": 0.5149,
+      "lift": 23.84,
+      "provenance": "dataset_3_clean.csv (39,536 baskets)"
+    }
+  ]
+}
